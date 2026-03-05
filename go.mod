@@ -3,8 +3,8 @@ module gogpuui
 go 1.26.0
 
 require (
-	github.com/gogpu/gg v0.33.1
-	github.com/gogpu/gogpu v0.22.6
+	github.com/gogpu/gg v0.33.2
+	github.com/gogpu/gogpu v0.22.7
 	github.com/gogpu/ui v0.0.0-20260305115525-ee09a8641726
 )
 
@@ -16,7 +16,7 @@ require (
 	github.com/gogpu/gpucontext v0.9.0 // indirect
 	github.com/gogpu/gputypes v0.2.0 // indirect
 	github.com/gogpu/naga v0.14.5 // indirect
-	github.com/gogpu/wgpu v0.19.5 // indirect
+	github.com/gogpu/wgpu v0.19.6 // indirect
 	golang.org/x/image v0.36.0 // indirect
 	golang.org/x/sys v0.41.0 // indirect
 	golang.org/x/text v0.34.0 // indirect
