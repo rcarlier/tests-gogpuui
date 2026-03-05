@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - a11y/node.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="active">a11y/node.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-Actions">Actions</a></li>
+                    
+                    <li><a href="#func-Bounds">Bounds</a></li>
+                    
+                    <li><a href="#func-ChildCount">ChildCount</a></li>
+                    
+                    <li><a href="#func-Children">Children</a></li>
+                    
+                    <li><a href="#func-Hint">Hint</a></li>
+                    
+                    <li><a href="#func-ID">ID</a></li>
+                    
+                    <li><a href="#func-IsValid">IsValid</a></li>
+                    
+                    <li><a href="#func-Label">Label</a></li>
+                    
+                    <li><a href="#func-NewNode">NewNode</a></li>
+                    
+                    <li><a href="#func-NewNodeFromAccessible">NewNodeFromAccessible</a></li>
+                    
+                    <li><a href="#func-NextNodeID">NextNodeID</a></li>
+                    
+                    <li><a href="#func-Parent">Parent</a></li>
+                    
+                    <li><a href="#func-Role">Role</a></li>
+                    
+                    <li><a href="#func-SetActions">SetActions</a></li>
+                    
+                    <li><a href="#func-SetBounds">SetBounds</a></li>
+                    
+                    <li><a href="#func-SetHint">SetHint</a></li>
+                    
+                    <li><a href="#func-SetLabel">SetLabel</a></li>
+                    
+                    <li><a href="#func-SetRole">SetRole</a></li>
+                    
+                    <li><a href="#func-SetSource">SetSource</a></li>
+                    
+                    <li><a href="#func-SetState">SetState</a></li>
+                    
+                    <li><a href="#func-SetValue">SetValue</a></li>
+                    
+                    <li><a href="#func-Source">Source</a></li>
+                    
+                    <li><a href="#func-State">State</a></li>
+                    
+                    <li><a href="#func-String">String</a></li>
+                    
+                    <li><a href="#func-String">String</a></li>
+                    
+                    <li><a href="#func-SyncFromSource">SyncFromSource</a></li>
+                    
+                    <li><a href="#func-Value">Value</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>a11y/node.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-Actions">
+    <div class="item-header">
+        <h4>func Actions</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Actions returns the node's supported accessibility actions.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The returned slice is a copy and safe to modify.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Actions() []Action {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	if len(n.actions) == 0 {
+		return nil
+	}
+	result := make([]Action, len(n.actions))
+	copy(result, n.actions)
+	return result
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Bounds">
+    <div class="item-header">
+        <h4>func Bounds</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Bounds returns the node's bounding rectangle in screen coordinates.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Bounds() geometry.Rect {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return n.bounds
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ChildCount">
+    <div class="item-header">
+        <h4>func ChildCount</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ChildCount returns the number of child nodes.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) ChildCount() int {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return len(n.children)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Children">
+    <div class="item-header">
+        <h4>func Children</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Children returns a copy of the node's child nodes.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The returned slice is safe to modify without affecting the node.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Children() []*Node {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	if len(n.children) == 0 {
+		return nil
+	}
+	result := make([]*Node, len(n.children))
+	copy(result, n.children)
+	return result
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Hint">
+    <div class="item-header">
+        <h4>func Hint</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Hint returns the node's hint text.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Hint() string {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return n.hint
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ID">
+    <div class="item-header">
+        <h4>func ID</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ID returns the node's unique identifier.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The ID is assigned at creation and never changes.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) ID() NodeID {
+	// ID is immutable after creation, no lock needed.
+	return n.id
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsValid">
+    <div class="item-header">
+        <h4>func IsValid</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsValid returns true if the node ID is not zero.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>A zero NodeID indicates an uninitialized or invalid node.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (id NodeID) IsValid() bool {
+	return id != 0
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Label">
+    <div class="item-header">
+        <h4>func Label</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Label returns the node's label text.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Label() string {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return n.label
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewNode">
+    <div class="item-header">
+        <h4>func NewNode</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewNode creates a new accessibility node with the given role and label.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The node is assigned a unique [NodeID] automatically.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>node := a11y.NewNode(a11y.RoleButton, "OK")</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewNode(role Role, label string) *Node {
+	return &Node{
+		id:	NextNodeID(),
+		role:	role,
+		label:	label,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewNodeFromAccessible">
+    <div class="item-header">
+        <h4>func NewNodeFromAccessible</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewNodeFromAccessible creates a new accessibility node populated from</p>
+          
+        <p>the given [Accessible] widget.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The node copies all properties from the widget and stores a reference</p>
+          
+        <p>to it for future updates via [Node.SyncFromSource].</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>var button Accessible = myButton</p>
+          
+        <p>node := a11y.NewNodeFromAccessible(button)</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewNodeFromAccessible(a Accessible) *Node {
+	return &Node{
+		id:		NextNodeID(),
+		role:		a.AccessibilityRole(),
+		label:		a.AccessibilityLabel(),
+		hint:		a.AccessibilityHint(),
+		value:		a.AccessibilityValue(),
+		state:		a.AccessibilityState(),
+		actions:	a.AccessibilityActions(),
+		source:		a,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NextNodeID">
+    <div class="item-header">
+        <h4>func NextNodeID</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NextNodeID returns a new unique NodeID.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>IDs are generated from an atomic counter starting at 1, ensuring they</p>
+          
+        <p>are unique within the process lifetime. This function is safe to call</p>
+          
+        <p>from any goroutine.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NextNodeID() NodeID {
+	return NodeID(nodeIDCounter.Add(1))
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Parent">
+    <div class="item-header">
+        <h4>func Parent</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Parent returns the node's parent, or nil if this is the root node.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Parent() *Node {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return n.parent
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Role">
+    <div class="item-header">
+        <h4>func Role</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Role returns the node's accessibility role.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Role() Role {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return n.role
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetActions">
+    <div class="item-header">
+        <h4>func SetActions</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetActions sets the node's supported accessibility actions.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SetActions(actions []Action) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.actions = actions
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetBounds">
+    <div class="item-header">
+        <h4>func SetBounds</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetBounds sets the node's bounding rectangle.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SetBounds(bounds geometry.Rect) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.bounds = bounds
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetHint">
+    <div class="item-header">
+        <h4>func SetHint</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetHint sets the node's hint text.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SetHint(hint string) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.hint = hint
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetLabel">
+    <div class="item-header">
+        <h4>func SetLabel</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetLabel sets the node's label text.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SetLabel(label string) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.label = label
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetRole">
+    <div class="item-header">
+        <h4>func SetRole</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetRole sets the node's accessibility role.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SetRole(role Role) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.role = role
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetSource">
+    <div class="item-header">
+        <h4>func SetSource</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetSource sets the [Accessible] widget backing this node.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SetSource(a Accessible) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.source = a
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetState">
+    <div class="item-header">
+        <h4>func SetState</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetState sets the node's accessibility state.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SetState(state State) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.state = state
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetValue">
+    <div class="item-header">
+        <h4>func SetValue</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetValue sets the node's current value.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SetValue(value string) {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	n.value = value
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Source">
+    <div class="item-header">
+        <h4>func Source</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Source returns the [Accessible] widget backing this node, or nil.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Source() Accessible {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return n.source
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-State">
+    <div class="item-header">
+        <h4>func State</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>State returns the node's current accessibility state.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) State() State {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return n.state
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a string representation of the node ID.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (id NodeID) String() string {
+	return fmt.Sprintf("NodeID(%d)", uint64(id))
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a human-readable representation of the node.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) String() string {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return fmt.Sprintf("Node{ID: %d, Role: %s, Label: %q}", uint64(n.id), n.role, n.label)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SyncFromSource">
+    <div class="item-header">
+        <h4>func SyncFromSource</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SyncFromSource updates the node's properties from its source [Accessible].</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If the node has no source, this is a no-op and returns false.</p>
+          
+        <p>Returns true if the node was updated.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) SyncFromSource() bool {
+	n.mu.Lock()
+	defer n.mu.Unlock()
+	if n.source == nil {
+		return false
+	}
+	n.role = n.source.AccessibilityRole()
+	n.label = n.source.AccessibilityLabel()
+	n.hint = n.source.AccessibilityHint()
+	n.value = n.source.AccessibilityValue()
+	n.state = n.source.AccessibilityState()
+	n.actions = n.source.AccessibilityActions()
+	return true
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Value">
+    <div class="item-header">
+        <h4>func Value</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Value returns the node's current value as a string.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (n *Node) Value() string {
+	n.mu.RLock()
+	defer n.mu.RUnlock()
+	return n.value
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-Node">
+    <div class="item-header">
+        <h4>type Node struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Node represents a single element in the accessibility tree.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Each Node has a stable [NodeID] for identification, a [Role] for semantics,</p>
+        
+        <p>and optional properties like label, hint, value, state, bounds, and actions.</p>
+        
+        <p>Nodes form a tree structure through parent-child relationships.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Nodes are safe for concurrent access. All reads and writes are protected</p>
+        
+        <p>by a sync.RWMutex.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Creating Nodes</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Create a node with [NewNode] or [NewNodeFromAccessible]:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>node := a11y.NewNode(a11y.RoleButton, "Save")</p>
+        
+        <p>node.SetHint("Saves the current document")</p>
+        
+        <p>node.SetActions([]a11y.Action{a11y.ActionClick})</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Tree Relationships</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Nodes maintain parent-child relationships. Use [Tree.Insert] and</p>
+        
+        <p>[Tree.Remove] to manage the tree structure rather than manipulating</p>
+        
+        <p>parent/children directly.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Node struct {
+	mu	sync.RWMutex
+
+	id		NodeID
+	role		Role
+	label		string
+	hint		string
+	value		string
+	state		State
+	actions		[]Action
+	bounds		geometry.Rect
+	parent		*Node
+	children	[]*Node
+
+	// source is the Accessible widget that this node represents.
+	// It may be nil for synthetic nodes not backed by a widget.
+	source	Accessible
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

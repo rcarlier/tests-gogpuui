@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - a11y/accessible.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="active">a11y/accessible.go</a>
+                
+                <ul>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>a11y/accessible.go</h2>
+
+<div style="margin-bottom: 20px">
+      <a
+        href="#interfaces"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Interfaces</a
+    >
+</div>
+
+  
+<h3 id="interfaces">Interfaces</h3>
+
+<div class="item" id="interface-Accessible">
+    <div class="item-header">
+        <h4>type Accessible interface</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Accessible is the interface that widgets implement to expose accessibility semantics.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Each method returns a snapshot of the widget's current accessibility state.</p>
+        
+        <p>Platform adapters query these methods to build and update the native accessibility</p>
+        
+        <p>tree consumed by screen readers and other assistive technology.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>All methods must be safe to call from the UI thread. Implementations should</p>
+        
+        <p>not block or perform expensive operations.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Minimal Implementation</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>At minimum, a widget should provide a meaningful role and label:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func (b *Button) AccessibilityRole() a11y.Role  { return a11y.RoleButton }</p>
+        
+        <p>func (b *Button) AccessibilityLabel() string     { return b.text }</p>
+        
+        <p>func (b *Button) AccessibilityHint() string      { return "" }</p>
+        
+        <p>func (b *Button) AccessibilityValue() string     { return "" }</p>
+        
+        <p>func (b *Button) AccessibilityState() a11y.State { return a11y.State{} }</p>
+        
+        <p>func (b *Button) AccessibilityActions() []a11y.Action {</p>
+        
+        <p>return []a11y.Action{a11y.ActionClick}</p>
+        
+        <p>}</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Rich Implementation</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>A slider widget provides full numeric value information:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func (s *Slider) AccessibilityRole() a11y.Role  { return a11y.RoleSlider }</p>
+        
+        <p>func (s *Slider) AccessibilityLabel() string     { return s.label }</p>
+        
+        <p>func (s *Slider) AccessibilityHint() string      { return "Adjusts the value" }</p>
+        
+        <p>func (s *Slider) AccessibilityValue() string     { return fmt.Sprintf("%.0f%%", s.value*100) }</p>
+        
+        <p>func (s *Slider) AccessibilityState() a11y.State {</p>
+        
+        <p>return a11y.State{</p>
+        
+        <p>ValueMin: a11y.Float64Ptr(float64(s.min)),</p>
+        
+        <p>ValueMax: a11y.Float64Ptr(float64(s.max)),</p>
+        
+        <p>ValueNow: a11y.Float64Ptr(float64(s.value)),</p>
+        
+        <p>}</p>
+        
+        <p>}</p>
+        
+        <p>func (s *Slider) AccessibilityActions() []a11y.Action {</p>
+        
+        <p>return []a11y.Action{a11y.ActionIncrement, a11y.ActionDecrement, a11y.ActionSetValue}</p>
+        
+        <p>}</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Accessible interface {
+	// AccessibilityRole returns the semantic role of this element.
+	//
+	// The role determines how assistive technology presents the element
+	// and what interactions are available. This should be stable for the
+	// lifetime of the widget.
+	AccessibilityRole() Role
+
+	// AccessibilityLabel returns a human-readable label for this element.
+	//
+	// The label is the primary text that screen readers announce.
+	// It should be concise and descriptive. For example, "Save" for a save button
+	// or "Volume" for a volume slider.
+	//
+	// An empty string indicates the element has no explicit label.
+	// Assistive technology may fall back to other sources (children, value, etc.).
+	AccessibilityLabel() string
+
+	// AccessibilityHint returns a description of the result of performing
+	// the default action on this element.
+	//
+	// The hint provides additional context about what will happen when the user
+	// activates the element. For example, "Opens the settings dialog" for a
+	// settings button.
+	//
+	// An empty string indicates no hint is available.
+	AccessibilityHint() string
+
+	// AccessibilityValue returns the current value of this element as a string.
+	//
+	// This is used for elements that have a user-facing value, such as text fields
+	// (the entered text), sliders (e.g., "50%"), and progress bars (e.g., "75% complete").
+	//
+	// An empty string indicates the element has no value to report.
+	AccessibilityValue() string
+
+	// AccessibilityState returns the current dynamic accessibility state.
+	//
+	// The state includes properties like disabled, selected, checked, expanded,
+	// and numeric value range. These change as the user interacts with the element.
+	AccessibilityState() State
+
+	// AccessibilityActions returns the list of actions that assistive technology
+	// can perform on this element.
+	//
+	// The returned slice should not be modified by the caller.
+	// An empty or nil slice indicates the element supports no special actions.
+	AccessibilityActions() []Action
+}
+</code></pre>
+</div>
+  
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

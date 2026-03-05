@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - widget/context.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="active">widget/context.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-ClearInvalidation">ClearInvalidation</a></li>
+                    
+                    <li><a href="#func-Cursor">Cursor</a></li>
+                    
+                    <li><a href="#func-DeltaTime">DeltaTime</a></li>
+                    
+                    <li><a href="#func-FocusedWidget">FocusedWidget</a></li>
+                    
+                    <li><a href="#func-Invalidate">Invalidate</a></li>
+                    
+                    <li><a href="#func-InvalidateRect">InvalidateRect</a></li>
+                    
+                    <li><a href="#func-InvalidatedRect">InvalidatedRect</a></li>
+                    
+                    <li><a href="#func-IsFocused">IsFocused</a></li>
+                    
+                    <li><a href="#func-IsInvalidated">IsInvalidated</a></li>
+                    
+                    <li><a href="#func-NewContext">NewContext</a></li>
+                    
+                    <li><a href="#func-Now">Now</a></li>
+                    
+                    <li><a href="#func-OverlayManager">OverlayManager</a></li>
+                    
+                    <li><a href="#func-ReleaseFocus">ReleaseFocus</a></li>
+                    
+                    <li><a href="#func-RequestFocus">RequestFocus</a></li>
+                    
+                    <li><a href="#func-ResetCursor">ResetCursor</a></li>
+                    
+                    <li><a href="#func-Scale">Scale</a></li>
+                    
+                    <li><a href="#func-SetCursor">SetCursor</a></li>
+                    
+                    <li><a href="#func-SetNow">SetNow</a></li>
+                    
+                    <li><a href="#func-SetOnInvalidate">SetOnInvalidate</a></li>
+                    
+                    <li><a href="#func-SetOnInvalidateRect">SetOnInvalidateRect</a></li>
+                    
+                    <li><a href="#func-SetOverlayManager">SetOverlayManager</a></li>
+                    
+                    <li><a href="#func-SetScale">SetScale</a></li>
+                    
+                    <li><a href="#func-SetThemeProvider">SetThemeProvider</a></li>
+                    
+                    <li><a href="#func-SetWindowSize">SetWindowSize</a></li>
+                    
+                    <li><a href="#func-String">String</a></li>
+                    
+                    <li><a href="#func-ThemeProvider">ThemeProvider</a></li>
+                    
+                    <li><a href="#func-WindowSize">WindowSize</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>widget/context.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > <a
+        href="#interfaces"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Interfaces</a
+    >
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-ClearInvalidation">
+    <div class="item-header">
+        <h4>func ClearInvalidation</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ClearInvalidation clears the invalidation state.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Call this after processing a redraw.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) ClearInvalidation() {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.invalidated = false
+	c.invalidateRect = geometry.Rect{}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Cursor">
+    <div class="item-header">
+        <h4>func Cursor</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Cursor returns the current cursor type.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) Cursor() CursorType {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.cursor
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-DeltaTime">
+    <div class="item-header">
+        <h4>func DeltaTime</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>DeltaTime returns the time elapsed since the previous frame.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) DeltaTime() time.Duration {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.deltaTime
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-FocusedWidget">
+    <div class="item-header">
+        <h4>func FocusedWidget</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>FocusedWidget returns the currently focused widget, or nil if none.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) FocusedWidget() Widget {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.focusedWidget
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Invalidate">
+    <div class="item-header">
+        <h4>func Invalidate</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Invalidate marks the entire window as needing a redraw.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) Invalidate() {
+	c.mu.Lock()
+	c.invalidated = true
+	callback := c.onInvalidate
+	c.mu.Unlock()
+
+	if callback != nil {
+		callback()
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InvalidateRect">
+    <div class="item-header">
+        <h4>func InvalidateRect</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InvalidateRect marks a specific rectangular area as needing a redraw.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) InvalidateRect(r geometry.Rect) {
+	c.mu.Lock()
+	if c.invalidated {
+		// Already doing a full invalidation, no need for partial
+		c.mu.Unlock()
+		return
+	}
+	if c.invalidateRect.IsEmpty() {
+		c.invalidateRect = r
+	} else {
+		c.invalidateRect = c.invalidateRect.Union(r)
+	}
+	callback := c.onInvalidateRect
+	c.mu.Unlock()
+
+	if callback != nil {
+		callback(r)
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InvalidatedRect">
+    <div class="item-header">
+        <h4>func InvalidatedRect</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InvalidatedRect returns the area that needs redrawing.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns an empty rect if no partial invalidation was requested,</p>
+          
+        <p>or if a full invalidation was requested (check IsInvalidated).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) InvalidatedRect() geometry.Rect {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.invalidateRect
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsFocused">
+    <div class="item-header">
+        <h4>func IsFocused</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsFocused returns true if the given widget currently has focus.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) IsFocused(w Widget) bool {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.focusedWidget == w
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsInvalidated">
+    <div class="item-header">
+        <h4>func IsInvalidated</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsInvalidated returns true if the window needs a redraw.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) IsInvalidated() bool {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.invalidated
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewContext">
+    <div class="item-header">
+        <h4>func NewContext</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewContext creates a new ContextImpl with default settings.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The context is initialized with:</p>
+          
+        <p>- No focused widget</p>
+          
+        <p>- Current time set to time.Now()</p>
+          
+        <p>- Scale factor of 1.0</p>
+          
+        <p>- Default cursor</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewContext() *ContextImpl {
+	now := time.Now()
+	return &ContextImpl{
+		now:		now,
+		lastFrame:	now,
+		scale:		1.0,
+		cursor:		CursorDefault,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Now">
+    <div class="item-header">
+        <h4>func Now</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Now returns the current time.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) Now() time.Time {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.now
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-OverlayManager">
+    <div class="item-header">
+        <h4>func OverlayManager</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>OverlayManager returns the overlay manager, or nil if none is set.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) OverlayManager() OverlayManager {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.overlayManager
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ReleaseFocus">
+    <div class="item-header">
+        <h4>func ReleaseFocus</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ReleaseFocus releases focus from the given widget.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) ReleaseFocus(w Widget) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+
+	if c.focusedWidget != w {
+		return	// Widget doesn't have focus
+	}
+
+	if setter, ok := c.focusedWidget.(interface{ SetFocused(bool) }); ok {
+		setter.SetFocused(false)
+	}
+	c.focusedWidget = nil
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-RequestFocus">
+    <div class="item-header">
+        <h4>func RequestFocus</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>RequestFocus requests focus for the given widget.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) RequestFocus(w Widget) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+
+	if c.focusedWidget == w {
+		return	// Already focused
+	}
+
+	// Clear focus from previous widget
+	if c.focusedWidget != nil {
+		if setter, ok := c.focusedWidget.(interface{ SetFocused(bool) }); ok {
+			setter.SetFocused(false)
+		}
+	}
+
+	// Set focus to new widget
+	c.focusedWidget = w
+	if w != nil {
+		if setter, ok := w.(interface{ SetFocused(bool) }); ok {
+			setter.SetFocused(true)
+		}
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ResetCursor">
+    <div class="item-header">
+        <h4>func ResetCursor</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ResetCursor resets the cursor to default.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Call this at the start of each frame before processing events.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) ResetCursor() {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.cursor = CursorDefault
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Scale">
+    <div class="item-header">
+        <h4>func Scale</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Scale returns the display scale factor.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) Scale() float32 {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.scale
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetCursor">
+    <div class="item-header">
+        <h4>func SetCursor</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetCursor changes the mouse cursor.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) SetCursor(cursor CursorType) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.cursor = cursor
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetNow">
+    <div class="item-header">
+        <h4>func SetNow</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetNow updates the current time and calculates delta time.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Call this at the start of each frame before processing events and layout.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) SetNow(now time.Time) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.deltaTime = now.Sub(c.now)
+	c.lastFrame = c.now
+	c.now = now
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetOnInvalidate">
+    <div class="item-header">
+        <h4>func SetOnInvalidate</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetOnInvalidate sets a callback function called when Invalidate is called.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) SetOnInvalidate(callback func()) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.onInvalidate = callback
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetOnInvalidateRect">
+    <div class="item-header">
+        <h4>func SetOnInvalidateRect</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetOnInvalidateRect sets a callback function called when InvalidateRect is called.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) SetOnInvalidateRect(callback func(geometry.Rect)) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.onInvalidateRect = callback
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetOverlayManager">
+    <div class="item-header">
+        <h4>func SetOverlayManager</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetOverlayManager sets the overlay manager for this context.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) SetOverlayManager(om OverlayManager) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.overlayManager = om
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetScale">
+    <div class="item-header">
+        <h4>func SetScale</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetScale sets the display scale factor.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) SetScale(scale float32) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.scale = scale
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetThemeProvider">
+    <div class="item-header">
+        <h4>func SetThemeProvider</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetThemeProvider sets the theme provider for this context.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Pass nil to clear the theme provider (e.g., for headless testing).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) SetThemeProvider(tp ThemeProvider) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.themeProvider = tp
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetWindowSize">
+    <div class="item-header">
+        <h4>func SetWindowSize</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetWindowSize sets the current window size.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) SetWindowSize(size geometry.Size) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	c.windowSize = size
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a human-readable name for the cursor type.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c CursorType) String() string {
+	switch c {
+	case CursorDefault:
+		return "Default"
+	case CursorPointer:
+		return "Pointer"
+	case CursorText:
+		return "Text"
+	case CursorCrosshair:
+		return "Crosshair"
+	case CursorMove:
+		return "Move"
+	case CursorResizeNS:
+		return "ResizeNS"
+	case CursorResizeEW:
+		return "ResizeEW"
+	case CursorResizeNESW:
+		return "ResizeNESW"
+	case CursorResizeNWSE:
+		return "ResizeNWSE"
+	case CursorNotAllowed:
+		return "NotAllowed"
+	case CursorWait:
+		return "Wait"
+	case CursorNone:
+		return "None"
+	default:
+		return "Unknown"
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ThemeProvider">
+    <div class="item-header">
+        <h4>func ThemeProvider</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ThemeProvider returns the current theme for this context.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns nil if no theme is set (headless mode without a theme).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) ThemeProvider() ThemeProvider {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.themeProvider
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WindowSize">
+    <div class="item-header">
+        <h4>func WindowSize</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WindowSize returns the current window size in logical pixels.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *ContextImpl) WindowSize() geometry.Size {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+	return c.windowSize
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-ContextImpl">
+    <div class="item-header">
+        <h4>type ContextImpl struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>ContextImpl is the standard implementation of the Context interface.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>It provides thread-safe focus management, time tracking, and invalidation.</p>
+        
+        <p>Create a new ContextImpl with [NewContext].</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Example:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>ctx := widget.NewContext()</p>
+        
+        <p>ctx.SetNow(time.Now())</p>
+        
+        <p>// Pass to widget tree during layout/draw/event</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type ContextImpl struct {
+	mu	sync.RWMutex
+
+	// Focus state
+	focusedWidget	Widget
+
+	// Time tracking
+	now		time.Time
+	lastFrame	time.Time
+	deltaTime	time.Duration
+
+	// Invalidation
+	invalidated	bool
+	invalidateRect	geometry.Rect
+
+	// Cursor
+	cursor	CursorType
+
+	// Display scale
+	scale	float32
+
+	// Theme provider
+	themeProvider	ThemeProvider
+
+	// Callback for invalidation (called when Invalidate is called)
+	onInvalidate	func()
+
+	// Callback for invalidate rect (called when InvalidateRect is called)
+	onInvalidateRect	func(geometry.Rect)
+
+	// Overlay manager
+	overlayManager	OverlayManager
+
+	// Window size
+	windowSize	geometry.Size
+}
+</code></pre>
+</div>
+  
+<h3 id="interfaces">Interfaces</h3>
+
+<div class="item" id="interface-Context">
+    <div class="item-header">
+        <h4>type Context interface</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Context provides access to UI state during layout, drawing, and event handling.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Context is passed through the widget tree during all phases (Layout, Draw, Event).</p>
+        
+        <p>It provides:</p>
+        
+        <p>- Focus management: Request/release focus, query focused widget</p>
+        
+        <p>- Time information: Current time and delta for animations</p>
+        
+        <p>- Invalidation: Mark areas as needing redraw</p>
+        
+        <p>- Cursor management: Change the mouse cursor</p>
+        
+        <p>- Theme access: Query the current visual theme</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Thread Safety:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Context implementations must be safe for concurrent access. The default</p>
+        
+        <p>implementation [ContextImpl] uses a mutex to protect internal state.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Example:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func (w *MyWidget) Event(ctx widget.Context, e event.Event) bool {</p>
+        
+        <p>if clicked {</p>
+        
+        <p>ctx.RequestFocus(w)</p>
+        
+        <p>ctx.Invalidate()</p>
+        
+        <p>return true</p>
+        
+        <p>}</p>
+        
+        <p>return false</p>
+        
+        <p>}</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Context interface {
+	// RequestFocus requests focus for the given widget.
+	//
+	// If another widget currently has focus, it will receive a focus lost event.
+	// The widget parameter should implement the Widget interface.
+	RequestFocus(w Widget)
+
+	// ReleaseFocus releases focus from the given widget.
+	//
+	// If the widget doesn't have focus, this is a no-op.
+	// After calling this, FocusedWidget() will return nil.
+	ReleaseFocus(w Widget)
+
+	// IsFocused returns true if the given widget currently has focus.
+	IsFocused(w Widget) bool
+
+	// FocusedWidget returns the currently focused widget, or nil if none.
+	FocusedWidget() Widget
+
+	// Now returns the current time.
+	//
+	// This is the time at the start of the current frame/event cycle.
+	// Use this for animations and time-based effects.
+	Now() time.Time
+
+	// DeltaTime returns the time elapsed since the previous frame.
+	//
+	// This is useful for smooth animations that should be frame-rate independent.
+	// Returns 0 for the first frame.
+	DeltaTime() time.Duration
+
+	// Invalidate marks the entire window as needing a redraw.
+	//
+	// Call this when widget state changes require visual updates.
+	// Multiple calls per frame are coalesced into a single redraw.
+	Invalidate()
+
+	// InvalidateRect marks a specific rectangular area as needing a redraw.
+	//
+	// Use this for more efficient partial redraws when only a small
+	// part of the UI has changed.
+	InvalidateRect(r geometry.Rect)
+
+	// Cursor returns the current cursor type.
+	Cursor() CursorType
+
+	// SetCursor changes the mouse cursor.
+	//
+	// The cursor is typically reset to CursorDefault at the start of each frame.
+	SetCursor(cursor CursorType)
+
+	// Scale returns the display scale factor (DPI scaling).
+	//
+	// Returns 1.0 for standard displays, 2.0 for Retina/HiDPI displays, etc.
+	// Use this to scale coordinates and sizes for proper rendering.
+	Scale() float32
+
+	// ThemeProvider returns the current theme for this context.
+	//
+	// Returns nil if no theme is set (headless mode without a theme).
+	// Widgets should check for nil before using the returned provider.
+	ThemeProvider() ThemeProvider
+
+	// OverlayManager returns the overlay manager for pushing/removing overlays.
+	//
+	// Returns nil if no overlay manager is set (headless mode without a window).
+	// Widgets should check for nil before calling overlay methods.
+	OverlayManager() OverlayManager
+
+	// WindowSize returns the current window size in logical pixels.
+	WindowSize() geometry.Size
+}
+</code></pre>
+</div>
+
+<div class="item" id="interface-OverlayManager">
+    <div class="item-header">
+        <h4>type OverlayManager interface</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>OverlayManager provides methods for pushing and removing overlays from the</p>
+        
+        <p>window's overlay stack. This interface lives in the widget package to avoid</p>
+        
+        <p>circular imports: the overlay package imports widget, so widget cannot</p>
+        
+        <p>import overlay. Instead, widgets call OverlayManager methods on the Context</p>
+        
+        <p>without needing to know the concrete overlay.Stack type.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type OverlayManager interface {
+	// PushOverlay pushes a widget as an overlay. The onDismiss callback is
+	// called when the overlay should be closed (e.g. click outside, Escape key).
+	PushOverlay(w Widget, onDismiss func())
+
+	// PopOverlay removes the topmost overlay from the stack.
+	PopOverlay()
+
+	// RemoveOverlay removes a specific overlay widget from the stack.
+	RemoveOverlay(w Widget)
+}
+</code></pre>
+</div>
+  
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

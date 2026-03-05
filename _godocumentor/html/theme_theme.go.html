@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - theme/theme.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="active">theme/theme.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-Clone">Clone</a></li>
+                    
+                    <li><a href="#func-Comfortable">Comfortable</a></li>
+                    
+                    <li><a href="#func-Compact">Compact</a></li>
+                    
+                    <li><a href="#func-GetExtension">GetExtension</a></li>
+                    
+                    <li><a href="#func-IsDark">IsDark</a></li>
+                    
+                    <li><a href="#func-IsLight">IsLight</a></li>
+                    
+                    <li><a href="#func-LerpExtensions">LerpExtensions</a></li>
+                    
+                    <li><a href="#func-MergeExtensions">MergeExtensions</a></li>
+                    
+                    <li><a href="#func-New">New</a></li>
+                    
+                    <li><a href="#func-OnSurface">OnSurface</a></li>
+                    
+                    <li><a href="#func-RegisterExtension">RegisterExtension</a></li>
+                    
+                    <li><a href="#func-ScaleSpacing">ScaleSpacing</a></li>
+                    
+                    <li><a href="#func-ScaleTypography">ScaleTypography</a></li>
+                    
+                    <li><a href="#func-SetExtension">SetExtension</a></li>
+                    
+                    <li><a href="#func-TypedExtension">TypedExtension</a></li>
+                    
+                    <li><a href="#func-TypedExtensions">TypedExtensions</a></li>
+                    
+                    <li><a href="#func-WithColors">WithColors</a></li>
+                    
+                    <li><a href="#func-WithMode">WithMode</a></li>
+                    
+                    <li><a href="#func-WithName">WithName</a></li>
+                    
+                    <li><a href="#func-WithRadii">WithRadii</a></li>
+                    
+                    <li><a href="#func-WithShadows">WithShadows</a></li>
+                    
+                    <li><a href="#func-WithSpacing">WithSpacing</a></li>
+                    
+                    <li><a href="#func-WithTypography">WithTypography</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>theme/theme.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-Clone">
+    <div class="item-header">
+        <h4>func Clone</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Clone creates a deep copy of the theme.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is useful when you want to create a variant of an existing theme</p>
+          
+        <p>without modifying the original.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Note: Extensions are shallow-copied. If you have mutable extension</p>
+          
+        <p>values, you should deep-copy them manually.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) Clone() *Theme {
+	if t == nil {
+		return nil
+	}
+
+	clone := &Theme{
+		Name:		t.Name,
+		Mode:		t.Mode,
+		Colors:		t.Colors,
+		Typography:	t.Typography,
+		Spacing:	t.Spacing,
+		Shadows:	t.Shadows,
+		Radii:		t.Radii,
+		Extensions:	make(map[string]any, len(t.Extensions)),
+		typedExts:	newTypedExtensions(),
+	}
+
+	// Shallow copy extensions
+	for k, v := range t.Extensions {
+		clone.Extensions[k] = v
+	}
+
+	// Clone typed extensions
+	if t.typedExts != nil {
+		clone.typedExts = t.typedExts.clone()
+	}
+
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Comfortable">
+    <div class="item-header">
+        <h4>func Comfortable</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Comfortable returns a copy of the theme with increased spacing (125%).</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This creates a more spacious layout suitable for touch interfaces.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) Comfortable() *Theme {
+	return t.ScaleSpacing(1.25)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Compact">
+    <div class="item-header">
+        <h4>func Compact</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Compact returns a copy of the theme with reduced spacing (75%).</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This creates a denser layout suitable for data-heavy interfaces.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) Compact() *Theme {
+	return t.ScaleSpacing(0.75)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-GetExtension">
+    <div class="item-header">
+        <h4>func GetExtension</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>GetExtension retrieves a custom extension value from the theme.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns the value and true if found, or nil and false if not found.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) GetExtension(key string) (any, bool) {
+	if t.Extensions == nil {
+		return nil, false
+	}
+	v, ok := t.Extensions[key]
+	return v, ok
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsDark">
+    <div class="item-header">
+        <h4>func IsDark</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsDark returns true if this theme uses a dark color scheme.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) IsDark() bool {
+	return t.Mode == ModeDark
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsLight">
+    <div class="item-header">
+        <h4>func IsLight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsLight returns true if this theme uses a light color scheme.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) IsLight() bool {
+	return t.Mode == ModeLight
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LerpExtensions">
+    <div class="item-header">
+        <h4>func LerpExtensions</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LerpExtensions interpolates all extensions with another theme.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>For each extension in this theme, if the other theme has an extension</p>
+          
+        <p>with the same name, Lerp is called to interpolate them. Extensions</p>
+          
+        <p>that exist in only one theme are not interpolated.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>t ranges from 0.0 (this theme) to 1.0 (other theme).</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This enables smooth theme transition animations.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) LerpExtensions(other *Theme, amount float32) {
+	if other == nil || other.typedExts == nil || t.typedExts == nil {
+		return
+	}
+
+	for name, ext := range t.typedExts.all() {
+		if otherExt := other.typedExts.get(name); otherExt != nil {
+			t.typedExts.register(ext.Lerp(otherExt, amount))
+		}
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-MergeExtensions">
+    <div class="item-header">
+        <h4>func MergeExtensions</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>MergeExtensions merges extensions from another theme.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>For each extension in the other theme, if this theme has an extension</p>
+          
+        <p>with the same name, Merge is called to combine them. Otherwise, the</p>
+          
+        <p>extension is simply copied.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This enables theme inheritance where child themes can override</p>
+          
+        <p>specific extension properties.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) MergeExtensions(other *Theme) {
+	if other == nil || other.typedExts == nil {
+		return
+	}
+	if t.typedExts == nil {
+		t.typedExts = newTypedExtensions()
+	}
+
+	for name, otherExt := range other.typedExts.all() {
+		if existing := t.typedExts.get(name); existing != nil {
+			// Merge existing with other's extension
+			t.typedExts.register(existing.Merge(otherExt))
+		} else {
+			// No existing extension, just copy
+			t.typedExts.register(otherExt)
+		}
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-New">
+    <div class="item-header">
+        <h4>func New</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>New creates a new Theme with the given name and mode.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The theme is initialized with default values for all properties.</p>
+          
+        <p>Use this as a starting point for custom themes.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>theme := theme.New("My Brand", theme.ModeLight)</p>
+          
+        <p>theme.Colors.Primary = widget.Hex(0x6200EE)</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func New(name string, mode ThemeMode) *Theme {
+	return &Theme{
+		Name:		name,
+		Mode:		mode,
+		Colors:		ColorPalette{},	// Will be filled by caller
+		Typography:	DefaultTypography(),
+		Spacing:	DefaultSpacing(),
+		Shadows:	DefaultShadowsLight(),
+		Radii:		DefaultRadii(),
+		Extensions:	make(map[string]any),
+		typedExts:	newTypedExtensions(),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-OnSurface">
+    <div class="item-header">
+        <h4>func OnSurface</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>OnSurface returns the default text/icon color for surface backgrounds.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This satisfies the widget.ThemeProvider interface and returns the</p>
+          
+        <p>OnSurface color from the theme's color palette.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) OnSurface() widget.Color {
+	return t.Colors.OnSurface
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-RegisterExtension">
+    <div class="item-header">
+        <h4>func RegisterExtension</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>RegisterExtension registers a ThemeExtension with the theme.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>ThemeExtension provides a type-safe way to add custom properties that</p>
+          
+        <p>support animation (Lerp), inheritance (Merge), and copying (CopyWith).</p>
+          
+        <p>Use this for extensions that need these advanced features.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>For simple key-value storage, use SetExtension instead.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This modifies the theme in place. For immutable usage, use Clone() first.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>theme.RegisterExtension(&CorporateExtension{</p>
+          
+        <p>BrandPrimary: widget.Hex(0x00529B),</p>
+          
+        <p>})</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) RegisterExtension(ext ThemeExtension) {
+	if t.typedExts == nil {
+		t.typedExts = newTypedExtensions()
+	}
+	t.typedExts.register(ext)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ScaleSpacing">
+    <div class="item-header">
+        <h4>func ScaleSpacing</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ScaleSpacing returns a copy of the theme with scaled spacing.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is useful for density adjustments.</p>
+          
+        <p>Factor of 1.0 keeps original spacing, 0.75 creates compact spacing, etc.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) ScaleSpacing(factor float32) *Theme {
+	clone := t.Clone()
+	clone.Spacing = t.Spacing.Scale(factor)
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ScaleTypography">
+    <div class="item-header">
+        <h4>func ScaleTypography</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ScaleTypography returns a copy of the theme with scaled typography.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is useful for accessibility settings that increase text size.</p>
+          
+        <p>Factor of 1.0 keeps original sizes, 1.25 increases by 25%, etc.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) ScaleTypography(factor float32) *Theme {
+	clone := t.Clone()
+	clone.Typography = t.Typography.Scale(factor)
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetExtension">
+    <div class="item-header">
+        <h4>func SetExtension</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetExtension sets a custom extension value on the theme.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This modifies the theme in place. For immutable usage, use</p>
+          
+        <p>Clone() first.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) SetExtension(key string, value any) {
+	if t.Extensions == nil {
+		t.Extensions = make(map[string]any)
+	}
+	t.Extensions[key] = value
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-TypedExtension">
+    <div class="item-header">
+        <h4>func TypedExtension</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>TypedExtension retrieves a registered ThemeExtension by name.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns nil if no extension with that name is registered.</p>
+          
+        <p>For type-safe access with automatic casting, use the ExtensionAs</p>
+          
+        <p>generic function.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>ext := theme.TypedExtension("corporate")</p>
+          
+        <p>if corp, ok := ext.(*CorporateExtension); ok {</p>
+          
+        <p>// Use corp.BrandPrimary</p>
+          
+        <p>}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) TypedExtension(name string) ThemeExtension {
+	if t.typedExts == nil {
+		return nil
+	}
+	return t.typedExts.get(name)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-TypedExtensions">
+    <div class="item-header">
+        <h4>func TypedExtensions</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>TypedExtensions returns all registered ThemeExtensions.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The returned map is a copy and can be safely modified.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) TypedExtensions() map[string]ThemeExtension {
+	if t.typedExts == nil {
+		return nil
+	}
+	return t.typedExts.all()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithColors">
+    <div class="item-header">
+        <h4>func WithColors</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithColors returns a copy of the theme with a different color palette.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) WithColors(colors *ColorPalette) *Theme {
+	clone := t.Clone()
+	clone.Colors = *colors
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithMode">
+    <div class="item-header">
+        <h4>func WithMode</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithMode returns a copy of the theme with a different mode.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Note: This only changes the Mode field. For a full light/dark switch,</p>
+          
+        <p>you should also update Colors and Shadows appropriately.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) WithMode(mode ThemeMode) *Theme {
+	clone := t.Clone()
+	clone.Mode = mode
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithName">
+    <div class="item-header">
+        <h4>func WithName</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithName returns a copy of the theme with a different name.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) WithName(name string) *Theme {
+	clone := t.Clone()
+	clone.Name = name
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithRadii">
+    <div class="item-header">
+        <h4>func WithRadii</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithRadii returns a copy of the theme with a different radius scale.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) WithRadii(radii RadiusScale) *Theme {
+	clone := t.Clone()
+	clone.Radii = radii
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithShadows">
+    <div class="item-header">
+        <h4>func WithShadows</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithShadows returns a copy of the theme with different shadow styles.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) WithShadows(shadows *ShadowStyles) *Theme {
+	clone := t.Clone()
+	clone.Shadows = *shadows
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithSpacing">
+    <div class="item-header">
+        <h4>func WithSpacing</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithSpacing returns a copy of the theme with a different spacing scale.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) WithSpacing(spacing SpacingScale) *Theme {
+	clone := t.Clone()
+	clone.Spacing = spacing
+	return clone
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithTypography">
+    <div class="item-header">
+        <h4>func WithTypography</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithTypography returns a copy of the theme with different typography.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *Theme) WithTypography(typography *Typography) *Theme {
+	clone := t.Clone()
+	clone.Typography = *typography
+	return clone
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-Theme">
+    <div class="item-header">
+        <h4>type Theme struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Theme defines the complete visual style for an application.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Theme combines all visual properties needed to style UI components:</p>
+        
+        <p>colors, typography, spacing, shadows, and border radii. Themes are</p>
+        
+        <p>designed to be immutable by convention - once created, they should</p>
+        
+        <p>not be modified. This allows safe sharing across goroutines.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Use [DefaultLight] or [DefaultDark] for pre-configured themes, or</p>
+        
+        <p>build custom themes by modifying a base theme:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func MyBrandTheme() *Theme {</p>
+        
+        <p>t := DefaultLight()</p>
+        
+        <p>t.Colors.Primary = widget.Hex(0x6200EE)</p>
+        
+        <p>return t</p>
+        
+        <p>}</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Themes can be extended with custom data using the Extensions map,</p>
+        
+        <p>which allows third-party components to add their own theme properties.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Theme struct {
+	// Name is a human-readable identifier for the theme.
+	//
+	// Examples: "Light", "Dark", "Ocean Blue", "High Contrast"
+	Name	string
+
+	// Mode indicates whether this is a light, dark, or system-following theme.
+	Mode	ThemeMode
+
+	// Colors defines the semantic color palette.
+	Colors	ColorPalette
+
+	// Typography defines the type scale and text styles.
+	Typography	Typography
+
+	// Spacing defines the spacing scale for margins and padding.
+	Spacing	SpacingScale
+
+	// Shadows defines the elevation-based shadow styles.
+	Shadows	ShadowStyles
+
+	// Radii defines the border radius scale.
+	Radii	RadiusScale
+
+	// Extensions allows custom theme data for third-party components.
+	//
+	// Components can store their own theme properties here using a unique
+	// key (typically the component package path). This enables theming
+	// of custom components while maintaining compatibility with the core
+	// theme system.
+	//
+	// Example:
+	//
+	//	type MyComponentTheme struct {
+	//	    AccentColor widget.Color
+	//	    BorderWidth float32
+	//	}
+	//
+	//	// Store custom theme data
+	//	theme.Extensions["myorg/mycomponent"] = MyComponentTheme{
+	//	    AccentColor: widget.Hex(0xFF5722),
+	//	    BorderWidth: 2,
+	//	}
+	//
+	//	// Retrieve custom theme data
+	//	if ext, ok := theme.Extensions["myorg/mycomponent"].(MyComponentTheme); ok {
+	//	    // Use ext.AccentColor, ext.BorderWidth
+	//	}
+	Extensions	map[string]any
+
+	// typedExts holds ThemeExtension implementations for type-safe access.
+	// Use RegisterExtension() and TypedExtension() to access these.
+	typedExts	*typedExtensions
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

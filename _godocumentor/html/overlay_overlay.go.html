@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - overlay/overlay.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="active">overlay/overlay.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-Draw">Draw</a></li>
+                    
+                    <li><a href="#func-HandleEvent">HandleEvent</a></li>
+                    
+                    <li><a href="#func-IsEmpty">IsEmpty</a></li>
+                    
+                    <li><a href="#func-Layout">Layout</a></li>
+                    
+                    <li><a href="#func-Len">Len</a></li>
+                    
+                    <li><a href="#func-List">List</a></li>
+                    
+                    <li><a href="#func-NewStack">NewStack</a></li>
+                    
+                    <li><a href="#func-Pop">Pop</a></li>
+                    
+                    <li><a href="#func-Push">Push</a></li>
+                    
+                    <li><a href="#func-Remove">Remove</a></li>
+                    
+                    <li><a href="#func-Top">Top</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>overlay/overlay.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > <a
+        href="#interfaces"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Interfaces</a
+    >
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-Draw">
+    <div class="item-header">
+        <h4>func Draw</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Draw draws all overlays in bottom-to-top order.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) Draw(ctx widget.Context, canvas widget.Canvas) {
+	for _, o := range s.overlays {
+		o.Draw(ctx, canvas)
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-HandleEvent">
+    <div class="item-header">
+        <h4>func HandleEvent</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>HandleEvent dispatches an event to the overlay stack. Events are sent to</p>
+          
+        <p>the top overlay first. If the top overlay is modal and does not consume</p>
+          
+        <p>the event, the event is still blocked from reaching the normal widget tree.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns true if the event was consumed or blocked by a modal overlay.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) HandleEvent(ctx widget.Context, e event.Event) bool {
+	if len(s.overlays) == 0 {
+		return false
+	}
+	top := s.overlays[len(s.overlays)-1]
+	if top.Event(ctx, e) {
+		return true
+	}
+	// Modal overlays block all events from reaching the widget tree,
+	// even if they did not explicitly consume the event.
+	return top.Modal()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsEmpty">
+    <div class="item-header">
+        <h4>func IsEmpty</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsEmpty returns true if the stack contains no overlays.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) IsEmpty() bool {
+	return len(s.overlays) == 0
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Layout">
+    <div class="item-header">
+        <h4>func Layout</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Layout lays out all overlays with the given window-sized constraints.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) Layout(ctx widget.Context, windowSize geometry.Size) {
+	constraints := geometry.Tight(windowSize)
+	for _, o := range s.overlays {
+		size := o.Layout(ctx, constraints)
+		if setter, ok := o.(interface{ SetBounds(geometry.Rect) }); ok {
+			setter.SetBounds(geometry.NewRect(0, 0, size.Width, size.Height))
+		}
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Len">
+    <div class="item-header">
+        <h4>func Len</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Len returns the number of overlays in the stack.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) Len() int {
+	return len(s.overlays)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-List">
+    <div class="item-header">
+        <h4>func List</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>List returns the overlay slice in bottom-to-top order.</p>
+          
+        <p>The returned slice should not be modified by the caller.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) List() []Overlay {
+	return s.overlays
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewStack">
+    <div class="item-header">
+        <h4>func NewStack</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewStack creates an empty overlay stack. The onChange callback, if non-nil,</p>
+          
+        <p>is called whenever the stack contents change (push, pop, or remove).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewStack(onChange func()) *Stack {
+	return &Stack{onChange: onChange}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Pop">
+    <div class="item-header">
+        <h4>func Pop</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Pop removes and returns the top overlay. Returns nil if the stack is empty.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) Pop() Overlay {
+	if len(s.overlays) == 0 {
+		return nil
+	}
+	top := s.overlays[len(s.overlays)-1]
+	s.overlays[len(s.overlays)-1] = nil	// clear reference for GC
+	s.overlays = s.overlays[:len(s.overlays)-1]
+	s.notify()
+	return top
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Push">
+    <div class="item-header">
+        <h4>func Push</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Push adds an overlay to the top of the stack.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) Push(o Overlay) {
+	if o == nil {
+		return
+	}
+	s.overlays = append(s.overlays, o)
+	s.notify()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Remove">
+    <div class="item-header">
+        <h4>func Remove</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Remove removes the given overlay and all overlays above it in the stack.</p>
+          
+        <p>This maintains stack semantics: you cannot remove an overlay from the</p>
+          
+        <p>middle without also removing everything on top of it.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) Remove(o Overlay) {
+	for i, existing := range s.overlays {
+		if existing == o {
+			// Clear references for GC.
+			for j := i; j < len(s.overlays); j++ {
+				s.overlays[j] = nil
+			}
+			s.overlays = s.overlays[:i]
+			s.notify()
+			return
+		}
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Top">
+    <div class="item-header">
+        <h4>func Top</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Top returns the topmost overlay, or nil if the stack is empty.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Stack) Top() Overlay {
+	if len(s.overlays) == 0 {
+		return nil
+	}
+	return s.overlays[len(s.overlays)-1]
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-Stack">
+    <div class="item-header">
+        <h4>type Stack struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Stack manages a last-in-first-out collection of overlays for a window.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>The stack supports push, pop, and targeted removal. When an overlay is</p>
+        
+        <p>removed, all overlays above it in the stack are also removed (maintaining</p>
+        
+        <p>stack semantics). An optional onChange callback is invoked whenever the</p>
+        
+        <p>stack is modified, which typically triggers a redraw.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Stack is NOT safe for concurrent access. All operations must occur on the</p>
+        
+        <p>main/UI thread.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Stack struct {
+	overlays	[]Overlay
+	onChange	func()
+}
+</code></pre>
+</div>
+  
+<h3 id="interfaces">Interfaces</h3>
+
+<div class="item" id="interface-Overlay">
+    <div class="item-header">
+        <h4>type Overlay interface</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Overlay represents content displayed above the normal widget tree.</p>
+        
+        <p>It extends widget.Widget with dismissal and modality support.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Overlay interface {
+	widget.Widget
+
+	// Dismiss is called when the overlay should close (e.g. click outside, Escape key).
+	Dismiss()
+
+	// Modal returns true if the overlay blocks interaction with content below.
+	// A modal overlay consumes all events that are not handled by its content.
+	Modal() bool
+}
+</code></pre>
+</div>
+  
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

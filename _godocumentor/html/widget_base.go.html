@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - widget/base.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="active">widget/base.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-AddChild">AddChild</a></li>
+                    
+                    <li><a href="#func-Bounds">Bounds</a></li>
+                    
+                    <li><a href="#func-ChildAt">ChildAt</a></li>
+                    
+                    <li><a href="#func-ChildCount">ChildCount</a></li>
+                    
+                    <li><a href="#func-Children">Children</a></li>
+                    
+                    <li><a href="#func-ClearChildren">ClearChildren</a></li>
+                    
+                    <li><a href="#func-ContainsPoint">ContainsPoint</a></li>
+                    
+                    <li><a href="#func-GlobalToLocal">GlobalToLocal</a></li>
+                    
+                    <li><a href="#func-HasChildren">HasChildren</a></li>
+                    
+                    <li><a href="#func-ID">ID</a></li>
+                    
+                    <li><a href="#func-InsertChild">InsertChild</a></li>
+                    
+                    <li><a href="#func-IsEnabled">IsEnabled</a></li>
+                    
+                    <li><a href="#func-IsFocused">IsFocused</a></li>
+                    
+                    <li><a href="#func-IsVisible">IsVisible</a></li>
+                    
+                    <li><a href="#func-LocalToGlobal">LocalToGlobal</a></li>
+                    
+                    <li><a href="#func-NewWidgetBase">NewWidgetBase</a></li>
+                    
+                    <li><a href="#func-Parent">Parent</a></li>
+                    
+                    <li><a href="#func-Position">Position</a></li>
+                    
+                    <li><a href="#func-RemoveChild">RemoveChild</a></li>
+                    
+                    <li><a href="#func-RemoveChildAt">RemoveChildAt</a></li>
+                    
+                    <li><a href="#func-SetBounds">SetBounds</a></li>
+                    
+                    <li><a href="#func-SetEnabled">SetEnabled</a></li>
+                    
+                    <li><a href="#func-SetFocused">SetFocused</a></li>
+                    
+                    <li><a href="#func-SetID">SetID</a></li>
+                    
+                    <li><a href="#func-SetParent">SetParent</a></li>
+                    
+                    <li><a href="#func-SetVisible">SetVisible</a></li>
+                    
+                    <li><a href="#func-Size">Size</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>widget/base.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-AddChild">
+    <div class="item-header">
+        <h4>func AddChild</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AddChild adds a child widget.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If the child has a WidgetBase that can be accessed, its parent is set</p>
+          
+        <p>to this widget.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) AddChild(child Widget) {
+	if child == nil {
+		return
+	}
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	w.children = append(w.children, child)
+	// Try to set parent if child supports it
+	if setter, ok := child.(interface{ SetParent(Widget) }); ok {
+		// Note: We can't pass w here because we only have *WidgetBase, not the containing widget
+		// The parent should be set by the containing widget type if needed
+		_ = setter	// Avoid unused variable
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Bounds">
+    <div class="item-header">
+        <h4>func Bounds</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Bounds returns the widget's current bounds (position and size).</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The bounds are set during layout by the parent widget.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) Bounds() geometry.Rect {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.bounds
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ChildAt">
+    <div class="item-header">
+        <h4>func ChildAt</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ChildAt returns the child at the given index, or nil if out of range.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) ChildAt(index int) Widget {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	if index < 0 || index >= len(w.children) {
+		return nil
+	}
+	return w.children[index]
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ChildCount">
+    <div class="item-header">
+        <h4>func ChildCount</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ChildCount returns the number of child widgets.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) ChildCount() int {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return len(w.children)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Children">
+    <div class="item-header">
+        <h4>func Children</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Children returns the widget's child widgets.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns nil for leaf widgets with no children.</p>
+          
+        <p>The returned slice should not be modified by the caller.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) Children() []Widget {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	if len(w.children) == 0 {
+		return nil
+	}
+	// Return a copy to prevent modification
+	result := make([]Widget, len(w.children))
+	copy(result, w.children)
+	return result
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ClearChildren">
+    <div class="item-header">
+        <h4>func ClearChildren</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ClearChildren removes all child widgets.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) ClearChildren() {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	// Clear references for GC
+	for i := range w.children {
+		w.children[i] = nil
+	}
+	w.children = w.children[:0]
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ContainsPoint">
+    <div class="item-header">
+        <h4>func ContainsPoint</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ContainsPoint returns true if the point is within the widget's bounds.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is a convenience method for hit testing.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) ContainsPoint(p geometry.Point) bool {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.bounds.Contains(p)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-GlobalToLocal">
+    <div class="item-header">
+        <h4>func GlobalToLocal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>GlobalToLocal converts a point from global (window) coordinates to local coordinates.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Local coordinates are relative to the widget's top-left corner.</p>
+          
+        <p>Global coordinates are relative to the window's top-left corner.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) GlobalToLocal(p geometry.Point) geometry.Point {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return p.Sub(w.bounds.Min)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-HasChildren">
+    <div class="item-header">
+        <h4>func HasChildren</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>HasChildren returns true if the widget has any children.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) HasChildren() bool {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return len(w.children) > 0
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ID">
+    <div class="item-header">
+        <h4>func ID</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ID returns the widget's ID for debugging purposes.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>IDs are optional and not used by the framework itself.</p>
+          
+        <p>They are useful for debugging and testing.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) ID() string {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.id
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InsertChild">
+    <div class="item-header">
+        <h4>func InsertChild</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InsertChild inserts a child widget at the given index.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If index is out of range, the child is appended.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) InsertChild(index int, child Widget) {
+	if child == nil {
+		return
+	}
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	if index < 0 {
+		index = 0
+	}
+	if index >= len(w.children) {
+		w.children = append(w.children, child)
+		return
+	}
+	// Insert at index
+	w.children = append(w.children, nil)
+	copy(w.children[index+1:], w.children[index:])
+	w.children[index] = child
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsEnabled">
+    <div class="item-header">
+        <h4>func IsEnabled</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsEnabled returns true if the widget accepts input.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Disabled widgets are drawn (usually with a dimmed appearance)</p>
+          
+        <p>but do not respond to user input.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) IsEnabled() bool {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.enabled
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsFocused">
+    <div class="item-header">
+        <h4>func IsFocused</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsFocused returns true if the widget currently has focus.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) IsFocused() bool {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.focused
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsVisible">
+    <div class="item-header">
+        <h4>func IsVisible</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsVisible returns true if the widget is visible.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Invisible widgets are not drawn and do not receive events.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) IsVisible() bool {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.visible
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LocalToGlobal">
+    <div class="item-header">
+        <h4>func LocalToGlobal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LocalToGlobal converts a point from local coordinates to global (window) coordinates.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Local coordinates are relative to the widget's top-left corner.</p>
+          
+        <p>Global coordinates are relative to the window's top-left corner.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) LocalToGlobal(p geometry.Point) geometry.Point {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return p.Add(w.bounds.Min)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewWidgetBase">
+    <div class="item-header">
+        <h4>func NewWidgetBase</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewWidgetBase creates a new WidgetBase with default settings.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The widget is visible and enabled by default, with no children</p>
+          
+        <p>and zero bounds.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewWidgetBase() *WidgetBase {
+	return &WidgetBase{
+		visible:	true,
+		enabled:	true,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Parent">
+    <div class="item-header">
+        <h4>func Parent</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Parent returns the widget's parent, or nil if none.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) Parent() Widget {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.parent
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Position">
+    <div class="item-header">
+        <h4>func Position</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Position returns the widget's top-left position.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) Position() geometry.Point {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.bounds.Min
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-RemoveChild">
+    <div class="item-header">
+        <h4>func RemoveChild</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>RemoveChild removes a child widget.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns true if the child was found and removed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) RemoveChild(child Widget) bool {
+	if child == nil {
+		return false
+	}
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	for i, c := range w.children {
+		if c != child {
+			continue
+		}
+		// Remove by replacing with last element and truncating
+		lastIdx := len(w.children) - 1
+		w.children[i] = w.children[lastIdx]
+		w.children[lastIdx] = nil	// Clear reference for GC
+		w.children = w.children[:lastIdx]
+		return true
+	}
+	return false
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-RemoveChildAt">
+    <div class="item-header">
+        <h4>func RemoveChildAt</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>RemoveChildAt removes the child at the given index.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns the removed child, or nil if the index is out of range.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) RemoveChildAt(index int) Widget {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	if index < 0 || index >= len(w.children) {
+		return nil
+	}
+	child := w.children[index]
+	// Remove while preserving order
+	copy(w.children[index:], w.children[index+1:])
+	w.children[len(w.children)-1] = nil	// Clear reference for GC
+	w.children = w.children[:len(w.children)-1]
+	return child
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetBounds">
+    <div class="item-header">
+        <h4>func SetBounds</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetBounds sets the widget's bounds.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is typically called by the parent widget during layout</p>
+          
+        <p>after the child's Layout() method returns its size.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) SetBounds(bounds geometry.Rect) {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	w.bounds = bounds
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetEnabled">
+    <div class="item-header">
+        <h4>func SetEnabled</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetEnabled sets whether the widget accepts input.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) SetEnabled(enabled bool) {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	w.enabled = enabled
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetFocused">
+    <div class="item-header">
+        <h4>func SetFocused</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetFocused sets the widget's focus state.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Note: To properly manage focus in the UI, use Context.RequestFocus()</p>
+          
+        <p>and Context.ReleaseFocus() instead of calling this directly.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) SetFocused(focused bool) {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	w.focused = focused
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetID">
+    <div class="item-header">
+        <h4>func SetID</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetID sets the widget's ID for debugging purposes.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) SetID(id string) {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	w.id = id
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetParent">
+    <div class="item-header">
+        <h4>func SetParent</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetParent sets the widget's parent.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is called automatically by AddChild and RemoveChild.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) SetParent(parent Widget) {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	w.parent = parent
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetVisible">
+    <div class="item-header">
+        <h4>func SetVisible</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetVisible sets the widget's visibility.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) SetVisible(visible bool) {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	w.visible = visible
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Size">
+    <div class="item-header">
+        <h4>func Size</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Size returns the widget's current size.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *WidgetBase) Size() geometry.Size {
+	w.mu.RLock()
+	defer w.mu.RUnlock()
+	return w.bounds.Size()
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-WidgetBase">
+    <div class="item-header">
+        <h4>type WidgetBase struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>WidgetBase provides common functionality for widgets.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Embed this struct in custom widget implementations to get:</p>
+        
+        <p>- Bounds tracking (position and size)</p>
+        
+        <p>- Focus state management</p>
+        
+        <p>- Visibility control</p>
+        
+        <p>- Enabled/disabled state</p>
+        
+        <p>- Child widget management</p>
+        
+        <p>- Optional ID for debugging</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Example usage:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>type MyButton struct {</p>
+        
+        <p>widget.WidgetBase</p>
+        
+        <p>label string</p>
+        
+        <p>}</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func NewMyButton(label string) *MyButton {</p>
+        
+        <p>b := &MyButton{label: label}</p>
+        
+        <p>b.SetVisible(true)</p>
+        
+        <p>b.SetEnabled(true)</p>
+        
+        <p>return b</p>
+        
+        <p>}</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Thread Safety:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>WidgetBase uses a mutex to protect its internal state. However, this</p>
+        
+        <p>does not make widgets thread-safe for general use. All widget operations</p>
+        
+        <p>should occur on the main/UI thread. The mutex is provided for cases</p>
+        
+        <p>where properties need to be queried from callbacks.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type WidgetBase struct {
+	mu		sync.RWMutex
+	bounds		geometry.Rect	// Cached layout bounds
+	focused		bool		// Whether widget has focus
+	visible		bool		// Whether widget is visible
+	enabled		bool		// Whether widget accepts input
+	id		string		// Optional ID for debugging
+	children	[]Widget	// Child widgets
+	parent		Widget		// Parent widget (if any)
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

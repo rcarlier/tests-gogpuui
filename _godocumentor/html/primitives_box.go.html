@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - primitives/box.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="active">primitives/box.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-AccessibilityActions">AccessibilityActions</a></li>
+                    
+                    <li><a href="#func-AccessibilityHint">AccessibilityHint</a></li>
+                    
+                    <li><a href="#func-AccessibilityLabel">AccessibilityLabel</a></li>
+                    
+                    <li><a href="#func-AccessibilityRole">AccessibilityRole</a></li>
+                    
+                    <li><a href="#func-AccessibilityState">AccessibilityState</a></li>
+                    
+                    <li><a href="#func-AccessibilityValue">AccessibilityValue</a></li>
+                    
+                    <li><a href="#func-Background">Background</a></li>
+                    
+                    <li><a href="#func-BorderStyle">BorderStyle</a></li>
+                    
+                    <li><a href="#func-Box">Box</a></li>
+                    
+                    <li><a href="#func-Children">Children</a></li>
+                    
+                    <li><a href="#func-Draw">Draw</a></li>
+                    
+                    <li><a href="#func-Event">Event</a></li>
+                    
+                    <li><a href="#func-Gap">Gap</a></li>
+                    
+                    <li><a href="#func-Height">Height</a></li>
+                    
+                    <li><a href="#func-Label">Label</a></li>
+                    
+                    <li><a href="#func-Layout">Layout</a></li>
+                    
+                    <li><a href="#func-MaxHeightValue">MaxHeightValue</a></li>
+                    
+                    <li><a href="#func-MaxWidthValue">MaxWidthValue</a></li>
+                    
+                    <li><a href="#func-MinHeightValue">MinHeightValue</a></li>
+                    
+                    <li><a href="#func-MinWidthValue">MinWidthValue</a></li>
+                    
+                    <li><a href="#func-Padding">Padding</a></li>
+                    
+                    <li><a href="#func-PaddingBottom">PaddingBottom</a></li>
+                    
+                    <li><a href="#func-PaddingLeft">PaddingLeft</a></li>
+                    
+                    <li><a href="#func-PaddingRight">PaddingRight</a></li>
+                    
+                    <li><a href="#func-PaddingTop">PaddingTop</a></li>
+                    
+                    <li><a href="#func-PaddingXY">PaddingXY</a></li>
+                    
+                    <li><a href="#func-Rounded">Rounded</a></li>
+                    
+                    <li><a href="#func-ShadowLevel">ShadowLevel</a></li>
+                    
+                    <li><a href="#func-Style">Style</a></li>
+                    
+                    <li><a href="#func-Width">Width</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>primitives/box.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-AccessibilityActions">
+    <div class="item-header">
+        <h4>func AccessibilityActions</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityActions returns nil. Containers have no actions.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) AccessibilityActions() []a11y.Action {
+	return nil
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityHint">
+    <div class="item-header">
+        <h4>func AccessibilityHint</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityHint returns an empty string. Containers typically have no hint.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) AccessibilityHint() string {
+	return ""
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityLabel">
+    <div class="item-header">
+        <h4>func AccessibilityLabel</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityLabel returns the custom label, or empty string if none set.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) AccessibilityLabel() string {
+	return b.accessibilityLabel
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityRole">
+    <div class="item-header">
+        <h4>func AccessibilityRole</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityRole returns [a11y.RoleGenericContainer].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) AccessibilityRole() a11y.Role {
+	return a11y.RoleGenericContainer
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityState">
+    <div class="item-header">
+        <h4>func AccessibilityState</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityState returns the default state.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) AccessibilityState() a11y.State {
+	return a11y.State{
+		Disabled:	!b.IsEnabled(),
+		Hidden:		!b.IsVisible(),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityValue">
+    <div class="item-header">
+        <h4>func AccessibilityValue</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityValue returns an empty string. Containers have no value.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) AccessibilityValue() string {
+	return ""
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Background">
+    <div class="item-header">
+        <h4>func Background</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Background sets the background color.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Background(c widget.Color) *BoxWidget {
+	b.style.Background = c
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-BorderStyle">
+    <div class="item-header">
+        <h4>func BorderStyle</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>BorderStyle sets the border width and color.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) BorderStyle(width float32, color widget.Color) *BoxWidget {
+	b.style.Border = Border{Width: width, Color: color}
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Box">
+    <div class="item-header">
+        <h4>func Box</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Box creates a new container widget with the given children.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Children are laid out vertically from top to bottom. Use the fluent</p>
+          
+        <p>methods to add styling.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>card := primitives.Box(</p>
+          
+        <p>primitives.Text("Title").Bold(),</p>
+          
+        <p>primitives.Text("Body"),</p>
+          
+        <p>).Padding(16).Background(widget.Hex(0xFFFFFF))</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Box(children ...widget.Widget) *BoxWidget {
+	b := &BoxWidget{
+		children: children,
+	}
+	b.SetVisible(true)
+	b.SetEnabled(true)
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Children">
+    <div class="item-header">
+        <h4>func Children</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Children returns the box's child widgets.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Children() []widget.Widget {
+	if len(b.children) == 0 {
+		return nil
+	}
+	result := make([]widget.Widget, len(b.children))
+	copy(result, b.children)
+	return result
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Draw">
+    <div class="item-header">
+        <h4>func Draw</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Draw renders the box background, border, shadow, and then draws all children.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Draw(ctx widget.Context, canvas widget.Canvas) {
+	if !b.IsVisible() {
+		return
+	}
+
+	bounds := b.Bounds()
+
+	// Draw shadow layers (outermost first, innermost last).
+	if !b.style.Shadow.IsZero() {
+		b.drawShadow(canvas, bounds)
+	}
+
+	// Draw background
+	if !b.style.Background.IsTransparent() {
+		if b.style.Radius > 0 {
+			canvas.DrawRoundRect(bounds, b.style.Background, b.style.Radius)
+		} else {
+			canvas.DrawRect(bounds, b.style.Background)
+		}
+	}
+
+	// Draw border
+	if !b.style.Border.IsZero() {
+		if b.style.Radius > 0 {
+			canvas.StrokeRoundRect(bounds, b.style.Border.Color, b.style.Radius, b.style.Border.Width)
+		} else {
+			canvas.StrokeRect(bounds, b.style.Border.Color, b.style.Border.Width)
+		}
+	}
+
+	// Draw children with transform offset for this box's position
+	canvas.PushTransform(bounds.Min)
+	for _, child := range b.children {
+		child.Draw(ctx, canvas)
+	}
+	canvas.PopTransform()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Event">
+    <div class="item-header">
+        <h4>func Event</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Event dispatches the event to children. Returns true if any child consumed it.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Event(ctx widget.Context, e event.Event) bool {
+	if !b.IsVisible() || !b.IsEnabled() {
+		return false
+	}
+
+	// For mouse events, translate position to local coordinates and
+	// dispatch only to children whose bounds contain the position.
+	if me, ok := e.(*event.MouseEvent); ok {
+		return b.dispatchMouseEvent(ctx, me)
+	}
+
+	// Non-mouse events (keyboard, focus) broadcast to all children.
+	for i := len(b.children) - 1; i >= 0; i-- {
+		if b.children[i].Event(ctx, e) {
+			return true
+		}
+	}
+	return false
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Gap">
+    <div class="item-header">
+        <h4>func Gap</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Gap sets the vertical spacing between children.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Gap(v float32) *BoxWidget {
+	b.style.Gap = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Height">
+    <div class="item-header">
+        <h4>func Height</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Height sets an explicit height.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Height(v float32) *BoxWidget {
+	b.style.ExplicitHeight = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Label">
+    <div class="item-header">
+        <h4>func Label</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Label sets a custom accessibility label for this container.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Label(label string) *BoxWidget {
+	b.accessibilityLabel = label
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Layout">
+    <div class="item-header">
+        <h4>func Layout</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Layout calculates the box size by laying out children vertically with</p>
+          
+        <p>padding and gap, then constraining the result.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Layout(ctx widget.Context, constraints geometry.Constraints) geometry.Size {
+	constraints = b.applyExplicitConstraints(constraints)
+
+	pad := b.style.Padding
+	childConstraints := constraints.Deflate(pad)
+	if childConstraints.MaxWidth < 0 {
+		childConstraints.MaxWidth = 0
+	}
+	if childConstraints.MaxHeight < 0 {
+		childConstraints.MaxHeight = 0
+	}
+
+	var totalHeight float32
+	var maxChildWidth float32
+	childCount := len(b.children)
+
+	for i, child := range b.children {
+		remaining := childConstraints
+		if childConstraints.HasBoundedHeight() {
+			remaining.MaxHeight = childConstraints.MaxHeight - totalHeight
+			if remaining.MaxHeight < 0 {
+				remaining.MaxHeight = 0
+			}
+		}
+		remaining.MinHeight = 0
+
+		size := child.Layout(ctx, remaining)
+
+		childX := pad.Left
+		childY := pad.Top + totalHeight
+		child.(interface{ SetBounds(geometry.Rect) }).SetBounds(
+			geometry.FromPointSize(geometry.Pt(childX, childY), size),
+		)
+
+		totalHeight += size.Height
+		if i < childCount-1 {
+			totalHeight += b.style.Gap
+		}
+		if size.Width > maxChildWidth {
+			maxChildWidth = size.Width
+		}
+	}
+
+	contentWidth := maxChildWidth + pad.Horizontal()
+	contentHeight := totalHeight + pad.Vertical()
+
+	resultSize := constraints.Constrain(geometry.Sz(contentWidth, contentHeight))
+	b.SetBounds(geometry.FromPointSize(b.Position(), resultSize))
+	return resultSize
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-MaxHeightValue">
+    <div class="item-header">
+        <h4>func MaxHeightValue</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>MaxHeightValue sets the maximum height.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) MaxHeightValue(v float32) *BoxWidget {
+	b.style.MaxHeight = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-MaxWidthValue">
+    <div class="item-header">
+        <h4>func MaxWidthValue</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>MaxWidthValue sets the maximum width.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) MaxWidthValue(v float32) *BoxWidget {
+	b.style.MaxWidth = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-MinHeightValue">
+    <div class="item-header">
+        <h4>func MinHeightValue</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>MinHeightValue sets the minimum height.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) MinHeightValue(v float32) *BoxWidget {
+	b.style.MinHeight = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-MinWidthValue">
+    <div class="item-header">
+        <h4>func MinWidthValue</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>MinWidthValue sets the minimum width.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) MinWidthValue(v float32) *BoxWidget {
+	b.style.MinWidth = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Padding">
+    <div class="item-header">
+        <h4>func Padding</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Padding sets uniform padding on all edges.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Padding(v float32) *BoxWidget {
+	b.style.Padding = geometry.UniformInsets(v)
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-PaddingBottom">
+    <div class="item-header">
+        <h4>func PaddingBottom</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>PaddingBottom sets the bottom padding.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) PaddingBottom(v float32) *BoxWidget {
+	b.style.Padding.Bottom = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-PaddingLeft">
+    <div class="item-header">
+        <h4>func PaddingLeft</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>PaddingLeft sets the left padding.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) PaddingLeft(v float32) *BoxWidget {
+	b.style.Padding.Left = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-PaddingRight">
+    <div class="item-header">
+        <h4>func PaddingRight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>PaddingRight sets the right padding.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) PaddingRight(v float32) *BoxWidget {
+	b.style.Padding.Right = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-PaddingTop">
+    <div class="item-header">
+        <h4>func PaddingTop</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>PaddingTop sets the top padding.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) PaddingTop(v float32) *BoxWidget {
+	b.style.Padding.Top = v
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-PaddingXY">
+    <div class="item-header">
+        <h4>func PaddingXY</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>PaddingXY sets separate horizontal and vertical padding.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) PaddingXY(x, y float32) *BoxWidget {
+	b.style.Padding = geometry.SymmetricInsets(x, y)
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Rounded">
+    <div class="item-header">
+        <h4>func Rounded</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Rounded sets a uniform border radius.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Rounded(r float32) *BoxWidget {
+	b.style.Radius = r
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ShadowLevel">
+    <div class="item-header">
+        <h4>func ShadowLevel</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ShadowLevel sets the elevation shadow level (0-5).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) ShadowLevel(level int) *BoxWidget {
+	if level < 0 {
+		level = 0
+	}
+	if level > maxShadowLevel {
+		level = maxShadowLevel
+	}
+	b.style.Shadow = Shadow{Level: level}
+	return b
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Style">
+    <div class="item-header">
+        <h4>func Style</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Style returns the current box style (read-only snapshot).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Style() BoxStyle {
+	return b.style
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Width">
+    <div class="item-header">
+        <h4>func Width</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Width sets an explicit width.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b *BoxWidget) Width(v float32) *BoxWidget {
+	b.style.ExplicitWidth = v
+	return b
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-BoxStyle">
+    <div class="item-header">
+        <h4>type BoxStyle struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>BoxStyle holds all visual styling for a [BoxWidget].</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type BoxStyle struct {
+	Padding		geometry.Insets
+	Background	widget.Color
+	Radius		float32
+	Border		Border
+	Shadow		Shadow
+	Gap		float32
+
+	// Explicit dimensions. Zero means unconstrained in that dimension.
+	ExplicitWidth	float32
+	ExplicitHeight	float32
+	MinWidth	float32
+	MinHeight	float32
+	MaxWidth	float32
+	MaxHeight	float32
+}
+</code></pre>
+</div>
+
+<div class="item" id="struct-BoxWidget">
+    <div class="item-header">
+        <h4>type BoxWidget struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>BoxWidget is a container that lays out children in a vertical stack with</p>
+        
+        <p>optional padding, background, border, rounded corners, shadow, and gap.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>BoxWidget implements [widget.Widget] and [a11y.Accessible].</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Create a BoxWidget with the [Box] constructor.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type BoxWidget struct {
+	widget.WidgetBase
+
+	style			BoxStyle
+	children		[]widget.Widget
+	accessibilityLabel	string
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

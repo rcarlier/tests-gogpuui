@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - state/scheduler.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="active">state/scheduler.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-Batch">Batch</a></li>
+                    
+                    <li><a href="#func-Flush">Flush</a></li>
+                    
+                    <li><a href="#func-IsFlushing">IsFlushing</a></li>
+                    
+                    <li><a href="#func-MarkDirty">MarkDirty</a></li>
+                    
+                    <li><a href="#func-NewScheduler">NewScheduler</a></li>
+                    
+                    <li><a href="#func-PendingCount">PendingCount</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>state/scheduler.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-Batch">
+    <div class="item-header">
+        <h4>func Batch</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Batch groups multiple state changes so that no automatic flush happens</p>
+          
+        <p>until fn returns. After fn completes the pending widgets are NOT</p>
+          
+        <p>automatically flushed; call [Scheduler.Flush] explicitly when the</p>
+          
+        <p>render loop is ready.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Batch calls may be nested. The batching flag is reference-counted</p>
+          
+        <p>internally via a simple boolean; the outermost Batch call clears it.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>sched.Batch(func() {</p>
+          
+        <p>counter.Set(1)</p>
+          
+        <p>name.Set("Alice")</p>
+          
+        <p>// Both changes enqueue dirty widgets, but nothing is flushed yet.</p>
+          
+        <p>})</p>
+          
+        <p>sched.Flush() // one flush for both changes</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Scheduler) Batch(fn func()) {
+	s.mu.Lock()
+	wasBatching := s.batching
+	s.batching = true
+	s.mu.Unlock()
+
+	fn()
+
+	if !wasBatching {
+		s.mu.Lock()
+		s.batching = false
+		s.mu.Unlock()
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Flush">
+    <div class="item-header">
+        <h4>func Flush</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Flush processes all pending dirty widgets by calling the flush function</p>
+          
+        <p>provided to [NewScheduler].</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>After the call the pending set is empty. If there are no pending widgets</p>
+          
+        <p>Flush is a no-op. Flush is safe to call from any goroutine.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Widgets added during the flush callback are not included in the current</p>
+          
+        <p>flush; they will be picked up by the next call to Flush.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Scheduler) Flush() {
+	s.mu.Lock()
+	if len(s.pending) == 0 {
+		s.mu.Unlock()
+		return
+	}
+
+	// Snapshot and clear pending set.
+	dirty := make([]widget.Widget, 0, len(s.pending))
+	for w := range s.pending {
+		dirty = append(dirty, w)
+	}
+	s.pending = make(map[widget.Widget]struct{})
+	s.flushing = true
+	s.mu.Unlock()
+
+	s.flushFn(dirty)
+
+	s.mu.Lock()
+	s.flushing = false
+	s.mu.Unlock()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsFlushing">
+    <div class="item-header">
+        <h4>func IsFlushing</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsFlushing reports whether the scheduler is currently executing its</p>
+          
+        <p>flush function. This is useful for re-entrancy guards.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Scheduler) IsFlushing() bool {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	return s.flushing
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-MarkDirty">
+    <div class="item-header">
+        <h4>func MarkDirty</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>MarkDirty queues a widget for re-render.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If the same widget is marked dirty multiple times before the next</p>
+          
+        <p>[Scheduler.Flush] it is only processed once (deduplication).</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If the scheduler is not currently inside a [Scheduler.Batch] call,</p>
+          
+        <p>MarkDirty is a lightweight enqueue operation. The actual flush happens</p>
+          
+        <p>when the render loop calls Flush.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Scheduler) MarkDirty(w widget.Widget) {
+	if w == nil {
+		return
+	}
+
+	s.mu.Lock()
+	s.pending[w] = struct{}{}
+	s.mu.Unlock()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewScheduler">
+    <div class="item-header">
+        <h4>func NewScheduler</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewScheduler creates a Scheduler that calls flushFn with the</p>
+          
+        <p>deduplicated list of dirty widgets when [Scheduler.Flush] is invoked.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>flushFn must not be nil. It receives a slice of unique widgets that</p>
+          
+        <p>were marked dirty since the last flush. The order of widgets in the</p>
+          
+        <p>slice is not guaranteed.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>sched := state.NewScheduler(func(dirty []widget.Widget) {</p>
+          
+        <p>for _, w := range dirty {</p>
+          
+        <p>w.Layout(ctx, constraints)</p>
+          
+        <p>w.Draw(ctx, canvas)</p>
+          
+        <p>}</p>
+          
+        <p>})</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewScheduler(flushFn func([]widget.Widget)) *Scheduler {
+	if flushFn == nil {
+		panic("state: NewScheduler flushFn must not be nil")
+	}
+	return &Scheduler{
+		pending:	make(map[widget.Widget]struct{}),
+		flushFn:	flushFn,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-PendingCount">
+    <div class="item-header">
+        <h4>func PendingCount</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>PendingCount returns the number of widgets currently awaiting flush.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is primarily useful for testing and diagnostics.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s *Scheduler) PendingCount() int {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	return len(s.pending)
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-Scheduler">
+    <div class="item-header">
+        <h4>type Scheduler struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Scheduler collects widgets that need re-rendering and flushes them in</p>
+        
+        <p>a single batch. This avoids redundant render passes when multiple</p>
+        
+        <p>signals change during the same event cycle.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Scheduler is instance-based (no global state) and safe for concurrent use.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Create a Scheduler with [NewScheduler].</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Scheduler struct {
+	mu		sync.Mutex
+	pending		map[widget.Widget]struct{}
+	flushFn		func([]widget.Widget)
+	batching	bool
+	flushing	bool
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

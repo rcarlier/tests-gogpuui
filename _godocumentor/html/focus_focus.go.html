@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - focus/focus.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="active">focus/focus.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-Blur">Blur</a></li>
+                    
+                    <li><a href="#func-DrawFocusRing">DrawFocusRing</a></li>
+                    
+                    <li><a href="#func-Focus">Focus</a></li>
+                    
+                    <li><a href="#func-Focused">Focused</a></li>
+                    
+                    <li><a href="#func-HandleKeyEvent">HandleKeyEvent</a></li>
+                    
+                    <li><a href="#func-New">New</a></li>
+                    
+                    <li><a href="#func-Next">Next</a></li>
+                    
+                    <li><a href="#func-Previous">Previous</a></li>
+                    
+                    <li><a href="#func-RegisterShortcut">RegisterShortcut</a></li>
+                    
+                    <li><a href="#func-SetRoot">SetRoot</a></li>
+                    
+                    <li><a href="#func-UnregisterShortcut">UnregisterShortcut</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>focus/focus.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-Blur">
+    <div class="item-header">
+        <h4>func Blur</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Blur removes focus from the currently focused widget.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>After calling Blur, [Manager.Focused] returns nil.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) Blur() {
+	m.impl.Blur()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-DrawFocusRing">
+    <div class="item-header">
+        <h4>func DrawFocusRing</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>DrawFocusRing draws a focus indicator around the given bounds.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The ring is drawn as a rounded rectangle outline, offset slightly</p>
+          
+        <p>outside the bounds. The radius controls corner rounding; use 0 for</p>
+          
+        <p>square corners.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>if w.IsFocused() {</p>
+          
+        <p>focus.DrawFocusRing(canvas, w.Bounds(), widget.ColorBlue, 4.0)</p>
+          
+        <p>}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func DrawFocusRing(canvas widget.Canvas, bounds geometry.Rect, color widget.Color, radius float32) {
+	ifocus.DrawFocusRing(canvas, bounds, color, radius)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Focus">
+    <div class="item-header">
+        <h4>func Focus</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Focus sets keyboard focus to the given widget.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If another widget currently has focus, it is blurred first.</p>
+          
+        <p>If w is nil, focus is cleared (equivalent to [Manager.Blur]).</p>
+          
+        <p>If w is not focusable (IsFocusable returns false), this is a no-op.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) Focus(w widget.Focusable) {
+	m.impl.Focus(w)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Focused">
+    <div class="item-header">
+        <h4>func Focused</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Focused returns the currently focused widget, or nil if no widget has focus.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) Focused() widget.Focusable {
+	return m.impl.Focused()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-HandleKeyEvent">
+    <div class="item-header">
+        <h4>func HandleKeyEvent</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>HandleKeyEvent processes a key event for focus management.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The event is checked in the following order:</p>
+          
+        <p>1. Registered keyboard shortcuts</p>
+          
+        <p>2. Tab key (moves focus to next widget)</p>
+          
+        <p>3. Shift+Tab (moves focus to previous widget)</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns true if the event was consumed (shortcut matched or tab navigation</p>
+          
+        <p>occurred), false otherwise.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) HandleKeyEvent(e *event.KeyEvent) bool {
+	return m.impl.HandleKeyEvent(e)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-New">
+    <div class="item-header">
+        <h4>func New</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>New creates a new focus [Manager] for the given widget tree root.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The root widget is the top-level widget whose subtree will be</p>
+          
+        <p>traversed for focus management. It may be nil, in which case the</p>
+          
+        <p>manager operates as a no-op until SetRoot is called.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func New(root widget.Widget) *Manager {
+	return &Manager{impl: ifocus.New(root)}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Next">
+    <div class="item-header">
+        <h4>func Next</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Next moves focus to the next focusable widget in tab order.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Tab order is determined by depth-first traversal of the widget tree.</p>
+          
+        <p>If no widget currently has focus, focus moves to the first focusable widget.</p>
+          
+        <p>If the last focusable widget has focus, focus wraps to the first.</p>
+          
+        <p>If no focusable widgets exist, this is a no-op.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) Next() {
+	m.impl.Next()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Previous">
+    <div class="item-header">
+        <h4>func Previous</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Previous moves focus to the previous focusable widget in tab order.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If no widget currently has focus, focus moves to the last focusable widget.</p>
+          
+        <p>If the first focusable widget has focus, focus wraps to the last.</p>
+          
+        <p>If no focusable widgets exist, this is a no-op.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) Previous() {
+	m.impl.Previous()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-RegisterShortcut">
+    <div class="item-header">
+        <h4>func RegisterShortcut</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>RegisterShortcut registers a global keyboard shortcut.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>When the shortcut's key combination is pressed, the handler function</p>
+          
+        <p>is called. Shortcuts take precedence over tab navigation.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) RegisterShortcut(s Shortcut, handler func()) {
+	m.impl.RegisterShortcut(ifocus.Shortcut{
+		Key:	s.Key,
+		Ctrl:	s.Ctrl,
+		Shift:	s.Shift,
+		Alt:	s.Alt,
+	}, handler)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetRoot">
+    <div class="item-header">
+        <h4>func SetRoot</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetRoot replaces the widget tree root.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If the currently focused widget is no longer in the new tree,</p>
+          
+        <p>focus is cleared.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) SetRoot(root widget.Widget) {
+	m.impl.SetRoot(root)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-UnregisterShortcut">
+    <div class="item-header">
+        <h4>func UnregisterShortcut</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>UnregisterShortcut removes all handlers for the given shortcut.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *Manager) UnregisterShortcut(s Shortcut) {
+	m.impl.UnregisterShortcut(ifocus.Shortcut{
+		Key:	s.Key,
+		Ctrl:	s.Ctrl,
+		Shift:	s.Shift,
+		Alt:	s.Alt,
+	})
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-Manager">
+    <div class="item-header">
+        <h4>type Manager struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Manager tracks keyboard focus within a widget tree.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>It maintains a reference to the widget tree root and the currently</p>
+        
+        <p>focused widget. Tab and Shift+Tab key events are handled automatically</p>
+        
+        <p>to cycle focus through focusable widgets in depth-first order.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Create a new Manager with [New].</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Manager struct {
+	impl *ifocus.Manager
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

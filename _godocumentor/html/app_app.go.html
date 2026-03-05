@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - app/app.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="active">app/app.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-Frame">Frame</a></li>
+                    
+                    <li><a href="#func-HandleEvent">HandleEvent</a></li>
+                    
+                    <li><a href="#func-New">New</a></li>
+                    
+                    <li><a href="#func-Scheduler">Scheduler</a></li>
+                    
+                    <li><a href="#func-SetRoot">SetRoot</a></li>
+                    
+                    <li><a href="#func-SetTheme">SetTheme</a></li>
+                    
+                    <li><a href="#func-Theme">Theme</a></li>
+                    
+                    <li><a href="#func-Window">Window</a></li>
+                    
+                    <li><a href="#func-WithEventSource">WithEventSource</a></li>
+                    
+                    <li><a href="#func-WithPlatformProvider">WithPlatformProvider</a></li>
+                    
+                    <li><a href="#func-WithTheme">WithTheme</a></li>
+                    
+                    <li><a href="#func-WithWindowProvider">WithWindowProvider</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>app/app.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-Frame">
+    <div class="item-header">
+        <h4>func Frame</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Frame performs one complete frame: layout, draw, and state management.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This method should be called by the host application's render loop</p>
+          
+        <p>(e.g., gogpu.App's draw callback).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (a *App) Frame() {
+	a.window.Frame()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-HandleEvent">
+    <div class="item-header">
+        <h4>func HandleEvent</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>HandleEvent dispatches a single event to the widget tree.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This method is an alternative to using an EventSource. It allows</p>
+          
+        <p>the host application to push events manually.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (a *App) HandleEvent(e event.Event) {
+	a.window.HandleEvent(e)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-New">
+    <div class="item-header">
+        <h4>func New</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>New creates a new App with the given options.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>When no options are provided, the App operates in headless mode with</p>
+          
+        <p>default settings suitable for testing.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func New(opts ...Option) *App {
+	cfg := &appConfig{}
+	for _, opt := range opts {
+		opt(cfg)
+	}
+
+	t := cfg.theme
+	if t == nil {
+		t = theme.DefaultLight()
+	}
+
+	a := &App{
+		theme: t,
+	}
+
+	// Create scheduler that requests redraw on flush.
+	a.scheduler = state.NewScheduler(func(_ []widget.Widget) {
+		if a.window != nil && a.window.wp != nil {
+			a.window.wp.RequestRedraw()
+		}
+	})
+
+	// Create the window.
+	a.window = newWindow(cfg.wp, cfg.pp, a.scheduler, t)
+
+	// Attach event bridge if event source is provided.
+	if cfg.es != nil {
+		attachEventBridge(cfg.es, a.window)
+	}
+
+	return a
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Scheduler">
+    <div class="item-header">
+        <h4>func Scheduler</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Scheduler returns the App's state scheduler.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (a *App) Scheduler() *state.Scheduler {
+	return a.scheduler
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetRoot">
+    <div class="item-header">
+        <h4>func SetRoot</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetRoot sets the root widget for the App's window.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The root widget forms the top of the widget tree. It receives</p>
+          
+        <p>layout constraints matching the window size and is drawn to fill</p>
+          
+        <p>the window.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (a *App) SetRoot(root widget.Widget) {
+	a.window.SetRoot(root)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SetTheme">
+    <div class="item-header">
+        <h4>func SetTheme</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SetTheme changes the App's theme.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This updates both the App and Window theme and triggers a full redraw.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (a *App) SetTheme(t *theme.Theme) {
+	if t == nil {
+		return
+	}
+	a.theme = t
+	a.window.setTheme(t)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Theme">
+    <div class="item-header">
+        <h4>func Theme</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Theme returns the App's current theme.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (a *App) Theme() *theme.Theme {
+	return a.theme
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Window">
+    <div class="item-header">
+        <h4>func Window</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Window returns the App's Window.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (a *App) Window() *Window {
+	return a.window
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithEventSource">
+    <div class="item-header">
+        <h4>func WithEventSource</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithEventSource sets the event source for the App.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The EventSource delivers input events (keyboard, mouse, scroll, resize,</p>
+          
+        <p>focus) from the host application. When nil, no events are delivered.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func WithEventSource(es gpucontext.EventSource) Option {
+	return func(c *appConfig) {
+		c.es = es
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithPlatformProvider">
+    <div class="item-header">
+        <h4>func WithPlatformProvider</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithPlatformProvider sets the platform provider for the App.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The PlatformProvider provides OS integration features such as clipboard,</p>
+          
+        <p>cursor management, and accessibility preferences. When nil, these</p>
+          
+        <p>features are unavailable.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func WithPlatformProvider(pp gpucontext.PlatformProvider) Option {
+	return func(c *appConfig) {
+		c.pp = pp
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithTheme">
+    <div class="item-header">
+        <h4>func WithTheme</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithTheme sets the theme for the App.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>When nil, the default light theme is used.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func WithTheme(t *theme.Theme) Option {
+	return func(c *appConfig) {
+		c.theme = t
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-WithWindowProvider">
+    <div class="item-header">
+        <h4>func WithWindowProvider</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>WithWindowProvider sets the window provider for the App.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The WindowProvider provides window geometry (Size, ScaleFactor) and</p>
+          
+        <p>the ability to request redraws. When nil, the App operates in headless</p>
+          
+        <p>mode with a default 800x600 window at 1x scale.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func WithWindowProvider(wp gpucontext.WindowProvider) Option {
+	return func(c *appConfig) {
+		c.wp = wp
+	}
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-App">
+    <div class="item-header">
+        <h4>type App struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>App is the main entry point for the UI framework.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>App bridges the widget tree with the windowing system through gpucontext</p>
+        
+        <p>interfaces. It manages the Window, theme, and scheduler.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Create an App with [New] and functional options.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type App struct {
+	window		*Window
+	theme		*theme.Theme
+	scheduler	*state.Scheduler
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

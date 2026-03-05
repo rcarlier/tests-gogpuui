@@ -1,0 +1,30 @@
+{
+    "path": "/Users/richnou/go/pkg/mod/github.com/gogpu/ui@v0.0.0-20260302064100-4910b59af024/",
+    "godocumentorFolder": "_godocumentor",
+    "out": "result.json",
+    "whitelist": null,
+    "blacklist": ["internal"],
+    "graphviz": {
+        "file": "result.dot",
+        "auto": "osage",
+        "dpi": 72,
+        "dependencies": false,
+        "format": "png",
+        "colors": {
+            "border": "#BDBDBD",
+            "edge": "#424242",
+            "function": "#BBDEFB",
+            "interface": "#FFCCBC",
+            "main": "#C8E6C9",
+            "struct": "#FFE082"
+        }
+    },
+    "markdown": {
+        "file": "result.md",
+        "format": "name"
+    },
+    "html": {
+        "outDir": "html"
+    },
+    "onlyExported": true
+}

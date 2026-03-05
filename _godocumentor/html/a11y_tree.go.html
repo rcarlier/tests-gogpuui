@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - a11y/tree.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="active">a11y/tree.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-ClearDirty">ClearDirty</a></li>
+                    
+                    <li><a href="#func-DirtyNodes">DirtyNodes</a></li>
+                    
+                    <li><a href="#func-Insert">Insert</a></li>
+                    
+                    <li><a href="#func-Len">Len</a></li>
+                    
+                    <li><a href="#func-NewMemoryTree">NewMemoryTree</a></li>
+                    
+                    <li><a href="#func-NodeByID">NodeByID</a></li>
+                    
+                    <li><a href="#func-Remove">Remove</a></li>
+                    
+                    <li><a href="#func-Root">Root</a></li>
+                    
+                    <li><a href="#func-Update">Update</a></li>
+                    
+                    <li><a href="#func-Walk">Walk</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>a11y/tree.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > <a
+        href="#interfaces"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Interfaces</a
+    >
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-ClearDirty">
+    <div class="item-header">
+        <h4>func ClearDirty</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ClearDirty clears the set of dirty nodes.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) ClearDirty() {
+	t.mu.Lock()
+	defer t.mu.Unlock()
+	t.dirty = make(map[NodeID]*Node)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-DirtyNodes">
+    <div class="item-header">
+        <h4>func DirtyNodes</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>DirtyNodes returns the set of nodes marked as changed since the last</p>
+          
+        <p>call to ClearDirty.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) DirtyNodes() []*Node {
+	t.mu.RLock()
+	defer t.mu.RUnlock()
+	if len(t.dirty) == 0 {
+		return nil
+	}
+	result := make([]*Node, 0, len(t.dirty))
+	for _, n := range t.dirty {
+		result = append(result, n)
+	}
+	return result
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Insert">
+    <div class="item-header">
+        <h4>func Insert</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Insert adds a child node under the given parent.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Both parent and child must be non-nil. The child is appended to the</p>
+          
+        <p>parent's children list and registered in the ID index.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) Insert(parent *Node, child *Node) {
+	if parent == nil || child == nil {
+		return
+	}
+	t.mu.Lock()
+	defer t.mu.Unlock()
+
+	parent.mu.Lock()
+	child.mu.Lock()
+	parent.addChild(child)
+	child.mu.Unlock()
+	parent.mu.Unlock()
+
+	t.registerSubtree(child)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Len">
+    <div class="item-header">
+        <h4>func Len</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Len returns the total number of nodes in the tree.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) Len() int {
+	t.mu.RLock()
+	defer t.mu.RUnlock()
+	return len(t.index)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewMemoryTree">
+    <div class="item-header">
+        <h4>func NewMemoryTree</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewMemoryTree creates a new in-memory accessibility tree with the given root node.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The root node is registered in the tree's ID index. Pass nil to create</p>
+          
+        <p>an empty tree (Root will return nil until a root is inserted).</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>root := a11y.NewNode(a11y.RoleWindow, "My Application")</p>
+          
+        <p>tree := a11y.NewMemoryTree(root)</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewMemoryTree(root *Node) *MemoryTree {
+	t := &MemoryTree{
+		index:	make(map[NodeID]*Node),
+		dirty:	make(map[NodeID]*Node),
+	}
+	if root != nil {
+		t.root = root
+		t.index[root.ID()] = root
+	}
+	return t
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NodeByID">
+    <div class="item-header">
+        <h4>func NodeByID</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NodeByID looks up a node by its unique identifier.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns nil if no node with the given ID exists.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) NodeByID(id NodeID) *Node {
+	t.mu.RLock()
+	defer t.mu.RUnlock()
+	return t.index[id]
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Remove">
+    <div class="item-header">
+        <h4>func Remove</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Remove removes a node and all its descendants from the tree.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If the removed node is the root, the tree becomes empty.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) Remove(node *Node) {
+	if node == nil {
+		return
+	}
+	t.mu.Lock()
+	defer t.mu.Unlock()
+
+	// Detach from parent
+	node.mu.RLock()
+	parent := node.parent
+	node.mu.RUnlock()
+
+	if parent != nil {
+		parent.mu.Lock()
+		parent.removeChild(node)
+		parent.mu.Unlock()
+	}
+
+	// Unregister subtree from index
+	t.unregisterSubtree(node)
+
+	// Clear root if it was removed
+	if t.root == node {
+		t.root = nil
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Root">
+    <div class="item-header">
+        <h4>func Root</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Root returns the root node of the tree, or nil if the tree is empty.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) Root() *Node {
+	t.mu.RLock()
+	defer t.mu.RUnlock()
+	return t.root
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Update">
+    <div class="item-header">
+        <h4>func Update</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Update marks a node as changed for the next platform sync cycle.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) Update(node *Node) {
+	if node == nil {
+		return
+	}
+	t.mu.Lock()
+	defer t.mu.Unlock()
+	t.dirty[node.ID()] = node
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Walk">
+    <div class="item-header">
+        <h4>func Walk</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Walk performs a depth-first traversal of the tree.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If fn returns false, the traversal stops immediately.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t *MemoryTree) Walk(fn func(*Node) bool) {
+	t.mu.RLock()
+	root := t.root
+	t.mu.RUnlock()
+	if root == nil {
+		return
+	}
+	walkNode(root, fn)
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-MemoryTree">
+    <div class="item-header">
+        <h4>type MemoryTree struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>MemoryTree is an in-memory implementation of [TreeProvider].</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>It stores the full accessibility tree with an index for O(1) node lookups</p>
+        
+        <p>by ID. It tracks dirty (changed) nodes for efficient platform synchronization.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Thread Safety:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>MemoryTree is safe for concurrent access. All operations are protected</p>
+        
+        <p>by a sync.RWMutex.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type MemoryTree struct {
+	mu	sync.RWMutex
+	root	*Node
+	index	map[NodeID]*Node
+	dirty	map[NodeID]*Node
+}
+</code></pre>
+</div>
+  
+<h3 id="interfaces">Interfaces</h3>
+
+<div class="item" id="interface-TreeProvider">
+    <div class="item-header">
+        <h4>type TreeProvider interface</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>TreeProvider is the interface for managing the accessibility tree.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>The accessibility tree is a hierarchical representation of all accessible</p>
+        
+        <p>elements in the UI. Platform adapters consume this tree to drive native</p>
+        
+        <p>accessibility APIs (Windows UI Automation, macOS NSAccessibility, Linux AT-SPI2).</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Implementations must be safe for concurrent access. The default implementation</p>
+        
+        <p>[MemoryTree] uses a sync.RWMutex.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Tree Lifecycle</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>1. Create a tree with a root node</p>
+        
+        <p>2. As widgets are created, insert nodes with [TreeProvider.Insert]</p>
+        
+        <p>3. As widgets are updated, call [TreeProvider.Update] to mark changes</p>
+        
+        <p>4. As widgets are removed, call [TreeProvider.Remove]</p>
+        
+        <p>5. Platform adapters walk the tree with [TreeProvider.Walk]</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Example</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>tree := a11y.NewMemoryTree(rootNode)</p>
+        
+        <p>tree.Insert(rootNode, childNode)</p>
+        
+        <p>tree.Walk(func(n *a11y.Node) bool {</p>
+        
+        <p>fmt.Printf("%s: %s\n", n.Role(), n.Label())</p>
+        
+        <p>return true // continue walking</p>
+        
+        <p>})</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type TreeProvider interface {
+	// Root returns the root node of the accessibility tree.
+	//
+	// The root node typically represents the application window.
+	// Returns nil if the tree is empty.
+	Root() *Node
+
+	// NodeByID looks up a node by its unique identifier.
+	//
+	// Returns nil if no node with the given ID exists in the tree.
+	NodeByID(id NodeID) *Node
+
+	// Update marks a node as having changed, so platform adapters can
+	// send appropriate change notifications to assistive technology.
+	//
+	// This does not modify the node's properties; it only flags the node
+	// for the next sync cycle. If the node has a source [Accessible],
+	// callers should call [Node.SyncFromSource] before or after Update.
+	Update(node *Node)
+
+	// Insert adds a child node under the given parent.
+	//
+	// The child is appended to the parent's children list and registered
+	// in the tree's ID index. If the child already has a parent, it is
+	// not re-parented automatically; call [TreeProvider.Remove] first.
+	Insert(parent *Node, child *Node)
+
+	// Remove removes a node and all its descendants from the tree.
+	//
+	// The node is detached from its parent and unregistered from the
+	// tree's ID index. Removing the root node empties the tree.
+	Remove(node *Node)
+
+	// Walk performs a depth-first traversal of the tree, calling fn
+	// for each node. If fn returns false, the traversal stops immediately.
+	//
+	// The traversal visits the parent before its children.
+	Walk(fn func(*Node) bool)
+
+	// Len returns the total number of nodes in the tree.
+	Len() int
+
+	// DirtyNodes returns the set of nodes that have been marked as changed
+	// since the last call to ClearDirty.
+	//
+	// The returned slice is a copy and safe to modify.
+	DirtyNodes() []*Node
+
+	// ClearDirty clears the set of dirty nodes.
+	//
+	// This is called by platform adapters after processing all pending
+	// change notifications.
+	ClearDirty()
+}
+</code></pre>
+</div>
+  
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

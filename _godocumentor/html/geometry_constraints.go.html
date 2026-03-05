@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - geometry/constraints.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="active">geometry/constraints.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-Biggest">Biggest</a></li>
+                    
+                    <li><a href="#func-BiggestFinite">BiggestFinite</a></li>
+                    
+                    <li><a href="#func-BoxConstraints">BoxConstraints</a></li>
+                    
+                    <li><a href="#func-Constrain">Constrain</a></li>
+                    
+                    <li><a href="#func-ConstrainDimensions">ConstrainDimensions</a></li>
+                    
+                    <li><a href="#func-ConstrainHeight">ConstrainHeight</a></li>
+                    
+                    <li><a href="#func-ConstrainWidth">ConstrainWidth</a></li>
+                    
+                    <li><a href="#func-Deflate">Deflate</a></li>
+                    
+                    <li><a href="#func-Enforce">Enforce</a></li>
+                    
+                    <li><a href="#func-Expand">Expand</a></li>
+                    
+                    <li><a href="#func-ExpandHeight">ExpandHeight</a></li>
+                    
+                    <li><a href="#func-ExpandWidth">ExpandWidth</a></li>
+                    
+                    <li><a href="#func-HasBoundedHeight">HasBoundedHeight</a></li>
+                    
+                    <li><a href="#func-HasBoundedWidth">HasBoundedWidth</a></li>
+                    
+                    <li><a href="#func-HasInfiniteHeight">HasInfiniteHeight</a></li>
+                    
+                    <li><a href="#func-HasInfiniteWidth">HasInfiniteWidth</a></li>
+                    
+                    <li><a href="#func-IsNaN">IsNaN</a></li>
+                    
+                    <li><a href="#func-IsNormalized">IsNormalized</a></li>
+                    
+                    <li><a href="#func-IsSatisfiedBy">IsSatisfiedBy</a></li>
+                    
+                    <li><a href="#func-IsTight">IsTight</a></li>
+                    
+                    <li><a href="#func-IsTightHeight">IsTightHeight</a></li>
+                    
+                    <li><a href="#func-IsTightWidth">IsTightWidth</a></li>
+                    
+                    <li><a href="#func-IsUnbounded">IsUnbounded</a></li>
+                    
+                    <li><a href="#func-IsZero">IsZero</a></li>
+                    
+                    <li><a href="#func-Loose">Loose</a></li>
+                    
+                    <li><a href="#func-Loosen">Loosen</a></li>
+                    
+                    <li><a href="#func-LoosenHeight">LoosenHeight</a></li>
+                    
+                    <li><a href="#func-LoosenWidth">LoosenWidth</a></li>
+                    
+                    <li><a href="#func-Normalize">Normalize</a></li>
+                    
+                    <li><a href="#func-Sanitize">Sanitize</a></li>
+                    
+                    <li><a href="#func-Smallest">Smallest</a></li>
+                    
+                    <li><a href="#func-String">String</a></li>
+                    
+                    <li><a href="#func-Tight">Tight</a></li>
+                    
+                    <li><a href="#func-TightHeight">TightHeight</a></li>
+                    
+                    <li><a href="#func-TightWidth">TightWidth</a></li>
+                    
+                    <li><a href="#func-Tighten">Tighten</a></li>
+                    
+                    <li><a href="#func-TightenHeight">TightenHeight</a></li>
+                    
+                    <li><a href="#func-TightenWidth">TightenWidth</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>geometry/constraints.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-Biggest">
+    <div class="item-header">
+        <h4>func Biggest</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Biggest returns the biggest finite size that satisfies these constraints.</p>
+          
+        <p>If a dimension is unbounded (Infinity), it uses the minimum instead.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Biggest() Size {
+	w := c.MaxWidth
+	if w >= Infinity {
+		w = c.MinWidth
+	}
+	h := c.MaxHeight
+	if h >= Infinity {
+		h = c.MinHeight
+	}
+	return Size{Width: w, Height: h}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-BiggestFinite">
+    <div class="item-header">
+        <h4>func BiggestFinite</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>BigggestFinite returns the biggest size, treating Infinity as the provided fallback.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) BiggestFinite(fallbackWidth, fallbackHeight float32) Size {
+	w := c.MaxWidth
+	if w >= Infinity {
+		w = fallbackWidth
+	}
+	h := c.MaxHeight
+	if h >= Infinity {
+		h = fallbackHeight
+	}
+	return Size{Width: w, Height: h}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-BoxConstraints">
+    <div class="item-header">
+        <h4>func BoxConstraints</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>BoxConstraints creates constraints with explicit min/max dimensions.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.BoxConstraints(50, 200, 30, 100)</p>
+          
+        <p>// MinWidth=50, MaxWidth=200, MinHeight=30, MaxHeight=100</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func BoxConstraints(minWidth, maxWidth, minHeight, maxHeight float32) Constraints {
+	return Constraints{
+		MinWidth:	minWidth,
+		MaxWidth:	maxWidth,
+		MinHeight:	minHeight,
+		MaxHeight:	maxHeight,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Constrain">
+    <div class="item-header">
+        <h4>func Constrain</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Constrain returns a size that satisfies these constraints.</p>
+          
+        <p>The returned size will be clamped to [min, max] for each dimension.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.BoxConstraints(50, 200, 30, 100)</p>
+          
+        <p>s := c.Constrain(geometry.Sz(300, 150)) // Size{200, 100}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Constrain(size Size) Size {
+	return Size{
+		Width:	clamp32(size.Width, c.MinWidth, c.MaxWidth),
+		Height:	clamp32(size.Height, c.MinHeight, c.MaxHeight),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ConstrainDimensions">
+    <div class="item-header">
+        <h4>func ConstrainDimensions</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ConstrainDimensions returns dimensions that satisfy these constraints.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) ConstrainDimensions(width, height float32) (float32, float32) {
+	return clamp32(width, c.MinWidth, c.MaxWidth),
+		clamp32(height, c.MinHeight, c.MaxHeight)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ConstrainHeight">
+    <div class="item-header">
+        <h4>func ConstrainHeight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ConstrainHeight returns a height that satisfies these constraints.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) ConstrainHeight(height float32) float32 {
+	return clamp32(height, c.MinHeight, c.MaxHeight)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ConstrainWidth">
+    <div class="item-header">
+        <h4>func ConstrainWidth</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ConstrainWidth returns a width that satisfies these constraints.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) ConstrainWidth(width float32) float32 {
+	return clamp32(width, c.MinWidth, c.MaxWidth)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Deflate">
+    <div class="item-header">
+        <h4>func Deflate</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Deflate returns constraints reduced by the given insets.</p>
+          
+        <p>This is useful when calculating available space for content inside padding.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.Tight(geometry.Sz(100, 100))</p>
+          
+        <p>padding := geometry.UniformInsets(10)</p>
+          
+        <p>content := c.Deflate(padding) // MaxWidth=80, MaxHeight=80</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Deflate(insets Insets) Constraints {
+	horizontal := insets.Horizontal()
+	vertical := insets.Vertical()
+	return Constraints{
+		MinWidth:	max32(0, c.MinWidth-horizontal),
+		MaxWidth:	max32(0, c.MaxWidth-horizontal),
+		MinHeight:	max32(0, c.MinHeight-vertical),
+		MaxHeight:	max32(0, c.MaxHeight-vertical),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Enforce">
+    <div class="item-header">
+        <h4>func Enforce</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Enforce returns constraints that are at least as restrictive as both c and other.</p>
+          
+        <p>The result has the max of minimums and min of maximums.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Enforce(other Constraints) Constraints {
+	return Constraints{
+		MinWidth:	max32(c.MinWidth, other.MinWidth),
+		MaxWidth:	min32(c.MaxWidth, other.MaxWidth),
+		MinHeight:	max32(c.MinHeight, other.MinHeight),
+		MaxHeight:	min32(c.MaxHeight, other.MaxHeight),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Expand">
+    <div class="item-header">
+        <h4>func Expand</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Expand creates constraints where the widget should expand to fill available space.</p>
+          
+        <p>This is a loose constraint with infinite max dimensions.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.Expand()</p>
+          
+        <p>// MinWidth=0, MaxWidth=Infinity, MinHeight=0, MaxHeight=Infinity</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Expand() Constraints {
+	return Constraints{
+		MinWidth:	0,
+		MaxWidth:	Infinity,
+		MinHeight:	0,
+		MaxHeight:	Infinity,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ExpandHeight">
+    <div class="item-header">
+        <h4>func ExpandHeight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ExpandHeight creates constraints that expand vertically but are flexible horizontally.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ExpandHeight(width float32) Constraints {
+	return Constraints{
+		MinWidth:	0,
+		MaxWidth:	width,
+		MinHeight:	0,
+		MaxHeight:	Infinity,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ExpandWidth">
+    <div class="item-header">
+        <h4>func ExpandWidth</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ExpandWidth creates constraints that expand horizontally but are flexible vertically.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ExpandWidth(height float32) Constraints {
+	return Constraints{
+		MinWidth:	0,
+		MaxWidth:	Infinity,
+		MinHeight:	0,
+		MaxHeight:	height,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-HasBoundedHeight">
+    <div class="item-header">
+        <h4>func HasBoundedHeight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>HasBoundedHeight returns true if max height is not Infinity.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) HasBoundedHeight() bool {
+	return c.MaxHeight < Infinity
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-HasBoundedWidth">
+    <div class="item-header">
+        <h4>func HasBoundedWidth</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>HasBoundedWidth returns true if max width is not Infinity.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) HasBoundedWidth() bool {
+	return c.MaxWidth < Infinity
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-HasInfiniteHeight">
+    <div class="item-header">
+        <h4>func HasInfiniteHeight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>HasInfiniteHeight returns true if max height is Infinity.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) HasInfiniteHeight() bool {
+	return c.MaxHeight >= Infinity
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-HasInfiniteWidth">
+    <div class="item-header">
+        <h4>func HasInfiniteWidth</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>HasInfiniteWidth returns true if max width is Infinity.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) HasInfiniteWidth() bool {
+	return c.MaxWidth >= Infinity
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsNaN">
+    <div class="item-header">
+        <h4>func IsNaN</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsNaN returns true if any value is NaN.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) IsNaN() bool {
+	return isNaN32(c.MinWidth) || isNaN32(c.MaxWidth) ||
+		isNaN32(c.MinHeight) || isNaN32(c.MaxHeight)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsNormalized">
+    <div class="item-header">
+        <h4>func IsNormalized</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsNormalized returns true if the constraints are valid (min <= max, no negatives).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) IsNormalized() bool {
+	return c.MinWidth >= 0 && c.MinWidth <= c.MaxWidth &&
+		c.MinHeight >= 0 && c.MinHeight <= c.MaxHeight
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsSatisfiedBy">
+    <div class="item-header">
+        <h4>func IsSatisfiedBy</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsSatisfiedBy returns true if the given size satisfies these constraints.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.BoxConstraints(50, 200, 30, 100)</p>
+          
+        <p>c.IsSatisfiedBy(geometry.Sz(100, 50)) // true</p>
+          
+        <p>c.IsSatisfiedBy(geometry.Sz(300, 50)) // false (width too large)</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) IsSatisfiedBy(size Size) bool {
+	return size.Width >= c.MinWidth && size.Width <= c.MaxWidth &&
+		size.Height >= c.MinHeight && size.Height <= c.MaxHeight
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsTight">
+    <div class="item-header">
+        <h4>func IsTight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsTight returns true if min equals max for both dimensions.</p>
+          
+        <p>A tight constraint forces a specific size.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) IsTight() bool {
+	return c.MinWidth == c.MaxWidth && c.MinHeight == c.MaxHeight
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsTightHeight">
+    <div class="item-header">
+        <h4>func IsTightHeight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsTightHeight returns true if min height equals max height.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) IsTightHeight() bool {
+	return c.MinHeight == c.MaxHeight
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsTightWidth">
+    <div class="item-header">
+        <h4>func IsTightWidth</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsTightWidth returns true if min width equals max width.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) IsTightWidth() bool {
+	return c.MinWidth == c.MaxWidth
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsUnbounded">
+    <div class="item-header">
+        <h4>func IsUnbounded</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsUnbounded returns true if both max dimensions are Infinity.</p>
+          
+        <p>An unbounded constraint has no upper size limit.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) IsUnbounded() bool {
+	return c.MaxWidth >= Infinity && c.MaxHeight >= Infinity
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsZero">
+    <div class="item-header">
+        <h4>func IsZero</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsZero returns true if all constraints are zero.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) IsZero() bool {
+	return c.MinWidth == 0 && c.MaxWidth == 0 && c.MinHeight == 0 && c.MaxHeight == 0
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Loose">
+    <div class="item-header">
+        <h4>func Loose</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Loose creates constraints where the widget can be any size up to the given size.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.Loose(geometry.Sz(100, 50))</p>
+          
+        <p>// MinWidth=0, MaxWidth=100, MinHeight=0, MaxHeight=50</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Loose(size Size) Constraints {
+	return Constraints{
+		MinWidth:	0,
+		MaxWidth:	size.Width,
+		MinHeight:	0,
+		MaxHeight:	size.Height,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Loosen">
+    <div class="item-header">
+        <h4>func Loosen</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Loosen returns constraints with the same max but min set to 0.</p>
+          
+        <p>This allows a child to be smaller than the parent's minimum.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.BoxConstraints(100, 200, 50, 100)</p>
+          
+        <p>loose := c.Loosen() // MinWidth=0, MaxWidth=200, MinHeight=0, MaxHeight=100</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Loosen() Constraints {
+	return Constraints{
+		MinWidth:	0,
+		MaxWidth:	c.MaxWidth,
+		MinHeight:	0,
+		MaxHeight:	c.MaxHeight,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LoosenHeight">
+    <div class="item-header">
+        <h4>func LoosenHeight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LoosenHeight returns constraints with min height set to 0.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) LoosenHeight() Constraints {
+	return Constraints{
+		MinWidth:	c.MinWidth,
+		MaxWidth:	c.MaxWidth,
+		MinHeight:	0,
+		MaxHeight:	c.MaxHeight,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LoosenWidth">
+    <div class="item-header">
+        <h4>func LoosenWidth</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LoosenWidth returns constraints with min width set to 0.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) LoosenWidth() Constraints {
+	return Constraints{
+		MinWidth:	0,
+		MaxWidth:	c.MaxWidth,
+		MinHeight:	c.MinHeight,
+		MaxHeight:	c.MaxHeight,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Normalize">
+    <div class="item-header">
+        <h4>func Normalize</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Normalize returns constraints with mins clamped to not exceed maxes,</p>
+          
+        <p>and ensures no negative values.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.BoxConstraints(200, 100, 50, 30) // Invalid: min > max</p>
+          
+        <p>normalized := c.Normalize() // MinWidth=100, MaxWidth=100, MinHeight=30, MaxHeight=30</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Normalize() Constraints {
+	minW := max32(0, c.MinWidth)
+	maxW := max32(0, c.MaxWidth)
+	minH := max32(0, c.MinHeight)
+	maxH := max32(0, c.MaxHeight)
+
+	// Ensure min <= max
+	if minW > maxW {
+		minW = maxW
+	}
+	if minH > maxH {
+		minH = maxH
+	}
+
+	return Constraints{
+		MinWidth:	minW,
+		MaxWidth:	maxW,
+		MinHeight:	minH,
+		MaxHeight:	maxH,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Sanitize">
+    <div class="item-header">
+        <h4>func Sanitize</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Sanitize returns constraints with NaN values replaced by appropriate defaults</p>
+          
+        <p>(0 for minimums, Infinity for maximums).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Sanitize() Constraints {
+	minW, maxW := c.MinWidth, c.MaxWidth
+	minH, maxH := c.MinHeight, c.MaxHeight
+	if isNaN32(minW) {
+		minW = 0
+	}
+	if isNaN32(maxW) {
+		maxW = Infinity
+	}
+	if isNaN32(minH) {
+		minH = 0
+	}
+	if isNaN32(maxH) {
+		maxH = Infinity
+	}
+	return Constraints{
+		MinWidth:	minW,
+		MaxWidth:	maxW,
+		MinHeight:	minH,
+		MaxHeight:	maxH,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Smallest">
+    <div class="item-header">
+        <h4>func Smallest</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Smallest returns the smallest size that satisfies these constraints.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Smallest() Size {
+	return Size{Width: c.MinWidth, Height: c.MinHeight}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a string representation of the constraints.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.BoxConstraints(50, 200, 30, 100)</p>
+          
+        <p>s := c.String() // "Constraints(50<=w<=200, 30<=h<=100)"</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) String() string {
+	wMin := formatConstraintValue(c.MinWidth)
+	wMax := formatConstraintValue(c.MaxWidth)
+	hMin := formatConstraintValue(c.MinHeight)
+	hMax := formatConstraintValue(c.MaxHeight)
+	return fmt.Sprintf("Constraints(%s<=w<=%s, %s<=h<=%s)", wMin, wMax, hMin, hMax)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Tight">
+    <div class="item-header">
+        <h4>func Tight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Tight creates constraints where the widget must be exactly the given size.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.Tight(geometry.Sz(100, 50))</p>
+          
+        <p>// MinWidth=100, MaxWidth=100, MinHeight=50, MaxHeight=50</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Tight(size Size) Constraints {
+	return Constraints{
+		MinWidth:	size.Width,
+		MaxWidth:	size.Width,
+		MinHeight:	size.Height,
+		MaxHeight:	size.Height,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-TightHeight">
+    <div class="item-header">
+        <h4>func TightHeight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>TightHeight creates constraints with exact height but flexible width.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func TightHeight(height float32) Constraints {
+	return Constraints{
+		MinWidth:	0,
+		MaxWidth:	Infinity,
+		MinHeight:	height,
+		MaxHeight:	height,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-TightWidth">
+    <div class="item-header">
+        <h4>func TightWidth</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>TightWidth creates constraints with exact width but flexible height.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func TightWidth(width float32) Constraints {
+	return Constraints{
+		MinWidth:	width,
+		MaxWidth:	width,
+		MinHeight:	0,
+		MaxHeight:	Infinity,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Tighten">
+    <div class="item-header">
+        <h4>func Tighten</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Tighten returns tight constraints using the given size, clamped to current constraints.</p>
+          
+        <p>This is useful when a widget wants to report its preferred size while respecting parent constraints.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>c := geometry.BoxConstraints(50, 200, 30, 100)</p>
+          
+        <p>tight := c.Tighten(geometry.Sz(150, 80))</p>
+          
+        <p>// MinWidth=150, MaxWidth=150, MinHeight=80, MaxHeight=80</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) Tighten(size Size) Constraints {
+	w := clamp32(size.Width, c.MinWidth, c.MaxWidth)
+	h := clamp32(size.Height, c.MinHeight, c.MaxHeight)
+	return Constraints{
+		MinWidth:	w,
+		MaxWidth:	w,
+		MinHeight:	h,
+		MaxHeight:	h,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-TightenHeight">
+    <div class="item-header">
+        <h4>func TightenHeight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>TightenHeight returns constraints with tight height, keeping width constraints.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) TightenHeight(height float32) Constraints {
+	h := clamp32(height, c.MinHeight, c.MaxHeight)
+	return Constraints{
+		MinWidth:	c.MinWidth,
+		MaxWidth:	c.MaxWidth,
+		MinHeight:	h,
+		MaxHeight:	h,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-TightenWidth">
+    <div class="item-header">
+        <h4>func TightenWidth</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>TightenWidth returns constraints with tight width, keeping height constraints.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c Constraints) TightenWidth(width float32) Constraints {
+	w := clamp32(width, c.MinWidth, c.MaxWidth)
+	return Constraints{
+		MinWidth:	w,
+		MaxWidth:	w,
+		MinHeight:	c.MinHeight,
+		MaxHeight:	c.MaxHeight,
+	}
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-Constraints">
+    <div class="item-header">
+        <h4>type Constraints struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Constraints represents box constraints for layout, similar to Flutter's BoxConstraints.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Constraints define the minimum and maximum dimensions a widget can have.</p>
+        
+        <p>They are passed down the widget tree during layout and used to constrain</p>
+        
+        <p>the size of child widgets.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>A constraint is considered "tight" when min equals max (widget must be exactly that size).</p>
+        
+        <p>A constraint is "loose" when min is 0 (widget can be any size up to max).</p>
+        
+        <p>A constraint is "unbounded" when max is Infinity (no upper limit).</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>The zero value represents unconstrained (0 to Infinity on both dimensions).</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Constraints struct {
+	MinWidth, MaxWidth	float32
+	MinHeight, MaxHeight	float32
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

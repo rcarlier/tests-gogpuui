@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - plugin/manager.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="active">plugin/manager.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-AllInfo">AllInfo</a></li>
+                    
+                    <li><a href="#func-AllInfo">AllInfo</a></li>
+                    
+                    <li><a href="#func-Clear">Clear</a></li>
+                    
+                    <li><a href="#func-ClearGlobalManager">ClearGlobalManager</a></li>
+                    
+                    <li><a href="#func-Count">Count</a></li>
+                    
+                    <li><a href="#func-Count">Count</a></li>
+                    
+                    <li><a href="#func-Get">Get</a></li>
+                    
+                    <li><a href="#func-Get">Get</a></li>
+                    
+                    <li><a href="#func-GlobalManager">GlobalManager</a></li>
+                    
+                    <li><a href="#func-Has">Has</a></li>
+                    
+                    <li><a href="#func-Has">Has</a></li>
+                    
+                    <li><a href="#func-Info">Info</a></li>
+                    
+                    <li><a href="#func-Info">Info</a></li>
+                    
+                    <li><a href="#func-Initialize">Initialize</a></li>
+                    
+                    <li><a href="#func-Initialize">Initialize</a></li>
+                    
+                    <li><a href="#func-InitializeWithContext">InitializeWithContext</a></li>
+                    
+                    <li><a href="#func-InitializeWithContext">InitializeWithContext</a></li>
+                    
+                    <li><a href="#func-IsInitialized">IsInitialized</a></li>
+                    
+                    <li><a href="#func-IsInitialized">IsInitialized</a></li>
+                    
+                    <li><a href="#func-List">List</a></li>
+                    
+                    <li><a href="#func-List">List</a></li>
+                    
+                    <li><a href="#func-LoadOrder">LoadOrder</a></li>
+                    
+                    <li><a href="#func-LoadOrder">LoadOrder</a></li>
+                    
+                    <li><a href="#func-MustRegister">MustRegister</a></li>
+                    
+                    <li><a href="#func-MustRegister">MustRegister</a></li>
+                    
+                    <li><a href="#func-NewPluginManager">NewPluginManager</a></li>
+                    
+                    <li><a href="#func-Register">Register</a></li>
+                    
+                    <li><a href="#func-Register">Register</a></li>
+                    
+                    <li><a href="#func-Shutdown">Shutdown</a></li>
+                    
+                    <li><a href="#func-Shutdown">Shutdown</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>plugin/manager.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-AllInfo">
+    <div class="item-header">
+        <h4>func AllInfo</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AllInfo returns information about all registered plugins.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func AllInfo() []PluginInfo {
+	return globalManager.AllInfo()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AllInfo">
+    <div class="item-header">
+        <h4>func AllInfo</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AllInfo returns information about all registered plugins.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The returned slice is sorted by plugin name.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) AllInfo() []PluginInfo {
+	m.mu.RLock()
+	defer m.mu.RUnlock()
+
+	infos := make([]PluginInfo, 0, len(m.info))
+	for _, info := range m.info {
+		infos = append(infos, info)
+	}
+
+	sort.Slice(infos, func(i, j int) bool {
+		return infos[i].Name < infos[j].Name
+	})
+
+	return infos
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Clear">
+    <div class="item-header">
+        <h4>func Clear</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Clear removes all registered plugins.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>If plugins are initialized, they are shut down first.</p>
+          
+        <p>This is primarily useful for testing.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) Clear() error {
+	m.mu.Lock()
+
+	if m.initialized {
+		m.mu.Unlock()
+		if err := m.Shutdown(); err != nil {
+			return err
+		}
+		m.mu.Lock()
+	}
+
+	m.plugins = make(map[string]Plugin)
+	m.info = make(map[string]PluginInfo)
+	m.loadOrder = nil
+	m.context = nil
+
+	m.mu.Unlock()
+	return nil
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ClearGlobalManager">
+    <div class="item-header">
+        <h4>func ClearGlobalManager</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ClearGlobalManager removes all plugins from the global manager.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>WARNING: This is primarily intended for testing. Use with caution</p>
+          
+        <p>in production code.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ClearGlobalManager() error {
+	return globalManager.Clear()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Count">
+    <div class="item-header">
+        <h4>func Count</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Count returns the number of registered plugins.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Count() int {
+	return globalManager.Count()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Count">
+    <div class="item-header">
+        <h4>func Count</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Count returns the number of registered plugins.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) Count() int {
+	m.mu.RLock()
+	defer m.mu.RUnlock()
+	return len(m.plugins)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Get">
+    <div class="item-header">
+        <h4>func Get</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Get returns a plugin by name from the global manager.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Get(name string) (Plugin, bool) {
+	return globalManager.Get(name)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Get">
+    <div class="item-header">
+        <h4>func Get</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Get returns a plugin by name.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns false as the second value if the plugin is not registered.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) Get(name string) (Plugin, bool) {
+	m.mu.RLock()
+	defer m.mu.RUnlock()
+
+	plugin, exists := m.plugins[name]
+	return plugin, exists
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-GlobalManager">
+    <div class="item-header">
+        <h4>func GlobalManager</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>GlobalManager returns the global plugin manager.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is useful for advanced use cases where direct access to the</p>
+          
+        <p>manager is needed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func GlobalManager() *PluginManager {
+	return globalManager
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Has">
+    <div class="item-header">
+        <h4>func Has</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Has returns true if a plugin with the given name is registered.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Has(name string) bool {
+	return globalManager.Has(name)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Has">
+    <div class="item-header">
+        <h4>func Has</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Has returns true if a plugin with the given name is registered.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) Has(name string) bool {
+	m.mu.RLock()
+	defer m.mu.RUnlock()
+
+	_, exists := m.plugins[name]
+	return exists
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Info">
+    <div class="item-header">
+        <h4>func Info</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Info returns information about a registered plugin.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns false as the second value if the plugin is not registered.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) Info(name string) (PluginInfo, bool) {
+	m.mu.RLock()
+	defer m.mu.RUnlock()
+
+	info, exists := m.info[name]
+	return info, exists
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Info">
+    <div class="item-header">
+        <h4>func Info</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Info returns information about a registered plugin.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Info(name string) (PluginInfo, bool) {
+	return globalManager.Info(name)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Initialize">
+    <div class="item-header">
+        <h4>func Initialize</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Initialize loads all registered plugins in dependency order.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This method:</p>
+          
+        <p>1. Validates all dependencies are registered</p>
+          
+        <p>2. Checks version constraints</p>
+          
+        <p>3. Resolves initialization order via topological sort</p>
+          
+        <p>4. Calls Init() on each plugin in order</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns an error if:</p>
+          
+        <p>- Already initialized ([ErrAlreadyInitialized])</p>
+          
+        <p>- A dependency is not registered ([ErrDependencyNotFound])</p>
+          
+        <p>- A version constraint is not satisfied ([ErrVersionMismatch])</p>
+          
+        <p>- Circular dependencies are detected ([ErrCircularDependency])</p>
+          
+        <p>- A plugin's Init() method returns an error</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) Initialize() error {
+	return m.InitializeWithContext(NewDefaultPluginContext())
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Initialize">
+    <div class="item-header">
+        <h4>func Initialize</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Initialize loads all registered plugins from the global manager.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Call this at application startup, after all plugins have been</p>
+          
+        <p>registered (typically via init() functions):</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>func main() {</p>
+          
+        <p>if err := plugin.Initialize(); err != nil {</p>
+          
+        <p>log.Fatal(err)</p>
+          
+        <p>}</p>
+          
+        <p>defer plugin.Shutdown()</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>// Application code...</p>
+          
+        <p>}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Initialize() error {
+	return globalManager.Initialize()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InitializeWithContext">
+    <div class="item-header">
+        <h4>func InitializeWithContext</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InitializeWithContext loads all plugins using a custom context.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This allows using custom registries or asset loaders instead of</p>
+          
+        <p>the global ones.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) InitializeWithContext(ctx *PluginContext) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+
+	if m.initialized {
+		return ErrAlreadyInitialized
+	}
+
+	// Validate dependencies and version constraints
+	if err := m.validateDependencies(); err != nil {
+		return err
+	}
+
+	// Build dependency graph and get initialization order
+	order, err := m.resolveDependencyOrder()
+	if err != nil {
+		return err
+	}
+
+	// Initialize plugins in order
+	for _, name := range order {
+		plugin := m.plugins[name]
+		if err := plugin.Init(ctx); err != nil {
+			return fmt.Errorf("plugin %q initialization failed: %w", name, err)
+		}
+	}
+
+	m.loadOrder = order
+	m.context = ctx
+	m.initialized = true
+
+	return nil
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InitializeWithContext">
+    <div class="item-header">
+        <h4>func InitializeWithContext</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InitializeWithContext loads plugins using a custom context.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func InitializeWithContext(ctx *PluginContext) error {
+	return globalManager.InitializeWithContext(ctx)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsInitialized">
+    <div class="item-header">
+        <h4>func IsInitialized</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsInitialized returns true if plugins have been initialized.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) IsInitialized() bool {
+	m.mu.RLock()
+	defer m.mu.RUnlock()
+	return m.initialized
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsInitialized">
+    <div class="item-header">
+        <h4>func IsInitialized</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsInitialized returns true if the global manager has been initialized.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func IsInitialized() bool {
+	return globalManager.IsInitialized()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-List">
+    <div class="item-header">
+        <h4>func List</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>List returns the names of all registered plugins.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func List() []string {
+	return globalManager.List()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-List">
+    <div class="item-header">
+        <h4>func List</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>List returns the names of all registered plugins in sorted order.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) List() []string {
+	m.mu.RLock()
+	defer m.mu.RUnlock()
+
+	names := make([]string, 0, len(m.plugins))
+	for name := range m.plugins {
+		names = append(names, name)
+	}
+	sort.Strings(names)
+	return names
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LoadOrder">
+    <div class="item-header">
+        <h4>func LoadOrder</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LoadOrder returns the order in which plugins were initialized.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns nil if plugins have not been initialized.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) LoadOrder() []string {
+	m.mu.RLock()
+	defer m.mu.RUnlock()
+
+	if m.loadOrder == nil {
+		return nil
+	}
+
+	// Return a copy to prevent modification
+	order := make([]string, len(m.loadOrder))
+	copy(order, m.loadOrder)
+	return order
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LoadOrder">
+    <div class="item-header">
+        <h4>func LoadOrder</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LoadOrder returns the initialization order of plugins.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func LoadOrder() []string {
+	return globalManager.LoadOrder()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-MustRegister">
+    <div class="item-header">
+        <h4>func MustRegister</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>MustRegister is like Register but panics if registration fails.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Use this in init() functions where registration failure indicates</p>
+          
+        <p>a programming error.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func MustRegister(plugin Plugin, info ...PluginInfo) {
+	globalManager.MustRegister(plugin, info...)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-MustRegister">
+    <div class="item-header">
+        <h4>func MustRegister</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>MustRegister is like Register but panics if registration fails.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is intended for use in init() functions where registration</p>
+          
+        <p>failure indicates a programming error.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) MustRegister(plugin Plugin, info ...PluginInfo) {
+	if err := m.Register(plugin, info...); err != nil {
+		panic(fmt.Sprintf("plugin: failed to register %q: %v", plugin.Name(), err))
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewPluginManager">
+    <div class="item-header">
+        <h4>func NewPluginManager</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewPluginManager creates a new PluginManager.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The manager starts empty and uninitialized. Register plugins with</p>
+          
+        <p>[PluginManager.Register] and then call [PluginManager.Initialize].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewPluginManager() *PluginManager {
+	return &PluginManager{
+		plugins:	make(map[string]Plugin),
+		info:		make(map[string]PluginInfo),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Register">
+    <div class="item-header">
+        <h4>func Register</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Register adds a plugin to the global manager.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is typically called from init() functions:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>func init() {</p>
+          
+        <p>plugin.Register(&MyPlugin{}, plugin.PluginInfo{</p>
+          
+        <p>Name:        "my-plugin",</p>
+          
+        <p>Description: "My custom plugin",</p>
+          
+        <p>})</p>
+          
+        <p>}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Register(plugin Plugin, info ...PluginInfo) error {
+	return globalManager.Register(plugin, info...)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Register">
+    <div class="item-header">
+        <h4>func Register</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Register adds a plugin to the manager.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The plugin's Name() method is used as the identifier. If info is</p>
+          
+        <p>provided, it stores metadata about the plugin for discovery purposes.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns ErrNilPlugin if plugin is nil, ErrEmptyName if the plugin's</p>
+          
+        <p>name is empty, or ErrPluginExists if a plugin with the same name</p>
+          
+        <p>is already registered.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Note: Registration does not initialize the plugin. Call [Initialize]</p>
+          
+        <p>after all plugins are registered.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) Register(plugin Plugin, info ...PluginInfo) error {
+	if plugin == nil {
+		return ErrNilPlugin
+	}
+
+	name := plugin.Name()
+	if name == "" {
+		return ErrEmptyName
+	}
+
+	m.mu.Lock()
+	defer m.mu.Unlock()
+
+	if m.initialized {
+		return fmt.Errorf("cannot register plugin %q: %w", name, ErrAlreadyInitialized)
+	}
+
+	if _, exists := m.plugins[name]; exists {
+		return fmt.Errorf("%w: %s", ErrPluginExists, name)
+	}
+
+	m.plugins[name] = plugin
+
+	// Store info
+	if len(info) > 0 {
+		pluginInfo := info[0]
+		pluginInfo.Name = name
+		pluginInfo.Version = plugin.Version()
+		pluginInfo.Dependencies = plugin.Dependencies()
+		m.info[name] = pluginInfo
+	} else {
+		// Create minimal info from plugin
+		m.info[name] = PluginInfo{
+			Name:		name,
+			Version:	plugin.Version(),
+			Dependencies:	plugin.Dependencies(),
+		}
+	}
+
+	return nil
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Shutdown">
+    <div class="item-header">
+        <h4>func Shutdown</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Shutdown unloads all plugins from the global manager.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Call this at application shutdown to allow plugins to release</p>
+          
+        <p>resources.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Shutdown() error {
+	return globalManager.Shutdown()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Shutdown">
+    <div class="item-header">
+        <h4>func Shutdown</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Shutdown unloads all plugins in reverse initialization order.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This method calls Shutdown() on each plugin, starting with those</p>
+          
+        <p>that were initialized last (to respect dependency order).</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Returns an error if plugins were not initialized, or if any plugin's</p>
+          
+        <p>Shutdown() method returns an error. All plugins are attempted to</p>
+          
+        <p>shut down even if some fail.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m *PluginManager) Shutdown() error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+
+	if !m.initialized {
+		return ErrNotInitialized
+	}
+
+	var errs []error
+
+	// Shutdown in reverse order
+	for i := len(m.loadOrder) - 1; i >= 0; i-- {
+		name := m.loadOrder[i]
+		plugin := m.plugins[name]
+		if err := plugin.Shutdown(); err != nil {
+			errs = append(errs, fmt.Errorf("plugin %q shutdown failed: %w", name, err))
+		}
+	}
+
+	m.initialized = false
+	m.loadOrder = nil
+	m.context = nil
+
+	if len(errs) > 0 {
+		// Return first error (could combine them, but this is simpler)
+		return errs[0]
+	}
+
+	return nil
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-PluginManager">
+    <div class="item-header">
+        <h4>type PluginManager struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>PluginManager manages plugin registration, initialization, and shutdown.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>The plugin manager maintains a registry of plugins and handles their</p>
+        
+        <p>lifecycle. It resolves dependencies between plugins and initializes</p>
+        
+        <p>them in the correct order.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>For most use cases, use the package-level functions ([Register],</p>
+        
+        <p>[Initialize], [Shutdown], [List], [Info]) which operate on a global</p>
+        
+        <p>plugin manager.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Create a custom PluginManager for testing or isolated use cases.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type PluginManager struct {
+	mu		sync.RWMutex
+	plugins		map[string]Plugin
+	info		map[string]PluginInfo
+	loadOrder	[]string
+	initialized	bool
+	context		*PluginContext
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

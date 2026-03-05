@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - theme/extension.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="active">theme/extension.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-ExtensionAs">ExtensionAs</a></li>
+                    
+                    <li><a href="#func-LerpFloat32">LerpFloat32</a></li>
+                    
+                    <li><a href="#func-LerpInt">LerpInt</a></li>
+                    
+                    <li><a href="#func-LerpString">LerpString</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>theme/extension.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    >  <a
+        href="#interfaces"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Interfaces</a
+    >
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-ExtensionAs">
+    <div class="item-header">
+        <h4>func ExtensionAs</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ExtensionAs retrieves and type-asserts a ThemeExtension.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is a generic helper that provides type-safe access to extensions.</p>
+          
+        <p>It returns the typed extension and true if found and of the correct type,</p>
+          
+        <p>or the zero value and false otherwise.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>if ext, ok := theme.ExtensionAs[*CorporateExtension](theme, "corporate"); ok {</p>
+          
+        <p>canvas.DrawRect(bounds, RectStyle{Fill: ext.BrandPrimary})</p>
+          
+        <p>}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ExtensionAs[T ThemeExtension](t *Theme, name string) (T, bool) {
+	var zero T
+	if t == nil {
+		return zero, false
+	}
+
+	ext := t.TypedExtension(name)
+	if ext == nil {
+		return zero, false
+	}
+
+	typed, ok := ext.(T)
+	return typed, ok
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LerpFloat32">
+    <div class="item-header">
+        <h4>func LerpFloat32</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LerpFloat32 interpolates between two float32 values.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is a helper function for implementing ThemeExtension.Lerp().</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func LerpFloat32(a, b, t float32) float32 {
+	return a + (b-a)*t
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LerpInt">
+    <div class="item-header">
+        <h4>func LerpInt</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LerpInt interpolates between two int values.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The result is rounded to the nearest integer.</p>
+          
+        <p>This is a helper function for implementing ThemeExtension.Lerp().</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func LerpInt(a, b int, t float32) int {
+	return a + int(float32(b-a)*t+0.5)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-LerpString">
+    <div class="item-header">
+        <h4>func LerpString</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>LerpString interpolates between two strings for animation.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Since strings cannot be mathematically interpolated, this function</p>
+          
+        <p>returns a when t < 0.5 and b when t >= 0.5.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>This is a helper function for implementing ThemeExtension.Lerp().</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func LerpString(a, b string, t float32) string {
+	if t < 0.5 {
+		return a
+	}
+	return b
+}
+</code></pre>
+</div>
+   
+<h3 id="interfaces">Interfaces</h3>
+
+<div class="item" id="interface-ThemeExtension">
+    <div class="item-header">
+        <h4>type ThemeExtension interface</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>ThemeExtension allows custom theme properties for third-party components.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>ThemeExtension provides a mechanism for third-party developers and</p>
+        
+        <p>enterprise applications to add custom properties to themes without</p>
+        
+        <p>modifying the core Theme struct. This follows Flutter's proven pattern</p>
+        
+        <p>for extensible theming.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Implementing a ThemeExtension</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>To create a custom extension, implement all four methods:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>type CorporateExtension struct {</p>
+        
+        <p>BrandPrimary   widget.Color</p>
+        
+        <p>BrandSecondary widget.Color</p>
+        
+        <p>LogoURL        string</p>
+        
+        <p>}</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func (e *CorporateExtension) Name() string { return "corporate" }</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func (e *CorporateExtension) Merge(other ThemeExtension) ThemeExtension {</p>
+        
+        <p>if o, ok := other.(*CorporateExtension); ok {</p>
+        
+        <p>return o // Use other's values (override)</p>
+        
+        <p>}</p>
+        
+        <p>return e // Keep original if types don't match</p>
+        
+        <p>}</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func (e *CorporateExtension) Lerp(other ThemeExtension, t float32) ThemeExtension {</p>
+        
+        <p>if o, ok := other.(*CorporateExtension); ok {</p>
+        
+        <p>return &CorporateExtension{</p>
+        
+        <p>BrandPrimary:   e.BrandPrimary.Lerp(o.BrandPrimary, t),</p>
+        
+        <p>BrandSecondary: e.BrandSecondary.Lerp(o.BrandSecondary, t),</p>
+        
+        <p>LogoURL:        e.LogoURL, // Can't interpolate strings</p>
+        
+        <p>}</p>
+        
+        <p>}</p>
+        
+        <p>return e</p>
+        
+        <p>}</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>func (e *CorporateExtension) CopyWith(overrides map[string]any) ThemeExtension {</p>
+        
+        <p>copy := *e</p>
+        
+        <p>if v, ok := overrides["brand_primary"].(widget.Color); ok {</p>
+        
+        <p>copy.BrandPrimary = v</p>
+        
+        <p>}</p>
+        
+        <p>return &copy</p>
+        
+        <p>}</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Registering Extensions</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>theme := DefaultLight()</p>
+        
+        <p>theme.RegisterExtension(&CorporateExtension{</p>
+        
+        <p>BrandPrimary: widget.Hex(0x00529B),</p>
+        
+        <p>})</p>
+        
+        <p>&nbsp;</p>
+        
+        <p># Retrieving Extensions</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>// Type-safe retrieval</p>
+        
+        <p>if ext, ok := ExtensionAs[*CorporateExtension](theme, "corporate"); ok {</p>
+        
+        <p>canvas.DrawRect(bounds, RectStyle{Fill: ext.BrandPrimary})</p>
+        
+        <p>}</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type ThemeExtension interface {
+	// Name returns the unique identifier for this extension.
+	//
+	// The name should be a stable string that uniquely identifies the
+	// extension type. Using a package path or namespace is recommended
+	// to avoid collisions (e.g., "myorg/branding", "corporate").
+	Name() string
+
+	// Merge combines this extension with another, typically for theme inheritance.
+	//
+	// When a child theme has an extension with the same name as a parent theme,
+	// Merge is called to combine them. The other parameter is the child's
+	// extension that should override values from this extension.
+	//
+	// If other is not the same type, implementations should return the
+	// original extension unchanged.
+	//
+	// Example:
+	//
+	//	func (e *MyExt) Merge(other ThemeExtension) ThemeExtension {
+	//	    if o, ok := other.(*MyExt); ok {
+	//	        return o // Child completely overrides parent
+	//	    }
+	//	    return e
+	//	}
+	Merge(other ThemeExtension) ThemeExtension
+
+	// Lerp interpolates between this extension and another for animations.
+	//
+	// t ranges from 0.0 (this) to 1.0 (other). This enables smooth theme
+	// transitions when animating between light and dark themes, or between
+	// different brand themes.
+	//
+	// For properties that cannot be interpolated (like strings), return
+	// the value from this extension when t < 0.5 and from other when t >= 0.5.
+	//
+	// If other is not the same type, implementations should return the
+	// original extension unchanged.
+	//
+	// Example:
+	//
+	//	func (e *MyExt) Lerp(other ThemeExtension, t float32) ThemeExtension {
+	//	    if o, ok := other.(*MyExt); ok {
+	//	        return &MyExt{
+	//	            Color: e.Color.Lerp(o.Color, t),
+	//	            Label: lerpString(e.Label, o.Label, t),
+	//	        }
+	//	    }
+	//	    return e
+	//	}
+	Lerp(other ThemeExtension, t float32) ThemeExtension
+
+	// CopyWith creates a modified copy of the extension.
+	//
+	// This allows creating variations of an extension without mutating
+	// the original. The overrides map uses string keys that are specific
+	// to each extension type.
+	//
+	// Example:
+	//
+	//	func (e *MyExt) CopyWith(overrides map[string]any) ThemeExtension {
+	//	    copy := *e
+	//	    if v, ok := overrides["color"].(widget.Color); ok {
+	//	        copy.Color = v
+	//	    }
+	//	    return &copy
+	//	}
+	CopyWith(overrides map[string]any) ThemeExtension
+}
+</code></pre>
+</div>
+  
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

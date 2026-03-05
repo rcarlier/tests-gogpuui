@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - geometry/insets.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="">event/mouse.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="active">geometry/insets.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-Abs">Abs</a></li>
+                    
+                    <li><a href="#func-Add">Add</a></li>
+                    
+                    <li><a href="#func-BottomRight">BottomRight</a></li>
+                    
+                    <li><a href="#func-Clamp">Clamp</a></li>
+                    
+                    <li><a href="#func-Horizontal">Horizontal</a></li>
+                    
+                    <li><a href="#func-InsetsLTRB">InsetsLTRB</a></li>
+                    
+                    <li><a href="#func-InsetsOnly">InsetsOnly</a></li>
+                    
+                    <li><a href="#func-InsetsTRBL">InsetsTRBL</a></li>
+                    
+                    <li><a href="#func-IsNaN">IsNaN</a></li>
+                    
+                    <li><a href="#func-IsNonNegative">IsNonNegative</a></li>
+                    
+                    <li><a href="#func-IsSymmetric">IsSymmetric</a></li>
+                    
+                    <li><a href="#func-IsUniform">IsUniform</a></li>
+                    
+                    <li><a href="#func-IsZero">IsZero</a></li>
+                    
+                    <li><a href="#func-Max">Max</a></li>
+                    
+                    <li><a href="#func-Min">Min</a></li>
+                    
+                    <li><a href="#func-Negate">Negate</a></li>
+                    
+                    <li><a href="#func-Sanitize">Sanitize</a></li>
+                    
+                    <li><a href="#func-Scale">Scale</a></li>
+                    
+                    <li><a href="#func-Size">Size</a></li>
+                    
+                    <li><a href="#func-String">String</a></li>
+                    
+                    <li><a href="#func-Sub">Sub</a></li>
+                    
+                    <li><a href="#func-SymmetricInsets">SymmetricInsets</a></li>
+                    
+                    <li><a href="#func-TopLeft">TopLeft</a></li>
+                    
+                    <li><a href="#func-UniformInsets">UniformInsets</a></li>
+                    
+                    <li><a href="#func-Vertical">Vertical</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>geometry/insets.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-Abs">
+    <div class="item-header">
+        <h4>func Abs</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Abs returns insets with all values converted to absolute values.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Abs() Insets {
+	return Insets{
+		Top:	abs32(i.Top),
+		Right:	abs32(i.Right),
+		Bottom:	abs32(i.Bottom),
+		Left:	abs32(i.Left),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Add">
+    <div class="item-header">
+        <h4>func Add</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Add returns new insets with values added.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>i1 := geometry.UniformInsets(10)</p>
+          
+        <p>i2 := geometry.UniformInsets(5)</p>
+          
+        <p>result := i1.Add(i2) // Insets{15, 15, 15, 15}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Add(other Insets) Insets {
+	return Insets{
+		Top:	i.Top + other.Top,
+		Right:	i.Right + other.Right,
+		Bottom:	i.Bottom + other.Bottom,
+		Left:	i.Left + other.Left,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-BottomRight">
+    <div class="item-header">
+        <h4>func BottomRight</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>BottomRight returns the bottom-right offset as a Point.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) BottomRight() Point {
+	return Point{X: i.Right, Y: i.Bottom}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Clamp">
+    <div class="item-header">
+        <h4>func Clamp</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Clamp returns insets with values clamped to the range [minInsets, maxInsets].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Clamp(minInsets, maxInsets Insets) Insets {
+	return Insets{
+		Top:	clamp32(i.Top, minInsets.Top, maxInsets.Top),
+		Right:	clamp32(i.Right, minInsets.Right, maxInsets.Right),
+		Bottom:	clamp32(i.Bottom, minInsets.Bottom, maxInsets.Bottom),
+		Left:	clamp32(i.Left, minInsets.Left, maxInsets.Left),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Horizontal">
+    <div class="item-header">
+        <h4>func Horizontal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Horizontal returns the sum of left and right insets.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>padding := geometry.UniformInsets(16)</p>
+          
+        <p>h := padding.Horizontal() // 32</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Horizontal() float32 {
+	return i.Left + i.Right
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InsetsLTRB">
+    <div class="item-header">
+        <h4>func InsetsLTRB</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InsetsLTRB creates insets from Left, Top, Right, Bottom values.</p>
+          
+        <p>This ordering matches CSS shorthand (when specifying all four values).</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>margin := geometry.InsetsLTRB(10, 20, 30, 40)</p>
+          
+        <p>// Insets{Top: 20, Right: 30, Bottom: 40, Left: 10}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func InsetsLTRB(left, top, right, bottom float32) Insets {
+	return Insets{Top: top, Right: right, Bottom: bottom, Left: left}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InsetsOnly">
+    <div class="item-header">
+        <h4>func InsetsOnly</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InsetsOnly creates insets with specific edges set, others zero.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>topPadding := geometry.InsetsOnly(10, 0, 0, 0) // top only</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func InsetsOnly(top, right, bottom, left float32) Insets {
+	return Insets{Top: top, Right: right, Bottom: bottom, Left: left}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InsetsTRBL">
+    <div class="item-header">
+        <h4>func InsetsTRBL</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InsetsTRBL creates insets from Top, Right, Bottom, Left values.</p>
+          
+        <p>This ordering matches CSS shorthand.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>margin := geometry.InsetsTRBL(20, 30, 40, 10)</p>
+          
+        <p>// Insets{Top: 20, Right: 30, Bottom: 40, Left: 10}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func InsetsTRBL(top, right, bottom, left float32) Insets {
+	return Insets{Top: top, Right: right, Bottom: bottom, Left: left}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsNaN">
+    <div class="item-header">
+        <h4>func IsNaN</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsNaN returns true if any value is NaN.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) IsNaN() bool {
+	return isNaN32(i.Top) || isNaN32(i.Right) || isNaN32(i.Bottom) || isNaN32(i.Left)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsNonNegative">
+    <div class="item-header">
+        <h4>func IsNonNegative</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsNonNegative returns true if all values are >= 0.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) IsNonNegative() bool {
+	return i.Top >= 0 && i.Right >= 0 && i.Bottom >= 0 && i.Left >= 0
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsSymmetric">
+    <div class="item-header">
+        <h4>func IsSymmetric</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsSymmetric returns true if horizontal edges match and vertical edges match.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) IsSymmetric() bool {
+	return i.Left == i.Right && i.Top == i.Bottom
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsUniform">
+    <div class="item-header">
+        <h4>func IsUniform</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsUniform returns true if all edges have the same value.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) IsUniform() bool {
+	return i.Top == i.Right && i.Right == i.Bottom && i.Bottom == i.Left
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsZero">
+    <div class="item-header">
+        <h4>func IsZero</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsZero returns true if all inset values are zero.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) IsZero() bool {
+	return i.Top == 0 && i.Right == 0 && i.Bottom == 0 && i.Left == 0
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Max">
+    <div class="item-header">
+        <h4>func Max</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Max returns insets with the maximum values from i and other.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Max(other Insets) Insets {
+	return Insets{
+		Top:	max32(i.Top, other.Top),
+		Right:	max32(i.Right, other.Right),
+		Bottom:	max32(i.Bottom, other.Bottom),
+		Left:	max32(i.Left, other.Left),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Min">
+    <div class="item-header">
+        <h4>func Min</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Min returns insets with the minimum values from i and other.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Min(other Insets) Insets {
+	return Insets{
+		Top:	min32(i.Top, other.Top),
+		Right:	min32(i.Right, other.Right),
+		Bottom:	min32(i.Bottom, other.Bottom),
+		Left:	min32(i.Left, other.Left),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Negate">
+    <div class="item-header">
+        <h4>func Negate</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Negate returns insets with all values negated.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Negate() Insets {
+	return Insets{
+		Top:	-i.Top,
+		Right:	-i.Right,
+		Bottom:	-i.Bottom,
+		Left:	-i.Left,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Sanitize">
+    <div class="item-header">
+        <h4>func Sanitize</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Sanitize returns a copy with NaN values replaced by zero.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Sanitize() Insets {
+	top, right, bottom, left := i.Top, i.Right, i.Bottom, i.Left
+	if isNaN32(top) {
+		top = 0
+	}
+	if isNaN32(right) {
+		right = 0
+	}
+	if isNaN32(bottom) {
+		bottom = 0
+	}
+	if isNaN32(left) {
+		left = 0
+	}
+	return Insets{Top: top, Right: right, Bottom: bottom, Left: left}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Scale">
+    <div class="item-header">
+        <h4>func Scale</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Scale returns new insets with all values multiplied by the scalar.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>padding := geometry.UniformInsets(10)</p>
+          
+        <p>doubled := padding.Scale(2) // Insets{20, 20, 20, 20}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Scale(scalar float32) Insets {
+	return Insets{
+		Top:	i.Top * scalar,
+		Right:	i.Right * scalar,
+		Bottom:	i.Bottom * scalar,
+		Left:	i.Left * scalar,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Size">
+    <div class="item-header">
+        <h4>func Size</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Size returns a Size representing the total horizontal and vertical insets.</p>
+          
+        <p>This is useful for calculating how much space insets consume.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>padding := geometry.SymmetricInsets(16, 8)</p>
+          
+        <p>s := padding.Size() // Size{Width: 32, Height: 16}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Size() Size {
+	return Size{Width: i.Horizontal(), Height: i.Vertical()}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a string representation of the insets.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>i := geometry.UniformInsets(16)</p>
+          
+        <p>s := i.String() // "Insets(16, 16, 16, 16)"</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) String() string {
+	return fmt.Sprintf("Insets(%.4g, %.4g, %.4g, %.4g)", i.Top, i.Right, i.Bottom, i.Left)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Sub">
+    <div class="item-header">
+        <h4>func Sub</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Sub returns new insets with values subtracted.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Sub(other Insets) Insets {
+	return Insets{
+		Top:	i.Top - other.Top,
+		Right:	i.Right - other.Right,
+		Bottom:	i.Bottom - other.Bottom,
+		Left:	i.Left - other.Left,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SymmetricInsets">
+    <div class="item-header">
+        <h4>func SymmetricInsets</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SymmetricInsets creates insets with separate horizontal and vertical values.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>padding := geometry.SymmetricInsets(16, 8)</p>
+          
+        <p>// Insets{Top: 8, Right: 16, Bottom: 8, Left: 16}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func SymmetricInsets(horizontal, vertical float32) Insets {
+	return Insets{Top: vertical, Right: horizontal, Bottom: vertical, Left: horizontal}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-TopLeft">
+    <div class="item-header">
+        <h4>func TopLeft</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>TopLeft returns the top-left offset as a Point.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) TopLeft() Point {
+	return Point{X: i.Left, Y: i.Top}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-UniformInsets">
+    <div class="item-header">
+        <h4>func UniformInsets</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>UniformInsets creates insets with the same value on all edges.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>padding := geometry.UniformInsets(16)</p>
+          
+        <p>// Insets{Top: 16, Right: 16, Bottom: 16, Left: 16}</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func UniformInsets(all float32) Insets {
+	return Insets{Top: all, Right: all, Bottom: all, Left: all}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Vertical">
+    <div class="item-header">
+        <h4>func Vertical</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Vertical returns the sum of top and bottom insets.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Example:</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>padding := geometry.UniformInsets(16)</p>
+          
+        <p>v := padding.Vertical() // 32</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (i Insets) Vertical() float32 {
+	return i.Top + i.Bottom
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-Insets">
+    <div class="item-header">
+        <h4>type Insets struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Insets represents edge insets for padding, margins, or borders.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Insets define spacing on each of the four edges of a rectangle.</p>
+        
+        <p>They are commonly used for padding (space inside a widget) and</p>
+        
+        <p>margins (space outside a widget).</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>The zero value represents no insets (0 on all edges).</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Insets struct {
+	Top, Right, Bottom, Left float32
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

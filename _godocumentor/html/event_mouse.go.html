@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com/gogpu/ui - event/mouse.go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1><a href="index.html" style="color: inherit; text-decoration: none;">github.com/gogpu/ui</a></h1>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li>
+                <a href="a11y_accessible.go.html" class="">a11y/accessible.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_action.go.html" class="">a11y/action.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_announcer.go.html" class="">a11y/announcer.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_node.go.html" class="">a11y/node.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_role.go.html" class="">a11y/role.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_state.go.html" class="">a11y/state.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="a11y_tree.go.html" class="">a11y/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_app.go.html" class="">app/app.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_loop.go.html" class="">app/loop.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="app_window.go.html" class="">app/window.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="cdk_content.go.html" class="">cdk/content.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_button.go.html" class="">core/button/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_config.go.html" class="">core/button/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_options.go.html" class="">core/button/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_painter.go.html" class="">core/button/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_styling.go.html" class="">core/button/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_variants.go.html" class="">core/button/variants.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_button_widget.go.html" class="">core/button/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_checkbox.go.html" class="">core/checkbox/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_config.go.html" class="">core/checkbox/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_options.go.html" class="">core/checkbox/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_painter.go.html" class="">core/checkbox/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_styling.go.html" class="">core/checkbox/styling.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_checkbox_widget.go.html" class="">core/checkbox/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_a11y.go.html" class="">core/dropdown/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_menu.go.html" class="">core/dropdown/menu.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_options.go.html" class="">core/dropdown/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_painter.go.html" class="">core/dropdown/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_types.go.html" class="">core/dropdown/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_dropdown_widget.go.html" class="">core/dropdown/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_config.go.html" class="">core/radio/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_group.go.html" class="">core/radio/group.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_item.go.html" class="">core/radio/item.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_options.go.html" class="">core/radio/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_radio_painter.go.html" class="">core/radio/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_a11y.go.html" class="">core/textfield/a11y.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_config.go.html" class="">core/textfield/config.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_options.go.html" class="">core/textfield/options.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_painter.go.html" class="">core/textfield/painter.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_selection.go.html" class="">core/textfield/selection.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_types.go.html" class="">core/textfield/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="core_textfield_widget.go.html" class="">core/textfield/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_event.go.html" class="">event/event.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_focus.go.html" class="">event/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_key.go.html" class="">event/key.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_modifiers.go.html" class="">event/modifiers.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="event_mouse.go.html" class="active">event/mouse.go</a>
+                
+                <ul>
+                    
+                    <li><a href="#func-AnyPressed">AnyPressed</a></li>
+                    
+                    <li><a href="#func-Has">Has</a></li>
+                    
+                    <li><a href="#func-IsDoubleClick">IsDoubleClick</a></li>
+                    
+                    <li><a href="#func-IsDrag">IsDrag</a></li>
+                    
+                    <li><a href="#func-IsEnter">IsEnter</a></li>
+                    
+                    <li><a href="#func-IsLeave">IsLeave</a></li>
+                    
+                    <li><a href="#func-IsLeftButton">IsLeftButton</a></li>
+                    
+                    <li><a href="#func-IsLeftPressed">IsLeftPressed</a></li>
+                    
+                    <li><a href="#func-IsMiddleButton">IsMiddleButton</a></li>
+                    
+                    <li><a href="#func-IsMiddlePressed">IsMiddlePressed</a></li>
+                    
+                    <li><a href="#func-IsMove">IsMove</a></li>
+                    
+                    <li><a href="#func-IsPress">IsPress</a></li>
+                    
+                    <li><a href="#func-IsRelease">IsRelease</a></li>
+                    
+                    <li><a href="#func-IsRightButton">IsRightButton</a></li>
+                    
+                    <li><a href="#func-IsRightPressed">IsRightPressed</a></li>
+                    
+                    <li><a href="#func-IsX1Pressed">IsX1Pressed</a></li>
+                    
+                    <li><a href="#func-IsX2Pressed">IsX2Pressed</a></li>
+                    
+                    <li><a href="#func-NewMouseEvent">NewMouseEvent</a></li>
+                    
+                    <li><a href="#func-NewMouseEventWithTime">NewMouseEventWithTime</a></li>
+                    
+                    <li><a href="#func-String">String</a></li>
+                    
+                    <li><a href="#func-String">String</a></li>
+                    
+                    <li><a href="#func-String">String</a></li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="event_wheel.go.html" class="">event/wheel.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_focus.go.html" class="">focus/focus.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="focus_shortcut.go.html" class="">focus/shortcut.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_constraints.go.html" class="">geometry/constraints.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_insets.go.html" class="">geometry/insets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_point.go.html" class="">geometry/point.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_rect.go.html" class="">geometry/rect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="geometry_size.go.html" class="">geometry/size.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_algorithm.go.html" class="">layout/algorithm.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_flex.go.html" class="">layout/flex.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_grid.go.html" class="">layout/grid.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_registry.go.html" class="">layout/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_stack.go.html" class="">layout/stack.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_style.go.html" class="">layout/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_tree.go.html" class="">layout/tree.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="layout_types.go.html" class="">layout/types.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="logger.go.html" class="">logger.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_container.go.html" class="">overlay/container.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_overlay.go.html" class="">overlay/overlay.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="overlay_position.go.html" class="">overlay/position.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_assets.go.html" class="">plugin/assets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_context.go.html" class="">plugin/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_manager.go.html" class="">plugin/manager.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="plugin_plugin.go.html" class="">plugin/plugin.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_box.go.html" class="">primitives/box.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_image.go.html" class="">primitives/image.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_style.go.html" class="">primitives/style.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_text.go.html" class="">primitives/text.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="primitives_themescope.go.html" class="">primitives/themescope.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="registry_widget.go.html" class="">registry/widget.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="render_canvas.go.html" class="">render/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_binding.go.html" class="">state/binding.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_computed.go.html" class="">state/computed.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_effect.go.html" class="">state/effect.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_scheduler.go.html" class="">state/scheduler.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="state_signal.go.html" class="">state/signal.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_colors.go.html" class="">theme/colors.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_extension.go.html" class="">theme/extension.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_button.go.html" class="">theme/material3/button.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_checkbox.go.html" class="">theme/material3/checkbox.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_color.go.html" class="">theme/material3/color.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_dropdown.go.html" class="">theme/material3/dropdown.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_radio.go.html" class="">theme/material3/radio.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_shape.go.html" class="">theme/material3/shape.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_textfield.go.html" class="">theme/material3/textfield.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_theme.go.html" class="">theme/material3/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_material3_typography.go.html" class="">theme/material3/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_mode.go.html" class="">theme/mode.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_presets.go.html" class="">theme/presets.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_radii.go.html" class="">theme/radii.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_registry.go.html" class="">theme/registry.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_shadows.go.html" class="">theme/shadows.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_spacing.go.html" class="">theme/spacing.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_theme.go.html" class="">theme/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="theme_typography.go.html" class="">theme/typography.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_base.go.html" class="">widget/base.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_canvas.go.html" class="">widget/canvas.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_context.go.html" class="">widget/context.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_focusable.go.html" class="">widget/focusable.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_theme.go.html" class="">widget/theme.go</a>
+                
+            </li>
+            
+            <li>
+                <a href="widget_widget.go.html" class="">widget/widget.go</a>
+                
+            </li>
+            
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            
+<h2>event/mouse.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-AnyPressed">
+    <div class="item-header">
+        <h4>func AnyPressed</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AnyPressed returns true if any button is pressed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s ButtonState) AnyPressed() bool {
+	return s != 0
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Has">
+    <div class="item-header">
+        <h4>func Has</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Has returns true if the specified button is pressed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s ButtonState) Has(state ButtonState) bool {
+	return s&state == state
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsDoubleClick">
+    <div class="item-header">
+        <h4>func IsDoubleClick</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsDoubleClick returns true if this is a double-click event.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsDoubleClick() bool {
+	return e.MouseType == MouseDoubleClick
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsDrag">
+    <div class="item-header">
+        <h4>func IsDrag</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsDrag returns true if this is a drag event.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsDrag() bool {
+	return e.MouseType == MouseDrag
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsEnter">
+    <div class="item-header">
+        <h4>func IsEnter</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsEnter returns true if this is a mouse enter event.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsEnter() bool {
+	return e.MouseType == MouseEnter
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsLeave">
+    <div class="item-header">
+        <h4>func IsLeave</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsLeave returns true if this is a mouse leave event.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsLeave() bool {
+	return e.MouseType == MouseLeave
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsLeftButton">
+    <div class="item-header">
+        <h4>func IsLeftButton</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsLeftButton returns true if the left button is involved.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsLeftButton() bool {
+	return e.Button == ButtonLeft
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsLeftPressed">
+    <div class="item-header">
+        <h4>func IsLeftPressed</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsLeftPressed returns true if the left button is pressed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s ButtonState) IsLeftPressed() bool {
+	return s.Has(ButtonStateLeft)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsMiddleButton">
+    <div class="item-header">
+        <h4>func IsMiddleButton</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsMiddleButton returns true if the middle button is involved.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsMiddleButton() bool {
+	return e.Button == ButtonMiddle
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsMiddlePressed">
+    <div class="item-header">
+        <h4>func IsMiddlePressed</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsMiddlePressed returns true if the middle button is pressed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s ButtonState) IsMiddlePressed() bool {
+	return s.Has(ButtonStateMiddle)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsMove">
+    <div class="item-header">
+        <h4>func IsMove</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsMove returns true if this is a mouse move event.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsMove() bool {
+	return e.MouseType == MouseMove
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsPress">
+    <div class="item-header">
+        <h4>func IsPress</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsPress returns true if this is a button press event.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsPress() bool {
+	return e.MouseType == MousePress
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsRelease">
+    <div class="item-header">
+        <h4>func IsRelease</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsRelease returns true if this is a button release event.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsRelease() bool {
+	return e.MouseType == MouseRelease
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsRightButton">
+    <div class="item-header">
+        <h4>func IsRightButton</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsRightButton returns true if the right button is involved.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) IsRightButton() bool {
+	return e.Button == ButtonRight
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsRightPressed">
+    <div class="item-header">
+        <h4>func IsRightPressed</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsRightPressed returns true if the right button is pressed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s ButtonState) IsRightPressed() bool {
+	return s.Has(ButtonStateRight)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsX1Pressed">
+    <div class="item-header">
+        <h4>func IsX1Pressed</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsX1Pressed returns true if the X1 button is pressed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s ButtonState) IsX1Pressed() bool {
+	return s.Has(ButtonStateX1)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsX2Pressed">
+    <div class="item-header">
+        <h4>func IsX2Pressed</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsX2Pressed returns true if the X2 button is pressed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (s ButtonState) IsX2Pressed() bool {
+	return s.Has(ButtonStateX2)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewMouseEvent">
+    <div class="item-header">
+        <h4>func NewMouseEvent</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewMouseEvent creates a new mouse event with the current time.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewMouseEvent(
+	mouseType MouseEventType,
+	button Button,
+	buttons ButtonState,
+	position geometry.Point,
+	globalPosition geometry.Point,
+	mods Modifiers,
+) *MouseEvent {
+	return &MouseEvent{
+		Base:		NewBase(TypeMouse, mods),
+		MouseType:	mouseType,
+		Button:		button,
+		Buttons:	buttons,
+		Position:	position,
+		GlobalPosition:	globalPosition,
+		ClickCount:	1,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-NewMouseEventWithTime">
+    <div class="item-header">
+        <h4>func NewMouseEventWithTime</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>NewMouseEventWithTime creates a new mouse event with a specific timestamp.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func NewMouseEventWithTime(
+	mouseType MouseEventType,
+	button Button,
+	buttons ButtonState,
+	position geometry.Point,
+	globalPosition geometry.Point,
+	mods Modifiers,
+	t time.Time,
+) *MouseEvent {
+	return &MouseEvent{
+		Base:		NewBaseWithTime(TypeMouse, t, mods),
+		MouseType:	mouseType,
+		Button:		button,
+		Buttons:	buttons,
+		Position:	position,
+		GlobalPosition:	globalPosition,
+		ClickCount:	1,
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a human-readable name for the mouse event type.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (t MouseEventType) String() string {
+	switch t {
+	case MousePress:
+		return "Press"
+	case MouseRelease:
+		return "Release"
+	case MouseMove:
+		return "Move"
+	case MouseEnter:
+		return "Enter"
+	case MouseLeave:
+		return "Leave"
+	case MouseDrag:
+		return "Drag"
+	case MouseDoubleClick:
+		return "DoubleClick"
+	default:
+		return unknownStr
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a human-readable name for the button.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (b Button) String() string {
+	switch b {
+	case ButtonNone:
+		return "None"
+	case ButtonLeft:
+		return "Left"
+	case ButtonRight:
+		return "Right"
+	case ButtonMiddle:
+		return "Middle"
+	case ButtonX1:
+		return "X1"
+	case ButtonX2:
+		return "X2"
+	default:
+		return unknownStr
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a human-readable representation of the event.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (e *MouseEvent) String() string {
+	return fmt.Sprintf("MouseEvent{Type: %s, Button: %s, Position: %s, Mods: %s}",
+		e.MouseType, e.Button, e.Position, e.Modifiers())
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-MouseEvent">
+    <div class="item-header">
+        <h4>type MouseEvent struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>MouseEvent represents a mouse input event.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Position is relative to the widget receiving the event.</p>
+        
+        <p>GlobalPosition is the position in screen coordinates.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type MouseEvent struct {
+	Base
+
+	// MouseType is the specific type of mouse event.
+	MouseType	MouseEventType
+
+	// Button is the button involved in press/release events.
+	Button	Button
+
+	// Buttons is the state of all mouse buttons.
+	Buttons	ButtonState
+
+	// Position is the mouse position relative to the widget.
+	Position	geometry.Point
+
+	// GlobalPosition is the mouse position in screen coordinates.
+	GlobalPosition	geometry.Point
+
+	// ClickCount is the number of consecutive clicks (1 for single, 2 for double).
+	ClickCount	int
+}
+</code></pre>
+</div>
+   
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
