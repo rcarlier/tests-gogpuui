@@ -3,9 +3,9 @@ module gogpuui
 go 1.26.0
 
 require (
-	github.com/gogpu/gg v0.33.0
-	github.com/gogpu/gogpu v0.22.5
-	github.com/gogpu/ui v0.0.0-20260302064100-4910b59af024
+	github.com/gogpu/gg v0.33.1
+	github.com/gogpu/gogpu v0.22.6
+	github.com/gogpu/ui v0.0.0-20260305115525-ee09a8641726
 )
 
 require (
