@@ -18,6 +18,8 @@ package main
 import (
 	"fmt"
 	"log"
+	"log/slog"
+	"os"
 
 	"github.com/gogpu/gg"
 	_ "github.com/gogpu/gg/gpu" // enable GPU SDF acceleration
@@ -32,6 +34,10 @@ import (
 )
 
 func main() {
+	gg.SetLogger(slog.New(slog.NewTextHandler(os.Stderr, &slog.HandlerOptions{
+		Level: slog.LevelDebug,
+	})))
+
 	// Create gogpu application with builder pattern.
 	gogpuApp := gogpu.NewApp(gogpu.DefaultConfig().
 		WithTitle("gogpu/ui — Widget Demo").
