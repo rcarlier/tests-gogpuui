@@ -1,0 +1,3985 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>github.com/gogpu/ui - core/gridview/gridview.go</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>
+                    <a href="index.html" style="color: inherit; text-decoration: none"
+                        >github.com/gogpu/ui</a
+                    >
+                </h1>
+
+                <section>
+                    <div class="search-wrapper">
+                        <input
+                            type="search"
+                            id="fn-search"
+                            placeholder="Search"
+                            autocomplete="off"
+                        />
+                        <div id="search-panel" hidden>
+                            <div class="search-options">
+                                <label>
+                                    <input type="checkbox" name="fields" value="signature" />
+                                    signature
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="fields" value="comments" />
+                                    comments
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="fields" value="code" />
+                                    code
+                                </label>
+                            </div>
+                            <ul id="search-results"></ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <ul class="sidebar-menu">
+                
+                <li>
+                    <a href="a11y_accessible.go.html" class=""
+                        >a11y/accessible.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="a11y_action.go.html" class=""
+                        >a11y/action.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="a11y_announcer.go.html" class=""
+                        >a11y/announcer.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="a11y_node.go.html" class=""
+                        >a11y/node.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="a11y_role.go.html" class=""
+                        >a11y/role.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="a11y_state.go.html" class=""
+                        >a11y/state.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="a11y_tree.go.html" class=""
+                        >a11y/tree.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_animation.go.html" class=""
+                        >animation/animation.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_bezier.go.html" class=""
+                        >animation/bezier.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_composition.go.html" class=""
+                        >animation/composition.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_controller.go.html" class=""
+                        >animation/controller.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_orchestrate.go.html" class=""
+                        >animation/orchestrate.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_presets.go.html" class=""
+                        >animation/presets.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_spring.go.html" class=""
+                        >animation/spring.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_three_point.go.html" class=""
+                        >animation/three_point.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="animation_tween.go.html" class=""
+                        >animation/tween.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="app_app.go.html" class=""
+                        >app/app.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="app_layer_tree.go.html" class=""
+                        >app/layer_tree.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="app_loop.go.html" class=""
+                        >app/loop.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="app_render_mode.go.html" class=""
+                        >app/render_mode.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="app_window.go.html" class=""
+                        >app/window.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="cdk_content.go.html" class=""
+                        >cdk/content.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="compositor_compositor.go.html" class=""
+                        >compositor/compositor.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="compositor_layer.go.html" class=""
+                        >compositor/layer.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_button_button.go.html" class=""
+                        >core/button/button.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_button_config.go.html" class=""
+                        >core/button/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_button_options.go.html" class=""
+                        >core/button/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_button_painter.go.html" class=""
+                        >core/button/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_button_styling.go.html" class=""
+                        >core/button/styling.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_button_variants.go.html" class=""
+                        >core/button/variants.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_button_widget.go.html" class=""
+                        >core/button/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_checkbox_checkbox.go.html" class=""
+                        >core/checkbox/checkbox.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_checkbox_config.go.html" class=""
+                        >core/checkbox/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_checkbox_options.go.html" class=""
+                        >core/checkbox/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_checkbox_painter.go.html" class=""
+                        >core/checkbox/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_checkbox_styling.go.html" class=""
+                        >core/checkbox/styling.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_checkbox_widget.go.html" class=""
+                        >core/checkbox/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_collapsible_collapsible.go.html" class=""
+                        >core/collapsible/collapsible.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_collapsible_config.go.html" class=""
+                        >core/collapsible/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_collapsible_header_widget.go.html" class=""
+                        >core/collapsible/header_widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_collapsible_options.go.html" class=""
+                        >core/collapsible/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_collapsible_painter.go.html" class=""
+                        >core/collapsible/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_datatable_column.go.html" class=""
+                        >core/datatable/column.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_datatable_datatable.go.html" class=""
+                        >core/datatable/datatable.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_datatable_painter.go.html" class=""
+                        >core/datatable/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dialog_action.go.html" class=""
+                        >core/dialog/action.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dialog_config.go.html" class=""
+                        >core/dialog/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dialog_convenience.go.html" class=""
+                        >core/dialog/convenience.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dialog_options.go.html" class=""
+                        >core/dialog/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dialog_painter.go.html" class=""
+                        >core/dialog/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dialog_widget.go.html" class=""
+                        >core/dialog/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_docking_host.go.html" class=""
+                        >core/docking/host.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_docking_painter.go.html" class=""
+                        >core/docking/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_docking_panel.go.html" class=""
+                        >core/docking/panel.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_docking_zone.go.html" class=""
+                        >core/docking/zone.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dropdown_a11y.go.html" class=""
+                        >core/dropdown/a11y.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dropdown_menu.go.html" class=""
+                        >core/dropdown/menu.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dropdown_options.go.html" class=""
+                        >core/dropdown/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dropdown_painter.go.html" class=""
+                        >core/dropdown/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dropdown_types.go.html" class=""
+                        >core/dropdown/types.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_dropdown_widget.go.html" class=""
+                        >core/dropdown/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_gridview_gridview.go.html" class="active"
+                        >core/gridview/gridview.go</a
+                    >
+                    
+                    <ul>
+                        
+                        <li><a href="#func-A11yLabel">A11yLabel</a></li>
+                        
+                        <li><a href="#func-AccessibilityActions">AccessibilityActions</a></li>
+                        
+                        <li><a href="#func-AccessibilityHint">AccessibilityHint</a></li>
+                        
+                        <li><a href="#func-AccessibilityLabel">AccessibilityLabel</a></li>
+                        
+                        <li><a href="#func-AccessibilityRole">AccessibilityRole</a></li>
+                        
+                        <li><a href="#func-AccessibilityState">AccessibilityState</a></li>
+                        
+                        <li><a href="#func-AccessibilityValue">AccessibilityValue</a></li>
+                        
+                        <li><a href="#func-BuildCell">BuildCell</a></li>
+                        
+                        <li><a href="#func-CellContent">CellContent</a></li>
+                        
+                        <li><a href="#func-Children">Children</a></li>
+                        
+                        <li><a href="#func-Children">Children</a></li>
+                        
+                        <li><a href="#func-Columns">Columns</a></li>
+                        
+                        <li><a href="#func-ColumnsAuto">ColumnsAuto</a></li>
+                        
+                        <li><a href="#func-ColumnsReadonlySignal">ColumnsReadonlySignal</a></li>
+                        
+                        <li><a href="#func-ColumnsSignal">ColumnsSignal</a></li>
+                        
+                        <li><a href="#func-Disabled">Disabled</a></li>
+                        
+                        <li><a href="#func-DisabledFn">DisabledFn</a></li>
+                        
+                        <li><a href="#func-DisabledReadonlySignal">DisabledReadonlySignal</a></li>
+                        
+                        <li><a href="#func-DisabledSignal">DisabledSignal</a></li>
+                        
+                        <li><a href="#func-Draw">Draw</a></li>
+                        
+                        <li><a href="#func-Draw">Draw</a></li>
+                        
+                        <li><a href="#func-Event">Event</a></li>
+                        
+                        <li><a href="#func-Event">Event</a></li>
+                        
+                        <li><a href="#func-Gap">Gap</a></li>
+                        
+                        <li><a href="#func-GetColumns">GetColumns</a></li>
+                        
+                        <li><a href="#func-GetItemCount">GetItemCount</a></li>
+                        
+                        <li><a href="#func-InvalidateData">InvalidateData</a></li>
+                        
+                        <li><a href="#func-IsFocusable">IsFocusable</a></li>
+                        
+                        <li><a href="#func-ItemCount">ItemCount</a></li>
+                        
+                        <li><a href="#func-ItemCountFn">ItemCountFn</a></li>
+                        
+                        <li><a href="#func-ItemCountReadonlySignal">ItemCountReadonlySignal</a></li>
+                        
+                        <li><a href="#func-ItemCountSignal">ItemCountSignal</a></li>
+                        
+                        <li><a href="#func-ItemSize">ItemSize</a></li>
+                        
+                        <li><a href="#func-Layout">Layout</a></li>
+                        
+                        <li><a href="#func-Layout">Layout</a></li>
+                        
+                        <li><a href="#func-Mount">Mount</a></li>
+                        
+                        <li><a href="#func-New">New</a></li>
+                        
+                        <li><a href="#func-OnCellClick">OnCellClick</a></li>
+                        
+                        <li><a href="#func-OnScroll">OnScroll</a></li>
+                        
+                        <li><a href="#func-OnSelectionChange">OnSelectionChange</a></li>
+                        
+                        <li><a href="#func-PainterOpt">PainterOpt</a></li>
+                        
+                        <li><a href="#func-ResolvedColumns">ResolvedColumns</a></li>
+                        
+                        <li><a href="#func-ResolvedDisabled">ResolvedDisabled</a></li>
+                        
+                        <li><a href="#func-ResolvedItemCount">ResolvedItemCount</a></li>
+                        
+                        <li><a href="#func-ResolvedSelectedIndex">ResolvedSelectedIndex</a></li>
+                        
+                        <li><a href="#func-ScrollToIndex">ScrollToIndex</a></li>
+                        
+                        <li><a href="#func-ScrollYSignal">ScrollYSignal</a></li>
+                        
+                        <li><a href="#func-SelectedIndex">SelectedIndex</a></li>
+                        
+                        <li><a href="#func-SelectedIndexReadonlySignal">SelectedIndexReadonlySignal</a></li>
+                        
+                        <li><a href="#func-SelectedIndexSignal">SelectedIndexSignal</a></li>
+                        
+                        <li><a href="#func-SelectionModeOpt">SelectionModeOpt</a></li>
+                        
+                        <li><a href="#func-String">String</a></li>
+                        
+                        <li><a href="#func-Unmount">Unmount</a></li>
+                        
+                        <li><a href="#func-VisibleRange">VisibleRange</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="core_gridview_painter.go.html" class=""
+                        >core/gridview/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_linechart_linechart.go.html" class=""
+                        >core/linechart/linechart.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_linechart_painter.go.html" class=""
+                        >core/linechart/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_listview_config.go.html" class=""
+                        >core/listview/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_listview_item_context.go.html" class=""
+                        >core/listview/item_context.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_listview_options.go.html" class=""
+                        >core/listview/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_listview_painter.go.html" class=""
+                        >core/listview/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_listview_virtual_content.go.html" class=""
+                        >core/listview/virtual_content.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_listview_widget.go.html" class=""
+                        >core/listview/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_menu_contextmenu.go.html" class=""
+                        >core/menu/contextmenu.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_menu_item.go.html" class=""
+                        >core/menu/item.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_menu_menu.go.html" class=""
+                        >core/menu/menu.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_menu_menubar.go.html" class=""
+                        >core/menu/menubar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_menu_painter.go.html" class=""
+                        >core/menu/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_popover_options.go.html" class=""
+                        >core/popover/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_popover_painter.go.html" class=""
+                        >core/popover/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_popover_placement.go.html" class=""
+                        >core/popover/placement.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_popover_popover.go.html" class=""
+                        >core/popover/popover.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_popover_tooltip.go.html" class=""
+                        >core/popover/tooltip.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_progress_painter.go.html" class=""
+                        >core/progress/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_progress_progress.go.html" class=""
+                        >core/progress/progress.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_progressbar_config.go.html" class=""
+                        >core/progressbar/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_progressbar_options.go.html" class=""
+                        >core/progressbar/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_progressbar_painter.go.html" class=""
+                        >core/progressbar/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_progressbar_progressbar.go.html" class=""
+                        >core/progressbar/progressbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_radio_config.go.html" class=""
+                        >core/radio/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_radio_group.go.html" class=""
+                        >core/radio/group.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_radio_item.go.html" class=""
+                        >core/radio/item.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_radio_options.go.html" class=""
+                        >core/radio/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_radio_painter.go.html" class=""
+                        >core/radio/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_scrollview_config.go.html" class=""
+                        >core/scrollview/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_scrollview_direction.go.html" class=""
+                        >core/scrollview/direction.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_scrollview_options.go.html" class=""
+                        >core/scrollview/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_scrollview_painter.go.html" class=""
+                        >core/scrollview/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_scrollview_widget.go.html" class=""
+                        >core/scrollview/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_slider_config.go.html" class=""
+                        >core/slider/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_slider_options.go.html" class=""
+                        >core/slider/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_slider_orientation.go.html" class=""
+                        >core/slider/orientation.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_slider_painter.go.html" class=""
+                        >core/slider/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_slider_styling.go.html" class=""
+                        >core/slider/styling.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_slider_widget.go.html" class=""
+                        >core/slider/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_splitview_painter.go.html" class=""
+                        >core/splitview/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_splitview_splitview.go.html" class=""
+                        >core/splitview/splitview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_stripe_item.go.html" class=""
+                        >core/stripe/item.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_stripe_options.go.html" class=""
+                        >core/stripe/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_stripe_painter.go.html" class=""
+                        >core/stripe/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_stripe_widget.go.html" class=""
+                        >core/stripe/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_tabview_config.go.html" class=""
+                        >core/tabview/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_tabview_options.go.html" class=""
+                        >core/tabview/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_tabview_painter.go.html" class=""
+                        >core/tabview/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_tabview_tab.go.html" class=""
+                        >core/tabview/tab.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_tabview_widget.go.html" class=""
+                        >core/tabview/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_textfield_a11y.go.html" class=""
+                        >core/textfield/a11y.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_textfield_config.go.html" class=""
+                        >core/textfield/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_textfield_options.go.html" class=""
+                        >core/textfield/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_textfield_painter.go.html" class=""
+                        >core/textfield/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_textfield_selection.go.html" class=""
+                        >core/textfield/selection.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_textfield_types.go.html" class=""
+                        >core/textfield/types.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_textfield_widget.go.html" class=""
+                        >core/textfield/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_titlebar_options.go.html" class=""
+                        >core/titlebar/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_titlebar_painter.go.html" class=""
+                        >core/titlebar/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_titlebar_titlebar.go.html" class=""
+                        >core/titlebar/titlebar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_toolbar_item.go.html" class=""
+                        >core/toolbar/item.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_toolbar_painter.go.html" class=""
+                        >core/toolbar/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_toolbar_toolbar.go.html" class=""
+                        >core/toolbar/toolbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_treeview_config.go.html" class=""
+                        >core/treeview/config.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_treeview_node.go.html" class=""
+                        >core/treeview/node.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_treeview_options.go.html" class=""
+                        >core/treeview/options.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_treeview_painter.go.html" class=""
+                        >core/treeview/painter.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="core_treeview_treeview.go.html" class=""
+                        >core/treeview/treeview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="desktop_desktop.go.html" class=""
+                        >desktop/desktop.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="dnd_dnd.go.html" class=""
+                        >dnd/dnd.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="dnd_feedback.go.html" class=""
+                        >dnd/feedback.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="dnd_manager.go.html" class=""
+                        >dnd/manager.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="dnd_session.go.html" class=""
+                        >dnd/session.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="event_event.go.html" class=""
+                        >event/event.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="event_focus.go.html" class=""
+                        >event/focus.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="event_key.go.html" class=""
+                        >event/key.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="event_modifiers.go.html" class=""
+                        >event/modifiers.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="event_mouse.go.html" class=""
+                        >event/mouse.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="event_wheel.go.html" class=""
+                        >event/wheel.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="examples_modular-compositor_main.go.html" class=""
+                        >examples/modular-compositor/main.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="focus_focus.go.html" class=""
+                        >focus/focus.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="focus_shortcut.go.html" class=""
+                        >focus/shortcut.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="geometry_constraints.go.html" class=""
+                        >geometry/constraints.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="geometry_insets.go.html" class=""
+                        >geometry/insets.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="geometry_point.go.html" class=""
+                        >geometry/point.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="geometry_rect.go.html" class=""
+                        >geometry/rect.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="geometry_size.go.html" class=""
+                        >geometry/size.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="i18n_bundle.go.html" class=""
+                        >i18n/bundle.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="i18n_direction.go.html" class=""
+                        >i18n/direction.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="i18n_locale.go.html" class=""
+                        >i18n/locale.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="i18n_plural.go.html" class=""
+                        >i18n/plural.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="i18n_translator.go.html" class=""
+                        >i18n/translator.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="icon_draw.go.html" class=""
+                        >icon/draw.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="icon_icon.go.html" class=""
+                        >icon/icon.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="icon_palette.go.html" class=""
+                        >icon/palette.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="icon_registry.go.html" class=""
+                        >icon/registry.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="icon_svg.go.html" class=""
+                        >icon/svg.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="icon_widget.go.html" class=""
+                        >icon/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="layout_algorithm.go.html" class=""
+                        >layout/algorithm.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="layout_flex.go.html" class=""
+                        >layout/flex.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="layout_grid.go.html" class=""
+                        >layout/grid.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="layout_registry.go.html" class=""
+                        >layout/registry.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="layout_stack.go.html" class=""
+                        >layout/stack.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="layout_style.go.html" class=""
+                        >layout/style.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="layout_tree.go.html" class=""
+                        >layout/tree.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="layout_types.go.html" class=""
+                        >layout/types.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="logger.go.html" class=""
+                        >logger.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="offscreen_renderer.go.html" class=""
+                        >offscreen/renderer.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="overlay_container.go.html" class=""
+                        >overlay/container.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="overlay_overlay.go.html" class=""
+                        >overlay/overlay.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="overlay_position.go.html" class=""
+                        >overlay/position.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="plugin_assets.go.html" class=""
+                        >plugin/assets.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="plugin_context.go.html" class=""
+                        >plugin/context.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="plugin_manager.go.html" class=""
+                        >plugin/manager.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="plugin_plugin.go.html" class=""
+                        >plugin/plugin.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="primitives_box.go.html" class=""
+                        >primitives/box.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="primitives_expanded.go.html" class=""
+                        >primitives/expanded.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="primitives_image.go.html" class=""
+                        >primitives/image.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="primitives_raster_cache.go.html" class=""
+                        >primitives/raster_cache.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="primitives_repaint_boundary.go.html" class=""
+                        >primitives/repaint_boundary.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="primitives_style.go.html" class=""
+                        >primitives/style.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="primitives_text.go.html" class=""
+                        >primitives/text.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="primitives_themescope.go.html" class=""
+                        >primitives/themescope.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="registry_widget.go.html" class=""
+                        >registry/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="render_canvas.go.html" class=""
+                        >render/canvas.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="state_binding.go.html" class=""
+                        >state/binding.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="state_computed.go.html" class=""
+                        >state/computed.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="state_effect.go.html" class=""
+                        >state/effect.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="state_scheduler.go.html" class=""
+                        >state/scheduler.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="state_signal.go.html" class=""
+                        >state/signal.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_colors.go.html" class=""
+                        >theme/colors.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_button.go.html" class=""
+                        >theme/cupertino/button.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_checkbox.go.html" class=""
+                        >theme/cupertino/checkbox.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_color.go.html" class=""
+                        >theme/cupertino/color.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_cupertino.go.html" class=""
+                        >theme/cupertino/cupertino.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_dialog.go.html" class=""
+                        >theme/cupertino/dialog.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_dropdown.go.html" class=""
+                        >theme/cupertino/dropdown.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_radio.go.html" class=""
+                        >theme/cupertino/radio.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_scrollbar.go.html" class=""
+                        >theme/cupertino/scrollbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_slider.go.html" class=""
+                        >theme/cupertino/slider.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_tabview.go.html" class=""
+                        >theme/cupertino/tabview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_cupertino_textfield.go.html" class=""
+                        >theme/cupertino/textfield.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_button.go.html" class=""
+                        >theme/devtools/button.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_checkbox.go.html" class=""
+                        >theme/devtools/checkbox.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_collapsible.go.html" class=""
+                        >theme/devtools/collapsible.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_color.go.html" class=""
+                        >theme/devtools/color.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_datatable.go.html" class=""
+                        >theme/devtools/datatable.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_devtools.go.html" class=""
+                        >theme/devtools/devtools.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_dialog.go.html" class=""
+                        >theme/devtools/dialog.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_docking.go.html" class=""
+                        >theme/devtools/docking.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_dropdown.go.html" class=""
+                        >theme/devtools/dropdown.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_linechart.go.html" class=""
+                        >theme/devtools/linechart.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_listview.go.html" class=""
+                        >theme/devtools/listview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_menu.go.html" class=""
+                        >theme/devtools/menu.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_painters.go.html" class=""
+                        >theme/devtools/painters.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_popover.go.html" class=""
+                        >theme/devtools/popover.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_progress.go.html" class=""
+                        >theme/devtools/progress.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_radio.go.html" class=""
+                        >theme/devtools/radio.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_scrollbar.go.html" class=""
+                        >theme/devtools/scrollbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_slider.go.html" class=""
+                        >theme/devtools/slider.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_splitview.go.html" class=""
+                        >theme/devtools/splitview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_stripe.go.html" class=""
+                        >theme/devtools/stripe.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_tabview.go.html" class=""
+                        >theme/devtools/tabview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_textfield.go.html" class=""
+                        >theme/devtools/textfield.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_titlebar.go.html" class=""
+                        >theme/devtools/titlebar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_toolbar.go.html" class=""
+                        >theme/devtools/toolbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_devtools_treeview.go.html" class=""
+                        >theme/devtools/treeview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_extension.go.html" class=""
+                        >theme/extension.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_button.go.html" class=""
+                        >theme/fluent/button.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_checkbox.go.html" class=""
+                        >theme/fluent/checkbox.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_color.go.html" class=""
+                        >theme/fluent/color.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_dialog.go.html" class=""
+                        >theme/fluent/dialog.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_dropdown.go.html" class=""
+                        >theme/fluent/dropdown.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_fluent.go.html" class=""
+                        >theme/fluent/fluent.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_radio.go.html" class=""
+                        >theme/fluent/radio.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_scrollbar.go.html" class=""
+                        >theme/fluent/scrollbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_slider.go.html" class=""
+                        >theme/fluent/slider.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_tabview.go.html" class=""
+                        >theme/fluent/tabview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_fluent_textfield.go.html" class=""
+                        >theme/fluent/textfield.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_font_family.go.html" class=""
+                        >theme/font/family.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_font_registry.go.html" class=""
+                        >theme/font/registry.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_font_style.go.html" class=""
+                        >theme/font/style.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_font_weight.go.html" class=""
+                        >theme/font/weight.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_button.go.html" class=""
+                        >theme/material3/button.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_checkbox.go.html" class=""
+                        >theme/material3/checkbox.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_collapsible.go.html" class=""
+                        >theme/material3/collapsible.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_color.go.html" class=""
+                        >theme/material3/color.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_datatable.go.html" class=""
+                        >theme/material3/datatable.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_dialog.go.html" class=""
+                        >theme/material3/dialog.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_docking.go.html" class=""
+                        >theme/material3/docking.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_dropdown.go.html" class=""
+                        >theme/material3/dropdown.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_gridview.go.html" class=""
+                        >theme/material3/gridview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_linechart.go.html" class=""
+                        >theme/material3/linechart.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_listview.go.html" class=""
+                        >theme/material3/listview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_menu.go.html" class=""
+                        >theme/material3/menu.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_popover.go.html" class=""
+                        >theme/material3/popover.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_progress.go.html" class=""
+                        >theme/material3/progress.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_progressbar.go.html" class=""
+                        >theme/material3/progressbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_radio.go.html" class=""
+                        >theme/material3/radio.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_scrollbar.go.html" class=""
+                        >theme/material3/scrollbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_shape.go.html" class=""
+                        >theme/material3/shape.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_slider.go.html" class=""
+                        >theme/material3/slider.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_splitview.go.html" class=""
+                        >theme/material3/splitview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_tabview.go.html" class=""
+                        >theme/material3/tabview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_textfield.go.html" class=""
+                        >theme/material3/textfield.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_theme.go.html" class=""
+                        >theme/material3/theme.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_toolbar.go.html" class=""
+                        >theme/material3/toolbar.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_treeview.go.html" class=""
+                        >theme/material3/treeview.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_material3_typography.go.html" class=""
+                        >theme/material3/typography.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_mode.go.html" class=""
+                        >theme/mode.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_presets.go.html" class=""
+                        >theme/presets.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_radii.go.html" class=""
+                        >theme/radii.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_registry.go.html" class=""
+                        >theme/registry.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_shadows.go.html" class=""
+                        >theme/shadows.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_spacing.go.html" class=""
+                        >theme/spacing.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_theme.go.html" class=""
+                        >theme/theme.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="theme_typography.go.html" class=""
+                        >theme/typography.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="transition_effects.go.html" class=""
+                        >transition/effects.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="transition_fade.go.html" class=""
+                        >transition/fade.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="transition_slide.go.html" class=""
+                        >transition/slide.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="transition_transition.go.html" class=""
+                        >transition/transition.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="uitest_assert.go.html" class=""
+                        >uitest/assert.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="uitest_canvas.go.html" class=""
+                        >uitest/canvas.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="uitest_context.go.html" class=""
+                        >uitest/context.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="uitest_events.go.html" class=""
+                        >uitest/events.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="uitest_widget.go.html" class=""
+                        >uitest/widget.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_base.go.html" class=""
+                        >widget/base.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_boundary.go.html" class=""
+                        >widget/boundary.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_boundary_draw.go.html" class=""
+                        >widget/boundary_draw.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_canvas.go.html" class=""
+                        >widget/canvas.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_context.go.html" class=""
+                        >widget/context.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_draw.go.html" class=""
+                        >widget/draw.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_focusable.go.html" class=""
+                        >widget/focusable.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_lifecycle.go.html" class=""
+                        >widget/lifecycle.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_redraw.go.html" class=""
+                        >widget/redraw.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_stamp.go.html" class=""
+                        >widget/stamp.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_theme.go.html" class=""
+                        >widget/theme.go</a
+                    >
+                    
+                </li>
+                
+                <li>
+                    <a href="widget_widget.go.html" class=""
+                        >widget/widget.go</a
+                    >
+                    
+                </li>
+                
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="container">
+<h2>core/gridview/gridview.go</h2>
+
+<div style="margin-bottom: 20px">
+    <a
+        href="#functions"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Functions</a
+    > <a
+        href="#structs"
+        style="margin-right: 15px; color: var(--accent-color); text-decoration: none"
+        >Structs</a
+    > 
+</div>
+
+
+<h3 id="functions">Functions</h3>
+
+<div class="item" id="func-A11yLabel">
+    <div id="cf5fe20f"></div>
+    <div class="item-header">
+        <h4>func A11yLabel</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>A11yLabel sets the accessibility label for the grid.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func A11yLabel(label string) Option {
+	return func(c *config) { c.a11yLabel = label }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityActions">
+    <div id="60b46b87"></div>
+    <div class="item-header">
+        <h4>func AccessibilityActions</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityActions returns the list of supported actions.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) AccessibilityActions() []a11y.Action {
+	return []a11y.Action{a11y.ActionScrollUp, a11y.ActionScrollDown}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityHint">
+    <div id="481242f5"></div>
+    <div class="item-header">
+        <h4>func AccessibilityHint</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityHint returns the accessibility hint.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) AccessibilityHint() string {
+	return ""
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityLabel">
+    <div id="7447eff5"></div>
+    <div class="item-header">
+        <h4>func AccessibilityLabel</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityLabel returns the accessibility label.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) AccessibilityLabel() string {
+	if w.cfg.a11yLabel != "" {
+		return w.cfg.a11yLabel
+	}
+	return "Grid"
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityRole">
+    <div id="4fe8301d"></div>
+    <div class="item-header">
+        <h4>func AccessibilityRole</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityRole returns the ARIA role for this widget.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) AccessibilityRole() a11y.Role {
+	return a11y.RoleGrid
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityState">
+    <div id="736c6506"></div>
+    <div class="item-header">
+        <h4>func AccessibilityState</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityState returns the current accessibility state.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) AccessibilityState() a11y.State {
+	return a11y.State{
+		Disabled: w.cfg.ResolvedDisabled(),
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-AccessibilityValue">
+    <div id="73691b6b"></div>
+    <div class="item-header">
+        <h4>func AccessibilityValue</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>AccessibilityValue returns the current grid state as a string.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) AccessibilityValue() string {
+	count := w.cfg.ResolvedItemCount()
+	selected := w.cfg.ResolvedSelectedIndex()
+	if selected >= 0 && selected < count {
+		return fmt.Sprintf("Item %d of %d selected", selected+1, count)
+	}
+	return fmt.Sprintf("%d items", count)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-BuildCell">
+    <div id="a47c518b"></div>
+    <div class="item-header">
+        <h4>func BuildCell</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>BuildCell sets the callback that creates a widget for each visible cell.</p>
+          
+        <p>The callback receives the item index and a [CellContext] with the cell's state.</p>
+          
+        <p>This is the primary convenience API for providing grid content.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>Internally, the function is wrapped into a [cdk.FuncContent] so that the</p>
+          
+        <p>grid view uniformly operates on [cdk.Content] for cell rendering.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func BuildCell(fn func(index int, ctx CellContext) widget.Widget) Option {
+	return func(c *config) {
+		c.cellContent = cdk.FuncContent[CellContext]{Fn: func(ctx CellContext) widget.Widget {
+			return fn(ctx.Index, ctx)
+		}}
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-CellContent">
+    <div id="a34ce357"></div>
+    <div class="item-header">
+        <h4>func CellContent</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>CellContent sets the [cdk.Content] used to render each visible cell.</p>
+          
+        <p>This is the enterprise API for providing grid content -- use it when you</p>
+          
+        <p>need reusable content implementations or progressive complexity.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>For most use cases, [BuildCell] is simpler and sufficient.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func CellContent(content cdk.Content[CellContext]) Option {
+	return func(c *config) { c.cellContent = content }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Children">
+    <div id="5b54aeeb"></div>
+    <div class="item-header">
+        <h4>func Children</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Children returns the internal scroll view as the single child.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) Children() []widget.Widget {
+	if w.scroll == nil {
+		return nil
+	}
+	return []widget.Widget{w.scroll}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Children">
+    <div id="d1a6462a"></div>
+    <div class="item-header">
+        <h4>func Children</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Children returns nil; visible cell widgets are ephemeral and managed by the cache.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (vc *virtualContent) Children() []widget.Widget {
+	return nil
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Columns">
+    <div id="943f6fe9"></div>
+    <div class="item-header">
+        <h4>func Columns</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Columns sets the fixed number of columns in the grid.</p>
+          
+        <p>Default: 4. See also [ColumnsAuto] for auto-fit mode.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Columns(n int) Option {
+	return func(c *config) {
+		c.columns = n
+		c.columnsAuto = false
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ColumnsAuto">
+    <div id="a3bdf649"></div>
+    <div class="item-header">
+        <h4>func ColumnsAuto</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ColumnsAuto enables auto-fit column count based on viewport width.</p>
+          
+        <p>When enabled, the column count is calculated as floor(viewportWidth / (itemWidth + gap)).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ColumnsAuto(enabled bool) Option {
+	return func(c *config) { c.columnsAuto = enabled }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ColumnsReadonlySignal">
+    <div id="d974431d"></div>
+    <div class="item-header">
+        <h4>func ColumnsReadonlySignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ColumnsReadonlySignal binds the column count to a read-only signal.</p>
+          
+        <p>When set, this takes highest precedence. Ignored if [ColumnsAuto] is enabled.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ColumnsReadonlySignal(sig state.ReadonlySignal[int]) Option {
+	return func(c *config) { c.readonlyColumnsSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ColumnsSignal">
+    <div id="927dac56"></div>
+    <div class="item-header">
+        <h4>func ColumnsSignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ColumnsSignal binds the column count to a reactive signal.</p>
+          
+        <p>When set, the signal takes precedence over [Columns] but not over</p>
+          
+        <p>[ColumnsReadonlySignal]. Ignored if [ColumnsAuto] is enabled.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ColumnsSignal(sig state.Signal[int]) Option {
+	return func(c *config) { c.columnsSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Disabled">
+    <div id="16631891"></div>
+    <div class="item-header">
+        <h4>func Disabled</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Disabled sets the grid view's disabled state.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Disabled(d bool) Option {
+	return func(c *config) { c.disabled = d }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-DisabledFn">
+    <div id="214973f8"></div>
+    <div class="item-header">
+        <h4>func DisabledFn</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>DisabledFn sets a dynamic function for the disabled state.</p>
+          
+        <p>When set, this takes precedence over [Disabled] but not over [DisabledSignal].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func DisabledFn(fn func() bool) Option {
+	return func(c *config) { c.disabledFn = fn }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-DisabledReadonlySignal">
+    <div id="fc22ec53"></div>
+    <div class="item-header">
+        <h4>func DisabledReadonlySignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>DisabledReadonlySignal binds the disabled state to a read-only signal.</p>
+          
+        <p>When set, this takes highest precedence over all other disabled sources.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func DisabledReadonlySignal(sig state.ReadonlySignal[bool]) Option {
+	return func(c *config) { c.readonlyDisabledSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-DisabledSignal">
+    <div id="295fcc33"></div>
+    <div class="item-header">
+        <h4>func DisabledSignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>DisabledSignal binds the disabled state to a reactive signal.</p>
+          
+        <p>When set, the signal takes precedence over [DisabledFn] and [Disabled]</p>
+          
+        <p>but not over [DisabledReadonlySignal].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func DisabledSignal(sig state.Signal[bool]) Option {
+	return func(c *config) { c.disabledSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Draw">
+    <div id="6f68f819"></div>
+    <div class="item-header">
+        <h4>func Draw</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Draw renders only the visible cells within the current viewport.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (vc *virtualContent) Draw(ctx widget.Context, canvas widget.Canvas) {
+	if vc.grid == nil {
+		return
+	}
+	vc.grid.drawVisibleCells(ctx, canvas)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Draw">
+    <div id="e766a229"></div>
+    <div class="item-header">
+        <h4>func Draw</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Draw renders the grid view to the canvas.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) Draw(ctx widget.Context, canvas widget.Canvas) {
+	if !w.IsVisible() {
+		return
+	}
+	bounds := w.Bounds()
+	if bounds.IsEmpty() {
+		return
+	}
+
+	// Set scroll view bounds to match our bounds.
+	w.scroll.SetBounds(bounds)
+
+	// Stamp screen origin on the internal scroll view so its ScreenBounds()
+	// returns correct window-space coordinates for dirty region collection.
+	widget.StampScreenOrigin(w.scroll, canvas)
+
+	// Delegate drawing to the internal scroll view.
+	w.scroll.Draw(ctx, canvas)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Event">
+    <div id="70c54214"></div>
+    <div class="item-header">
+        <h4>func Event</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Event delegates events back to the parent grid for cell interaction.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (vc *virtualContent) Event(ctx widget.Context, e event.Event) bool {
+	if vc.grid == nil {
+		return false
+	}
+	return handleContentEvent(vc.grid, ctx, e)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Event">
+    <div id="64634bc4"></div>
+    <div class="item-header">
+        <h4>func Event</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Event handles an input event and returns true if consumed.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) Event(ctx widget.Context, e event.Event) bool {
+	if !w.IsVisible() || !w.IsEnabled() {
+		return false
+	}
+
+	// Handle keyboard events at the grid level.
+	if ke, ok := e.(*event.KeyEvent); ok {
+		if w.handleKeyEvent(ctx, ke) {
+			return true
+		}
+	}
+
+	// Delegate other events to the scroll view.
+	return w.scroll.Event(ctx, e)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Gap">
+    <div id="a293351f"></div>
+    <div class="item-header">
+        <h4>func Gap</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Gap sets the spacing between cells in pixels. Default: 0.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func Gap(g float32) Option {
+	return func(c *config) { c.gap = g }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-GetColumns">
+    <div id="0fc4c5ef"></div>
+    <div class="item-header">
+        <h4>func GetColumns</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>GetColumns returns the current effective column count.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) GetColumns() int {
+	return w.effectiveColumns()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-GetItemCount">
+    <div id="f069e4a2"></div>
+    <div class="item-header">
+        <h4>func GetItemCount</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>GetItemCount returns the current item count.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) GetItemCount() int {
+	return w.cfg.ResolvedItemCount()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-InvalidateData">
+    <div id="4b9eb1f7"></div>
+    <div class="item-header">
+        <h4>func InvalidateData</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>InvalidateData signals that the underlying data has changed.</p>
+          
+        <p>This invalidates the widget cache and triggers re-layout.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) InvalidateData() {
+	w.cache.invalidate()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-IsFocusable">
+    <div id="f8cc6c0d"></div>
+    <div class="item-header">
+        <h4>func IsFocusable</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>IsFocusable reports whether the grid view can currently receive focus.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) IsFocusable() bool {
+	return w.IsVisible() && w.IsEnabled() && !w.cfg.ResolvedDisabled()
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ItemCount">
+    <div id="01034936"></div>
+    <div class="item-header">
+        <h4>func ItemCount</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ItemCount sets the total number of items in the grid.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ItemCount(n int) Option {
+	return func(c *config) { c.itemCount = n }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ItemCountFn">
+    <div id="63c9c4ca"></div>
+    <div class="item-header">
+        <h4>func ItemCountFn</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ItemCountFn sets a dynamic function that returns the item count.</p>
+          
+        <p>When set, this takes precedence over [ItemCount] but not over [ItemCountSignal].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ItemCountFn(fn func() int) Option {
+	return func(c *config) { c.itemCountFn = fn }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ItemCountReadonlySignal">
+    <div id="af5da0dd"></div>
+    <div class="item-header">
+        <h4>func ItemCountReadonlySignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ItemCountReadonlySignal binds the item count to a read-only signal.</p>
+          
+        <p>When set, this takes highest precedence over all other item count sources.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ItemCountReadonlySignal(sig state.ReadonlySignal[int]) Option {
+	return func(c *config) { c.readonlyItemCountSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ItemCountSignal">
+    <div id="0125ca3a"></div>
+    <div class="item-header">
+        <h4>func ItemCountSignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ItemCountSignal binds the item count to a reactive signal.</p>
+          
+        <p>When set, the signal takes precedence over [ItemCountFn] and [ItemCount]</p>
+          
+        <p>but not over [ItemCountReadonlySignal].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ItemCountSignal(sig state.Signal[int]) Option {
+	return func(c *config) { c.itemCountSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ItemSize">
+    <div id="bdab62be"></div>
+    <div class="item-header">
+        <h4>func ItemSize</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ItemSize sets the fixed width and height for all grid cells.</p>
+          
+        <p>Default: 120x120.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ItemSize(width, height float32) Option {
+	return func(c *config) {
+		c.itemWidth = width
+		c.itemHeight = height
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Layout">
+    <div id="7b0cec0b"></div>
+    <div class="item-header">
+        <h4>func Layout</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Layout returns the total content size.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (vc *virtualContent) Layout(_ widget.Context, c geometry.Constraints) geometry.Size {
+	if vc.grid == nil {
+		return geometry.Size{}
+	}
+
+	totalHeight := vc.grid.totalContentHeight()
+
+	width := c.MaxWidth
+	if width >= geometry.Infinity {
+		width = c.MinWidth
+	}
+	if width < c.MinWidth {
+		width = c.MinWidth
+	}
+
+	return geometry.Sz(width, totalHeight)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Layout">
+    <div id="2120377c"></div>
+    <div class="item-header">
+        <h4>func Layout</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Layout calculates the grid view's size within the given constraints.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) Layout(ctx widget.Context, constraints geometry.Constraints) geometry.Size {
+	size := constraints.Biggest()
+	if size.Width >= geometry.Infinity {
+		size.Width = constraints.Constrain(geometry.Sz(defaultViewportWidth, 0)).Width
+	}
+	if size.Height >= geometry.Infinity {
+		totalH := w.totalContentHeight()
+		if totalH > defaultViewportHeight {
+			totalH = defaultViewportHeight
+		}
+		size.Height = totalH
+	}
+	if size.Width <= 0 {
+		size.Width = defaultViewportWidth
+	}
+	if size.Height <= 0 {
+		size.Height = defaultViewportHeight
+	}
+
+	w.viewportWidth = size.Width
+	w.viewportHeight = size.Height
+
+	// Compute effective column count.
+	w.effectiveCols = w.computeEffectiveColumns()
+
+	// Layout the internal scroll view with concrete constraints.
+	svConstraints := geometry.Tight(size)
+	w.scroll.Layout(ctx, svConstraints)
+
+	return size
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Mount">
+    <div id="4ac9d5ac"></div>
+    <div class="item-header">
+        <h4>func Mount</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Mount creates signal bindings for push-based invalidation.</p>
+          
+        <p>Implements [widget.Lifecycle].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) Mount(ctx widget.Context) {
+	sched := ctx.Scheduler()
+	if sched == nil {
+		return
+	}
+
+	// Bind item count signals.
+	if w.cfg.readonlyItemCountSignal != nil {
+		b := state.BindToScheduler(w.cfg.readonlyItemCountSignal, w, sched)
+		w.AddBinding(b)
+	} else if w.cfg.itemCountSignal != nil {
+		b := state.BindToScheduler(w.cfg.itemCountSignal, w, sched)
+		w.AddBinding(b)
+	}
+
+	// Bind selected index signals.
+	if w.cfg.readonlySelectedIndexSignal != nil {
+		b := state.BindToScheduler(w.cfg.readonlySelectedIndexSignal, w, sched)
+		w.AddBinding(b)
+	} else if w.cfg.selectedIndexSignal != nil {
+		b := state.BindToScheduler(w.cfg.selectedIndexSignal, w, sched)
+		w.AddBinding(b)
+	}
+
+	// Bind disabled signals.
+	if w.cfg.readonlyDisabledSignal != nil {
+		b := state.BindToScheduler(w.cfg.readonlyDisabledSignal, w, sched)
+		w.AddBinding(b)
+	} else if w.cfg.disabledSignal != nil {
+		b := state.BindToScheduler(w.cfg.disabledSignal, w, sched)
+		w.AddBinding(b)
+	}
+
+	// Bind columns signals.
+	if w.cfg.readonlyColumnsSignal != nil {
+		b := state.BindToScheduler(w.cfg.readonlyColumnsSignal, w, sched)
+		w.AddBinding(b)
+	} else if w.cfg.columnsSignal != nil {
+		b := state.BindToScheduler(w.cfg.columnsSignal, w, sched)
+		w.AddBinding(b)
+	}
+
+	// Mount internal scroll view.
+	w.scroll.Mount(ctx)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-New">
+    <div id="a4321883"></div>
+    <div class="item-header">
+        <h4>func New</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>New creates a new grid view Widget with the given options.</p>
+          
+        <p class="empty">&nbsp;</p>
+          
+        <p>The returned widget is visible, enabled, and focusable by default.</p>
+          
+        <p>If no [BuildCell] callback is provided, the grid renders empty.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func New(opts ...Option) *Widget {
+	cfg := defaultConfig()
+	for _, opt := range opts {
+		opt(&cfg)
+	}
+
+	w := &Widget{
+		cfg:		cfg,
+		painter:	DefaultPainter{},
+		hoveredIndex:	noHoveredIndex,
+	}
+	w.SetVisible(true)
+	w.SetEnabled(true)
+
+	if w.cfg.painter != nil {
+		w.painter = w.cfg.painter
+	}
+
+	// Create virtual content widget.
+	w.virtual = &virtualContent{grid: w}
+	w.virtual.SetVisible(true)
+
+	// Build internal scroll view options.
+	svOpts := []scrollview.Option{
+		scrollview.DirectionOpt(scrollview.Vertical),
+	}
+	if w.cfg.scrollYSignal != nil {
+		svOpts = append(svOpts, scrollview.ScrollYSignal(w.cfg.scrollYSignal))
+	}
+	if w.cfg.onScroll != nil {
+		fn := w.cfg.onScroll
+		svOpts = append(svOpts, scrollview.OnScroll(func(_, y float32) {
+			fn(y)
+			w.cache.invalidate()
+		}))
+	} else {
+		svOpts = append(svOpts, scrollview.OnScroll(func(_, _ float32) {
+			w.cache.invalidate()
+		}))
+	}
+
+	w.scroll = scrollview.New(w.virtual, svOpts...)
+
+	// ADR-028: parent chain for upward dirty propagation.
+	// Flutter: RenderObject.adoptChild sets parent on each child.
+	w.scroll.SetParent(w)
+
+	return w
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-OnCellClick">
+    <div id="fb501257"></div>
+    <div class="item-header">
+        <h4>func OnCellClick</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>OnCellClick sets the callback invoked when a cell is clicked.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func OnCellClick(fn func(index int)) Option {
+	return func(c *config) { c.onCellClick = fn }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-OnScroll">
+    <div id="5f5394c0"></div>
+    <div class="item-header">
+        <h4>func OnScroll</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>OnScroll sets the callback invoked when the scroll position changes.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func OnScroll(fn func(offset float32)) Option {
+	return func(c *config) { c.onScroll = fn }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-OnSelectionChange">
+    <div id="836271fa"></div>
+    <div class="item-header">
+        <h4>func OnSelectionChange</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>OnSelectionChange sets the callback invoked when the selected cell changes.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func OnSelectionChange(fn func(index int)) Option {
+	return func(c *config) { c.onSelectionChange = fn }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-PainterOpt">
+    <div id="0e02ff06"></div>
+    <div class="item-header">
+        <h4>func PainterOpt</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>PainterOpt sets the painter used to render grid-specific visuals.</p>
+          
+        <p>Each design system provides its own painter. If not set,</p>
+          
+        <p>[DefaultPainter] is used.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func PainterOpt(p Painter) Option {
+	return func(c *config) { c.painter = p }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ResolvedColumns">
+    <div id="02d7aae8"></div>
+    <div class="item-header">
+        <h4>func ResolvedColumns</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ResolvedColumns returns the current column count.</p>
+          
+        <p>Priority: ReadonlySignal > Signal > Static.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *config) ResolvedColumns() int {
+	if c.readonlyColumnsSignal != nil {
+		return c.readonlyColumnsSignal.Get()
+	}
+	if c.columnsSignal != nil {
+		return c.columnsSignal.Get()
+	}
+	return c.columns
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ResolvedDisabled">
+    <div id="9223dfa3"></div>
+    <div class="item-header">
+        <h4>func ResolvedDisabled</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ResolvedDisabled returns the current disabled state.</p>
+          
+        <p>Priority: ReadonlySignal > Signal > Fn > Static.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *config) ResolvedDisabled() bool {
+	if c.readonlyDisabledSignal != nil {
+		return c.readonlyDisabledSignal.Get()
+	}
+	if c.disabledSignal != nil {
+		return c.disabledSignal.Get()
+	}
+	if c.disabledFn != nil {
+		return c.disabledFn()
+	}
+	return c.disabled
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ResolvedItemCount">
+    <div id="cb5b5135"></div>
+    <div class="item-header">
+        <h4>func ResolvedItemCount</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ResolvedItemCount returns the current item count.</p>
+          
+        <p>Priority: ReadonlySignal > Signal > Fn > Static.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *config) ResolvedItemCount() int {
+	if c.readonlyItemCountSignal != nil {
+		return c.readonlyItemCountSignal.Get()
+	}
+	if c.itemCountSignal != nil {
+		return c.itemCountSignal.Get()
+	}
+	if c.itemCountFn != nil {
+		return c.itemCountFn()
+	}
+	return c.itemCount
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ResolvedSelectedIndex">
+    <div id="6c65da37"></div>
+    <div class="item-header">
+        <h4>func ResolvedSelectedIndex</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ResolvedSelectedIndex returns the current selected index.</p>
+          
+        <p>Priority: ReadonlySignal > Signal > Static.</p>
+          
+        <p>Returns -1 if no selection.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (c *config) ResolvedSelectedIndex() int {
+	if c.readonlySelectedIndexSignal != nil {
+		return c.readonlySelectedIndexSignal.Get()
+	}
+	if c.selectedIndexSignal != nil {
+		return c.selectedIndexSignal.Get()
+	}
+	return c.selectedIndex
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ScrollToIndex">
+    <div id="fd3cc26a"></div>
+    <div class="item-header">
+        <h4>func ScrollToIndex</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ScrollToIndex scrolls to make the cell at the given index visible.</p>
+          
+        <p>If the cell is already fully visible, this is a no-op.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) ScrollToIndex(index int) {
+	itemCount := w.cfg.ResolvedItemCount()
+	if index < 0 || index >= itemCount {
+		return
+	}
+
+	cols := w.effectiveColumns()
+	if cols <= 0 {
+		return
+	}
+	row := index / cols
+	cellTop := float32(row) * (w.cfg.itemHeight + w.cfg.gap)
+	cellBottom := cellTop + w.cfg.itemHeight
+	scrollY := w.currentScrollY()
+
+	// Already visible: no-op.
+	if cellTop >= scrollY && cellBottom <= scrollY+w.viewportHeight {
+		return
+	}
+
+	var newScrollY float32
+	if cellTop < scrollY {
+		newScrollY = cellTop
+	} else {
+		newScrollY = cellBottom - w.viewportHeight
+		if newScrollY < 0 {
+			newScrollY = 0
+		}
+	}
+
+	w.setScrollY(newScrollY)
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-ScrollYSignal">
+    <div id="2f5ac4f7"></div>
+    <div class="item-header">
+        <h4>func ScrollYSignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>ScrollYSignal binds the vertical scroll offset to a reactive signal.</p>
+          
+        <p>This is a TWO-WAY binding passed through to the internal ScrollView.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func ScrollYSignal(sig state.Signal[float32]) Option {
+	return func(c *config) { c.scrollYSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SelectedIndex">
+    <div id="d3116c08"></div>
+    <div class="item-header">
+        <h4>func SelectedIndex</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SelectedIndex sets the initially selected cell index.</p>
+          
+        <p>Use -1 for no selection.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func SelectedIndex(index int) Option {
+	return func(c *config) { c.selectedIndex = index }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SelectedIndexReadonlySignal">
+    <div id="37dd72b1"></div>
+    <div class="item-header">
+        <h4>func SelectedIndexReadonlySignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SelectedIndexReadonlySignal binds the selected index to a read-only signal.</p>
+          
+        <p>When set, this takes highest precedence over all other selection sources.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func SelectedIndexReadonlySignal(sig state.ReadonlySignal[int]) Option {
+	return func(c *config) { c.readonlySelectedIndexSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SelectedIndexSignal">
+    <div id="e6e599f4"></div>
+    <div class="item-header">
+        <h4>func SelectedIndexSignal</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SelectedIndexSignal binds the selected index to a reactive signal.</p>
+          
+        <p>This is a TWO-WAY binding: the widget reads from the signal, and</p>
+          
+        <p>when the user selects a cell, the new index is written back.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func SelectedIndexSignal(sig state.Signal[int]) Option {
+	return func(c *config) { c.selectedIndexSignal = sig }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-SelectionModeOpt">
+    <div id="8ff436d3"></div>
+    <div class="item-header">
+        <h4>func SelectionModeOpt</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>SelectionModeOpt sets the selection mode for the grid.</p>
+          
+        <p>Default is [SelectionNone].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func SelectionModeOpt(mode SelectionMode) Option {
+	return func(c *config) { c.selectionMode = mode }
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-String">
+    <div id="db715f22"></div>
+    <div class="item-header">
+        <h4>func String</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>String returns a human-readable name for the selection mode.</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (m SelectionMode) String() string {
+	switch m {
+	case SelectionNone:
+		return selectionNoneStr
+	case SelectionSingle:
+		return selectionSingleStr
+	default:
+		return selectionUnknownStr
+	}
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-Unmount">
+    <div id="56dad9b1"></div>
+    <div class="item-header">
+        <h4>func Unmount</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>Unmount is called when the grid view is removed from the widget tree.</p>
+          
+        <p>Implements [widget.Lifecycle].</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) Unmount() {
+	w.scroll.Unmount()
+	// Bindings are cleaned up automatically by WidgetBase.CleanupBindings().
+}
+</code></pre>
+</div>
+
+<div class="item" id="func-VisibleRange">
+    <div id="52a5c4eb"></div>
+    <div class="item-header">
+        <h4>func VisibleRange</h4>
+    </div>
+
+    
+    <div class="comments">
+         
+        <p>VisibleRange returns the indices of currently visible cells [start, end).</p>
+         
+    </div>
+    
+
+    <pre><code class="language-go">func (w *Widget) VisibleRange() (start, end int) {
+	cols := w.effectiveColumns()
+	if cols <= 0 {
+		return 0, 0
+	}
+	itemCount := w.cfg.ResolvedItemCount()
+	if itemCount == 0 {
+		return 0, 0
+	}
+
+	scrollY := w.currentScrollY()
+	firstRow, lastRow := w.visibleRowRange(scrollY, w.viewportHeight)
+
+	startIdx := firstRow * cols
+	endIdx := (lastRow + 1) * cols
+	if endIdx > itemCount {
+		endIdx = itemCount
+	}
+	if startIdx > itemCount {
+		startIdx = itemCount
+	}
+	return startIdx, endIdx
+}
+</code></pre>
+</div>
+  
+<h3 id="structs">Structs</h3>
+
+<div class="item" id="struct-CellContext">
+    <div id="905e410d"></div>
+    <div class="item-header">
+        <h4>type CellContext struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>CellContext provides contextual information to the cell builder callback.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>The builder receives a CellContext for each visible cell, allowing it to</p>
+        
+        <p>customize the returned widget based on selection, hover, and position state.</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type CellContext struct {
+	// Index is the zero-based item index in the data source.
+	Index	int
+
+	// Row is the cell's row index (zero-based).
+	Row	int
+
+	// Col is the cell's column index (zero-based).
+	Col	int
+
+	// IsSelected is true if this cell is the currently selected cell.
+	IsSelected	bool
+
+	// IsHovered is true if the mouse cursor is over this cell.
+	IsHovered	bool
+}
+</code></pre>
+</div>
+
+<div class="item" id="struct-Widget">
+    <div id="520dbea1"></div>
+    <div class="item-header">
+        <h4>type Widget struct</h4>
+    </div>
+
+    
+    <div class="comments">
+        
+        <p>Widget implements a virtualized grid that renders only visible cells.</p>
+        
+        <p>It composes an internal [scrollview.Widget] for scroll handling and</p>
+        
+        <p>delegates cell rendering to a builder callback.</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>A grid view is created with [New] using functional options:</p>
+        
+        <p>&nbsp;</p>
+        
+        <p>gv := gridview.New(</p>
+        
+        <p>gridview.Columns(4),</p>
+        
+        <p>gridview.ItemCount(1000),</p>
+        
+        <p>gridview.ItemSize(120, 120),</p>
+        
+        <p>gridview.BuildCell(func(index int, ctx gridview.CellContext) widget.Widget {</p>
+        
+        <p>return buildCell(index, ctx.IsSelected)</p>
+        
+        <p>}),</p>
+        
+        <p>)</p>
+        
+    </div>
+    
+
+    <pre><code class="language-go">type Widget struct {
+	widget.WidgetBase
+	cfg	config
+	painter	Painter
+
+	// Internal scroll view (composition).
+	scroll	*scrollview.Widget
+	virtual	*virtualContent
+
+	// Widget cache for visible cells.
+	cache	cellCache
+
+	// Layout state.
+	viewportWidth	float32
+	viewportHeight	float32
+	effectiveCols	int	// actual columns after auto-fit
+
+	// Interaction state.
+	hoveredIndex	int
+}
+</code></pre>
+</div>
+   </div>
+        </main>
+
+        <footer>
+            <div class="credits"><p>Unofficial documentation of <a target='_blank' href='https://github.com/gogpu/ui'>GoGPU/UI</a> <strong>v0.1.29</strong></p><p class="godocumentorCredits">Generated with GoDocumentor - by <a href="https://www.linkedin.com/in/rcarlier/" target="_blank">Richard Carlier</a></p></div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/minisearch@7.2.0/dist/umd/index.min.js"></script>
+        <script>
+            // search.js
+            const INDEX_URL = "index.json";
+            const BASE_FIELDS = ["name"];
+            const EXTRA_FIELDS = ["signature", "comments", "code"];
+
+            let ms = null;
+            let data = [];
+
+            function buildIndex(fields) {
+                ms = new MiniSearch({
+                    fields,
+                    storeFields: ["name", "signature", "path"],
+                    searchOptions: {
+                        boost: { name: 3, signature: 2, comments: 1, code: 1 },
+                        prefix: true,
+                        fuzzy: 0.2,
+                    },
+                });
+                ms.addAll(data);
+            }
+
+            function getFields() {
+                const checked = [...document.querySelectorAll('[name="fields"]:checked')].map(
+                    (el) => el.value,
+                );
+                return [...BASE_FIELDS, ...checked.filter((f) => EXTRA_FIELDS.includes(f))];
+            }
+
+            function positionPanel() {
+                const input = document.getElementById("fn-search");
+                const panel = document.getElementById("search-panel");
+                const rect = input.getBoundingClientRect();
+                panel.style.top = rect.bottom + 4 + "px";
+                panel.style.left = rect.left + "px";
+            }
+
+            function render(query) {
+                const ul = document.getElementById("search-results");
+                ul.innerHTML = "";
+
+                if (!query.trim()) return;
+
+                const results = ms.search(query);
+
+                if (!results.length) {
+                    ul.innerHTML = `<li>No results.</li>`;
+                    return;
+                }
+
+                ul.innerHTML = results
+                    .map(
+                        (r) => `
+    <li>
+      <a href="${r.path}">${r.name}</a>
+      ${r.signature ? `<code>${r.signature}</code>` : ""}
+    </li>
+  `,
+                    )
+                    .join("");
+            }
+
+            window.onload = (event) => {
+                const input = document.getElementById("fn-search");
+                input.disabled = true;
+                input.placeholder = "Loading…";
+
+                fetch(INDEX_URL)
+                    .then((res) => res.json())
+                    .then((json) => {
+                        data = json;
+                        buildIndex(BASE_FIELDS);
+
+                        input.disabled = false;
+                        input.placeholder = "Search…";
+
+                        const panel = document.getElementById("search-panel");
+                        const checks = document.querySelectorAll('[name="fields"]');
+                        const ul = document.getElementById("search-results");
+
+                        document.body.appendChild(panel);
+
+                        input.addEventListener("focus", () => {
+                            positionPanel();
+                            panel.hidden = false;
+                            render(input.value);
+                        });
+
+                        window.addEventListener(
+                            "scroll",
+                            () => {
+                                if (!panel.hidden) positionPanel();
+                            },
+                            true,
+                        );
+                        window.addEventListener("resize", () => {
+                            if (!panel.hidden) positionPanel();
+                        });
+
+                        document.addEventListener("click", (e) => {
+                            if (!e.target.closest(".search-wrapper") && !panel.contains(e.target))
+                                panel.hidden = true;
+                        });
+
+                        input.addEventListener("input", () => render(input.value));
+
+                        // Failed to load index.json: ReferenceError: ul is not defined
+                        ul.addEventListener("click", (e) => {
+                            if (e.target.closest("a")) panel.hidden = true;
+                        });
+
+                        checks.forEach((cb) => {
+                            cb.addEventListener("change", () => {
+                                buildIndex(getFields());
+                                render(input.value);
+                            });
+                        });
+                    })
+                    .catch((err) => console.error("Failed to load index.json:", err));
+            };
+        </script>
+    </body>
+</html>
