@@ -1,0 +1,598 @@
+time=2026-05-25T11:28:50.452+02:00 level=INFO msg="metal: framework initialized"
+time=2026-05-25T11:28:50.453+02:00 level=INFO msg="metal: instance created"
+time=2026-05-25T11:28:50.453+02:00 level=DEBUG msg="metal: enumerating adapters" count=1
+time=2026-05-25T11:28:50.453+02:00 level=INFO msg="metal: adapter found" name="Apple M3" type=DiscreteGPU lowPower=false removable=false headless=false maxBuffer=8589934592 depth24Stencil8=false
+time=2026-05-25T11:28:50.453+02:00 level=INFO msg="wgpu: adapter selected" name="Apple M3" backend=Metal type=DiscreteGPU
+2026/05/25 11:28:50 INFO adapter selected name="Apple M3" type=DiscreteGPU
+time=2026-05-25T11:28:50.454+02:00 level=INFO msg="metal: device created" name="Apple M3"
+time=2026-05-25T11:28:50.454+02:00 level=DEBUG msg="metal: adapter opened" maxFramesInFlight=2 blockSupport=true
+time=2026-05-25T11:28:50.454+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=259.459µs mslBytes=1460
+time=2026-05-25T11:28:50.456+02:00 level=INFO msg="metal: shader module compiled" entryPoints=1
+time=2026-05-25T11:28:50.457+02:00 level=DEBUG msg="metal: compute pipeline created" entryPoint=main workgroupSize=1x1x1
+time=2026-05-25T11:28:50.457+02:00 level=INFO msg="metal: surface configured" width=1800 height=2000 format=BGRA8Unorm presentMode=Fifo vsync=true
+time=2026-05-25T11:28:50.469+02:00 level=INFO msg=ggcanvas.NewWithScale logical_w=900 logical_h=1000 scale=2 physical_w=1800 physical_h=2000
+time=2026-05-25T11:28:50.469+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=346.042µs mslBytes=4668
+time=2026-05-25T11:28:50.469+02:00 level=INFO msg="metal: shader module compiled" entryPoints=1
+time=2026-05-25T11:28:50.470+02:00 level=DEBUG msg="metal: compute pipeline created" entryPoint=main workgroupSize=256x1x1
+time=2026-05-25T11:28:50.470+02:00 level=DEBUG msg="vello compute: pipeline created" stage=pathtag_reduce bindings=3 shader_bytes=4454
+time=2026-05-25T11:28:50.470+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=223.917µs mslBytes=5952
+time=2026-05-25T11:28:50.470+02:00 level=INFO msg="metal: shader module compiled" entryPoints=1
+time=2026-05-25T11:28:50.470+02:00 level=DEBUG msg="metal: compute pipeline created" entryPoint=main workgroupSize=256x1x1
+time=2026-05-25T11:28:50.470+02:00 level=DEBUG msg="vello compute: pipeline created" stage=pathtag_scan bindings=4 shader_bytes=4315
+time=2026-05-25T11:28:50.470+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=187.875µs mslBytes=4009
+time=2026-05-25T11:28:50.470+02:00 level=INFO msg="metal: shader module compiled" entryPoints=1
+time=2026-05-25T11:28:50.471+02:00 level=DEBUG msg="metal: compute pipeline created" entryPoint=main workgroupSize=256x1x1
+time=2026-05-25T11:28:50.471+02:00 level=DEBUG msg="vello compute: pipeline created" stage=draw_reduce bindings=3 shader_bytes=3006
+time=2026-05-25T11:28:50.471+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=188.75µs mslBytes=6087
+time=2026-05-25T11:28:50.471+02:00 level=INFO msg="metal: shader module compiled" entryPoints=1
+time=2026-05-25T11:28:50.471+02:00 level=DEBUG msg="metal: compute pipeline created" entryPoint=main workgroupSize=256x1x1
+time=2026-05-25T11:28:50.471+02:00 level=DEBUG msg="vello compute: pipeline created" stage=draw_leaf bindings=5 shader_bytes=4102
+time=2026-05-25T11:28:50.472+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=883.458µs mslBytes=13145
+time=2026-05-25T11:28:50.503+02:00 level=DEBUG msg="gpu-shared: compute pipeline unavailable" error="vello compute: create shader module for path_count: wgpu: failed to create shader module: metal: failed to compile MSL: program_source:170:53: warning: operator '?:' has lower precedence than '+'; '+' will be evaluated first [-Wparentheses]\n    float x0_ = (xt0_ * x_sign) + is_positive_slope ? 0.0 : -1.0;\n                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^\nprogram_source:170:53: note: place parentheses around the '+' expression to silence this warning\n    float x0_ = (xt0_ * x_sign) + is_positive_slope ? 0.0 : -1.0;\n                                                    ^\n                (                                  )\nprogram_source:170:53: note: place parentheses around the '?:' expression to evaluate it first\n    float x0_ = (xt0_ * x_sign) + is_positive_slope ? 0.0 : -1.0;\n                                                    ^\n                                  (                             )\nprogram_source:252:62: warning: operator '?:' has lower precedence than '+'; '+' will be evaluated first [-Wparentheses]\n                    ymin_i = naga_f2i32(y0_ + (y0_ == s0_.y) ? 0.0 : 1.0);\n                                        ~~~~~~~~~~~~~~~~~~~~ ^\nprogram_source:252:62: note: place parentheses around the '+' expression to silence this warning\n                    ymin_i = naga_f2i32(y0_ + (y0_ == s0_.y) ? 0.0 : 1.0);\n                                                             ^\n                                        (                   )\nprogram_source:252:62: note: place parentheses around the '?:' expression to evaluate it first\n                    ymin_i = naga_f2i32(y0_ + (y0_ == s0_.y) ? 0.0 : 1.0);\n                                                             ^\n                                              (                         )\nprogram_source:316:58: error: cannot take the address of an rvalue of type 'metal::uint' (aka 'unsigned int')\n            int _e378 = metal::atomic_fetch_add_explicit(&uint(base_idx) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[base_idx].backdrop : DefaultConstructible(), delta, metal::memory_order_relaxed);\n                                                         ^~~~~~~~~~~~~~~\nprogram_source:368:62: error: cannot take the address of an rvalue of type 'metal::uint' (aka 'unsigned int')\n                int _e450 = metal::atomic_fetch_add_explicit(&uint(_e447) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[_e447].backdrop : DefaultConstructible(), delta, metal::memory_order_relaxed);\n                                                             ^~~~~~~~~~~~\nprogram_source:371:59: error: cannot take the address of an rvalue of type 'metal::uint' (aka 'unsigned int')\n            uint _e456 = metal::atomic_fetch_add_explicit(&uint(_e452) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[_e452].segment_count_or_ix : DefaultConstructible(), 1u, metal::memory_order_relaxed);\n                                                          ^~~~~~~~~~~~\n | {\n    NSLocalizedDescription = \"program_source:170:53: warning: operator '?:' has lower precedence than '+'; '+' will be evaluated first [-Wparentheses]\\n    float x0_ = (xt0_ * x_sign) + is_positive_slope ? 0.0 : -1.0;\\n                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^\\nprogram_source:170:53: note: place parentheses around the '+' expression to silence this warning\\n    float x0_ = (xt0_ * x_sign) + is_positive_slope ? 0.0 : -1.0;\\n                                                    ^\\n                (                                  )\\nprogram_source:170:53: note: place parentheses around the '?:' expression to evaluate it first\\n    float x0_ = (xt0_ * x_sign) + is_positive_slope ? 0.0 : -1.0;\\n                                                    ^\\n                                  (                             )\\nprogram_source:252:62: warning: operator '?:' has lower precedence than '+'; '+' will be evaluated first [-Wparentheses]\\n                    ymin_i = naga_f2i32(y0_ + (y0_ == s0_.y) ? 0.0 : 1.0);\\n                                        ~~~~~~~~~~~~~~~~~~~~ ^\\nprogram_source:252:62: note: place parentheses around the '+' expression to silence this warning\\n                    ymin_i = naga_f2i32(y0_ + (y0_ == s0_.y) ? 0.0 : 1.0);\\n                                                             ^\\n                                        (                   )\\nprogram_source:252:62: note: place parentheses around the '?:' expression to evaluate it first\\n                    ymin_i = naga_f2i32(y0_ + (y0_ == s0_.y) ? 0.0 : 1.0);\\n                                                             ^\\n                                              (                         )\\nprogram_source:316:58: error: cannot take the address of an rvalue of type 'metal::uint' (aka 'unsigned int')\\n            int _e378 = metal::atomic_fetch_add_explicit(&uint(base_idx) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[base_idx].backdrop : DefaultConstructible(), delta, metal::memory_order_relaxed);\\n                                                         ^~~~~~~~~~~~~~~\\nprogram_source:368:62: error: cannot take the address of an rvalue of type 'metal::uint' (aka 'unsigned int')\\n                int _e450 = metal::atomic_fetch_add_explicit(&uint(_e447) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[_e447].backdrop : DefaultConstructible(), delta, metal::memory_order_relaxed);\\n                                                             ^~~~~~~~~~~~\\nprogram_source:371:59: error: cannot take the address of an rvalue of type 'metal::uint' (aka 'unsigned int')\\n            uint _e456 = metal::atomic_fetch_add_explicit(&uint(_e452) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[_e452].segment_count_or_ix : DefaultConstructible(), 1u, metal::memory_order_relaxed);\\n                                                          ^~~~~~~~~~~~\\n\";\n}\nMSL:\n// language: metal2.1\n#include <metal_stdlib>\n#include <simd/simd.h>\n\nusing metal::uint;\nstruct DefaultConstructible {\n    template<typename T>\n    operator T() && {\n        return T {};\n    }\n};\n\nstruct _mslBufferSizes {\n    uint size1;\n    uint size2;\n    uint size3;\n    uint size4;\n};\n\nstruct LineSoup {\n    uint path_ix;\n    float p0x;\n    float p0y;\n    float p1x;\n    float p1y;\n};\nstruct Path {\n    uint bbox_x0_;\n    uint bbox_y0_;\n    uint bbox_x1_;\n    uint bbox_y1_;\n    uint tiles;\n};\nstruct Tile {\n    metal::atomic_int backdrop;\n    metal::atomic_uint segment_count_or_ix;\n};\nstruct Config {\n    uint width_in_tiles;\n    uint height_in_tiles;\n    uint target_width;\n    uint target_height;\n    uint n_drawobj;\n    uint n_path;\n    uint n_clip;\n    uint pathtag_base;\n    uint pathdata_base;\n    uint drawtag_base;\n    uint drawdata_base;\n    uint transform_base;\n    uint style_base;\n    uint n_lines;\n    uint bg_color;\n};\nstruct SegmentCount {\n    uint line_ix;\n    uint counts;\n};\nstruct BumpAlloc {\n    metal::atomic_uint seg_counts;\n    metal::atomic_uint segments;\n    metal::atomic_uint _pad0_;\n    metal::atomic_uint _pad1_;\n};\ntypedef LineSoup type_4[1];\ntypedef Path type_5[1];\ntypedef Tile type_6[1];\ntypedef SegmentCount type_7[1];\nconstant uint TILE_WIDTH = 16u;\nconstant uint TILE_HEIGHT = 16u;\nconstant float TILE_SCALE = 0.0625;\nconstant float ONE_MINUS_ULP = 0.99999994;\nconstant float ROBUST_EPSILON = 0.0000002;\n\nuint naga_f2u32(float value) {\n    return static_cast<uint>(metal::clamp(value, 0.0, 4294967000.0));\n}\n\nuint span(\n    float a_1,\n    float b\n) {\n    return naga_f2u32(metal::max(metal::ceil(metal::max(a_1, b)) - metal::floor(metal::min(a_1, b)), 1.0));\n}\nint naga_f2i32(float value) {\n    return static_cast<int>(metal::clamp(value, -2147483600.0, 2147483500.0));\n}\n\n\nstruct main_Input {\n};\nkernel void main_(\n  metal::uint3 global_id [[thread_position_in_grid]]\n, constant Config& config [[buffer(0)]]\n, device type_4 const& lines [[buffer(1)]]\n, device type_5 const& paths [[buffer(2)]]\n, device type_6& tiles [[buffer(3)]]\n, device type_7& seg_counts [[buffer(4)]]\n, device BumpAlloc& bump [[buffer(5)]]\n, constant _mslBufferSizes& _buffer_sizes \n) {\n    uint count_x = {};\n    uint count = {};\n    bool local = {};\n    float a = {};\n    bool local_1 = {};\n    bool local_2 = {};\n    bool local_3 = {};\n    uint imin = 0u;\n    float iminf = {};\n    uint imax = {};\n    float imaxf = {};\n    int ymin_i = 0;\n    int ymax_i = 0;\n    float f_val = {};\n    float f_val_1 = {};\n    int y_val = {};\n    float last_z = {};\n    uint i = {};\n    bool local_4 = {};\n    uint line_ix = global_id.x;\n    uint _e4 = config.n_lines;\n    if (line_ix >= _e4) {\n        return;\n    }\n    LineSoup line = uint(line_ix) < 1 + (_buffer_sizes.size1 - 0 - 20) / 20 ? lines[line_ix] : DefaultConstructible();\n    metal::float2 p0_ = metal::float2(line.p0x, line.p0y);\n    metal::float2 p1_ = metal::float2(line.p1x, line.p1y);\n    bool is_down = p1_.y >= p0_.y;\n    metal::float2 xy0_ = is_down ? p0_ : p1_;\n    metal::float2 xy1_ = is_down ? p1_ : p0_;\n    metal::float2 s0_ = xy0_ * TILE_SCALE;\n    metal::float2 s1_ = xy1_ * TILE_SCALE;\n    uint _e26 = span(s0_.x, s1_.x);\n    count_x = _e26 - 1u;\n    uint _e30 = count_x;\n    uint _e33 = span(s0_.y, s1_.y);\n    count = _e30 + _e33;\n    float dx = metal::abs(s1_.x - s0_.x);\n    float dy = s1_.y - s0_.y;\n    if ((dx + dy) == 0.0) {\n        return;\n    }\n    if (dy == 0.0) {\n        local = metal::floor(s0_.y) == s0_.y;\n    } else {\n        local = false;\n    }\n    bool _e55 = local;\n    if (_e55) {\n        return;\n    }\n    float idxdy = 1.0 / (dx + dy);\n    a = dx * idxdy;\n    bool is_positive_slope = s1_.x >= s0_.x;\n    float x_sign = is_positive_slope ? 1.0 : -1.0;\n    float xt0_ = metal::floor(s0_.x * x_sign);\n    float c = (s0_.x * x_sign) - xt0_;\n    float y0_ = metal::floor(s0_.y);\n    float ytop = (s0_.y == s1_.y) ? metal::ceil(s0_.y) : y0_ + 1.0;\n    float b_1 = metal::min(((dy * c) + (dx * (ytop - s0_.y))) * idxdy, ONE_MINUS_ULP);\n    float _e91 = a;\n    uint _e92 = count;\n    uint _e99 = count_x;\n    float robust_err = metal::floor((_e91 * (static_cast<float>(_e92) - 1.0)) + b_1) - static_cast<float>(_e99);\n    if (robust_err != 0.0) {\n        float _e107 = a;\n        a = _e107 - (ROBUST_EPSILON * metal::sign(robust_err));\n    }\n    float x0_ = (xt0_ * x_sign) + is_positive_slope ? 0.0 : -1.0;\n    uint _e115 = line.path_ix;\n    Path path = uint(_e115) < 1 + (_buffer_sizes.size2 - 0 - 20) / 20 ? paths[_e115] : DefaultConstructible();\n    metal::int4 bbox = metal::int4(static_cast<int>(path.bbox_x0_), static_cast<int>(path.bbox_y0_), static_cast<int>(path.bbox_x1_), static_cast<int>(path.bbox_y1_));\n    float xmin = metal::min(s0_.x, s1_.x);\n    int stride = as_type<int>(as_type<uint>(bbox.z) - as_type<uint>(bbox.x));\n    if (!(s0_.y >= static_cast<float>(bbox.w))) {\n        local_1 = s1_.y < static_cast<float>(bbox.y);\n    } else {\n        local_1 = true;\n    }\n    bool _e145 = local_1;\n    if (!(_e145)) {\n        local_2 = xmin >= static_cast<float>(bbox.z);\n    } else {\n        local_2 = true;\n    }\n    bool _e153 = local_2;\n    if (!(_e153)) {\n        local_3 = stride == 0;\n    } else {\n        local_3 = true;\n    }\n    bool _e160 = local_3;\n    if (_e160) {\n        return;\n    }\n    if (s0_.y < static_cast<float>(bbox.y)) {\n        float _e171 = a;\n        float _e173 = a;\n        iminf = metal::round((((static_cast<float>(bbox.y) - y0_) + b_1) - _e171) / (1.0 - _e173)) - 1.0;\n        float _e181 = iminf;\n        float _e183 = a;\n        float _e184 = iminf;\n        if (((y0_ + _e181) - metal::floor((_e183 * _e184) + b_1)) < static_cast<float>(bbox.y)) {\n            float _e192 = iminf;\n            iminf = _e192 + 1.0;\n        }\n        float _e195 = iminf;\n        imin = naga_f2u32(_e195);\n    }\n    uint _e197 = count;\n    imax = _e197;\n    if (s1_.y > static_cast<float>(bbox.w)) {\n        float _e207 = a;\n        float _e209 = a;\n        imaxf = metal::round((((static_cast<float>(bbox.w) - y0_) + b_1) - _e207) / (1.0 - _e209)) - 1.0;\n        float _e217 = imaxf;\n        float _e219 = a;\n        float _e220 = imaxf;\n        if (((y0_ + _e217) - metal::floor((_e219 * _e220) + b_1)) < static_cast<float>(bbox.w)) {\n            float _e228 = imaxf;\n            imaxf = _e228 + 1.0;\n        }\n        float _e231 = imaxf;\n        imax = naga_f2u32(_e231);\n    }\n    int delta = is_down ? -1 : 1;\n    if (metal::max(s0_.x, s1_.x) < static_cast<float>(bbox.x)) {\n        ymin_i = naga_f2i32(metal::ceil(s0_.y));\n        ymax_i = naga_f2i32(metal::ceil(s1_.y));\n        uint _e252 = imin;\n        imax = _e252;\n    } else {\n        float fudge = is_positive_slope ? 0.0 : 1.0;\n        if (xmin < static_cast<float>(bbox.x)) {\n            float _e265 = a;\n            f_val = metal::round((((x_sign * (static_cast<float>(bbox.x) - x0_)) - b_1) + fudge) / _e265);\n            float _e269 = a;\n            float _e270 = f_val;\n            if (((x0_ + (x_sign * metal::floor((_e269 * _e270) + b_1))) < static_cast<float>(bbox.x)) == is_positive_slope) {\n                float _e280 = f_val;\n                f_val = _e280 + 1.0;\n            }\n            float _e283 = f_val;\n            float _e285 = a;\n            float _e286 = f_val;\n            int ynext = naga_f2i32(((y0_ + _e283) - metal::floor((_e285 * _e286) + b_1)) + 1.0);\n            if (is_positive_slope) {\n                float _e294 = f_val;\n                uint _e296 = imin;\n                if (naga_f2u32(_e294) > _e296) {\n                    ymin_i = naga_f2i32(y0_ + (y0_ == s0_.y) ? 0.0 : 1.0);\n                    ymax_i = ynext;\n                    float _e305 = f_val;\n                    imin = naga_f2u32(_e305);\n                }\n            } else {\n                float _e307 = f_val;\n                uint _e309 = imax;\n                if (naga_f2u32(_e307) < _e309) {\n                    ymin_i = ynext;\n                    ymax_i = naga_f2i32(metal::ceil(s1_.y));\n                    float _e314 = f_val;\n                    imax = naga_f2u32(_e314);\n                }\n            }\n        }\n        if (metal::max(s0_.x, s1_.x) > static_cast<float>(bbox.z)) {\n            float _e328 = a;\n            f_val_1 = metal::round((((x_sign * (static_cast<float>(bbox.z) - x0_)) - b_1) + fudge) / _e328);\n            float _e332 = a;\n            float _e333 = f_val_1;\n            if (((x0_ + (x_sign * metal::floor((_e332 * _e333) + b_1))) < static_cast<float>(bbox.z)) == is_positive_slope) {\n                float _e343 = f_val_1;\n                f_val_1 = _e343 + 1.0;\n            }\n            if (is_positive_slope) {\n                uint _e346 = imax;\n                float _e347 = f_val_1;\n                imax = metal::min(_e346, naga_f2u32(_e347));\n            } else {\n                uint _e350 = imin;\n                float _e351 = f_val_1;\n                imin = metal::max(_e350, naga_f2u32(_e351));\n            }\n        }\n    }\n    uint _e354 = imin;\n    uint _e355 = imax;\n    imax = metal::max(_e354, _e355);\n    int _e357 = ymin_i;\n    ymin_i = metal::max(_e357, bbox.y);\n    int _e360 = ymax_i;\n    ymax_i = metal::min(_e360, bbox.w);\n    int _e363 = ymin_i;\n    y_val = _e363;\n    uint2 loop_bound = uint2(4294967295u);\n    bool loop_init = true;\n    while(true) {\n        if (metal::all(loop_bound == uint2(0u))) { break; }\n        loop_bound -= uint2(loop_bound.y == 0u, 1u);\n        if (!loop_init) {\n            int _e379 = y_val;\n            y_val = as_type<int>(as_type<uint>(_e379) + as_type<uint>(1));\n        }\n        loop_init = false;\n        int _e365 = y_val;\n        int _e366 = ymax_i;\n        if (_e365 < _e366) {\n        } else {\n            break;\n        }\n        {\n            int _e370 = y_val;\n            int base_idx = as_type<int>(as_type<uint>(static_cast<int>(path.tiles)) + as_type<uint>(as_type<int>(as_type<uint>(as_type<int>(as_type<uint>(_e370) - as_type<uint>(bbox.y))) * as_type<uint>(stride))));\n            int _e378 = metal::atomic_fetch_add_explicit(&uint(base_idx) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[base_idx].backdrop : DefaultConstructible(), delta, metal::memory_order_relaxed);\n        }\n    }\n    uint _e382 = imax;\n    uint _e383 = imin;\n    uint n_segs = _e382 - _e383;\n    if (n_segs == 0u) {\n        return;\n    }\n    uint _e389 = metal::atomic_fetch_add_explicit(&bump.seg_counts, n_segs, metal::memory_order_relaxed);\n    float _e390 = a;\n    uint _e391 = imin;\n    last_z = metal::floor((_e390 * (static_cast<float>(_e391) - 1.0)) + b_1);\n    uint _e399 = imin;\n    i = _e399;\n    uint2 loop_bound_1 = uint2(4294967295u);\n    bool loop_init_1 = true;\n    while(true) {\n        if (metal::all(loop_bound_1 == uint2(0u))) { break; }\n        loop_bound_1 -= uint2(loop_bound_1.y == 0u, 1u);\n        if (!loop_init_1) {\n            uint _e468 = i;\n            i = _e468 + 1u;\n        }\n        loop_init_1 = false;\n        uint _e401 = i;\n        uint _e402 = imax;\n        if (_e401 < _e402) {\n        } else {\n            break;\n        }\n        {\n            float _e404 = a;\n            uint _e405 = i;\n            float zf = (_e404 * static_cast<float>(_e405)) + b_1;\n            float z = metal::floor(zf);\n            uint _e410 = i;\n            int y_val_1 = naga_f2i32((y0_ + static_cast<float>(_e410)) - z);\n            int x_val = naga_f2i32(x0_ + (x_sign * z));\n            int base_idx_1 = as_type<int>(as_type<uint>(as_type<int>(as_type<uint>(static_cast<int>(path.tiles)) + as_type<uint>(as_type<int>(as_type<uint>(as_type<int>(as_type<uint>(y_val_1) - as_type<uint>(bbox.y))) * as_type<uint>(stride))))) - as_type<uint>(bbox.x));\n            float _e426 = last_z;\n            uint _e430 = i;\n            bool top_edge = (_e430 == 0u) ? y0_ == s0_.y : _e426 == z;\n            if (top_edge) {\n                local_4 = (as_type<int>(as_type<uint>(x_val) + as_type<uint>(1))) < bbox.z;\n            } else {\n                local_4 = false;\n            }\n            bool _e441 = local_4;\n            if (_e441) {\n                int x_bump = metal::max(as_type<int>(as_type<uint>(x_val) + as_type<uint>(1)), bbox.x);\n                int _e447 = as_type<int>(as_type<uint>(base_idx_1) + as_type<uint>(x_bump));\n                int _e450 = metal::atomic_fetch_add_explicit(&uint(_e447) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[_e447].backdrop : DefaultConstructible(), delta, metal::memory_order_relaxed);\n            }\n            int _e452 = as_type<int>(as_type<uint>(base_idx_1) + as_type<uint>(x_val));\n            uint _e456 = metal::atomic_fetch_add_explicit(&uint(_e452) < 1 + (_buffer_sizes.size3 - 0 - 8) / 8 ? tiles[_e452].segment_count_or_ix : DefaultConstructible(), 1u, metal::memory_order_relaxed);\n            uint _e459 = i;\n            uint counts_packed = (_e456 << 16u) | _e459;\n            uint _e462 = i;\n            uint _e464 = imin;\n            uint _e465 = (_e389 + _e462) - _e464;\n            if (uint(_e465) < 1 + (_buffer_sizes.size4 - 0 - 8) / 8) {\n                seg_counts[_e465] = SegmentCount {line_ix, counts_packed};\n            }\n            last_z = z;\n        }\n    }\n    return;\n}\n"
+time=2026-05-25T11:28:50.503+02:00 level=INFO msg="gpu-shared: switched to shared GPU device" adapter=*wgpu.Device
+time=2026-05-25T11:28:50.503+02:00 level=INFO msg="NewContext HiDPI" logical_w=900 logical_h=1000 scale=2 physical_w=1800 physical_h=2000
+time=2026-05-25T11:28:50.506+02:00 level=DEBUG msg="metal: command encoder created" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:50.507+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:50.507+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=166.5µs mslBytes=2474
+time=2026-05-25T11:28:50.507+02:00 level=INFO msg="metal: shader module compiled" entryPoints=0
+time=2026-05-25T11:28:50.507+02:00 level=DEBUG msg="metal: render pipeline created" label=glyph_mask_pipeline_with_stencil vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.507+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:50.517+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=9.66125ms mslBytes=7529
+time=2026-05-25T11:28:50.517+02:00 level=INFO msg="metal: shader module compiled" entryPoints=0
+time=2026-05-25T11:28:50.527+02:00 level=DEBUG msg="metal: render pipeline created" label=sdf_render_pipeline vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.527+02:00 level=DEBUG msg="metal: render pipeline created" label=sdf_render_pipeline_with_stencil vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.531+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=3.237667ms mslBytes=3805
+time=2026-05-25T11:28:50.531+02:00 level=INFO msg="metal: shader module compiled" entryPoints=0
+time=2026-05-25T11:28:50.533+02:00 level=DEBUG msg="metal: render pipeline created" label=convex_pipeline vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.533+02:00 level=DEBUG msg="metal: render pipeline created" label=convex_pipeline_with_stencil vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.533+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=49.417µs mslBytes=941
+time=2026-05-25T11:28:50.534+02:00 level=INFO msg="metal: shader module compiled" entryPoints=0
+time=2026-05-25T11:28:50.536+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=2.872083ms mslBytes=3072
+time=2026-05-25T11:28:50.536+02:00 level=INFO msg="metal: shader module compiled" entryPoints=0
+time=2026-05-25T11:28:50.539+02:00 level=DEBUG msg="metal: render pipeline created" label=stencil_fill_pipeline vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.539+02:00 level=DEBUG msg="metal: render pipeline created" label=stencil_fill_even_odd_pipeline vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.540+02:00 level=DEBUG msg="metal: render pipeline created" label=cover_pipeline vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.540+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=103.958µs mslBytes=2447
+time=2026-05-25T11:28:50.540+02:00 level=INFO msg="metal: shader module compiled" entryPoints=0
+time=2026-05-25T11:28:50.540+02:00 level=DEBUG msg="metal: render pipeline created" label=textured_quad_pipeline_with_stencil vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.540+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=41µs mslBytes=941
+time=2026-05-25T11:28:50.540+02:00 level=INFO msg="metal: shader module compiled" entryPoints=0
+time=2026-05-25T11:28:50.540+02:00 level=DEBUG msg="metal: render pipeline created" label=depth_clip_stencil_fill_pipeline vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.540+02:00 level=DEBUG msg="metal: render pipeline created" label=depth_clip_cover_pipeline vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.540+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:50.540+02:00 level=DEBUG msg="metal: WGSL→MSL compilation" elapsed=83.5µs mslBytes=2474
+time=2026-05-25T11:28:50.540+02:00 level=INFO msg="metal: shader module compiled" entryPoints=0
+time=2026-05-25T11:28:50.541+02:00 level=DEBUG msg="metal: render pipeline created" label=glyph_mask_pipeline_with_stencil vertexEntry=vs_main sampleCount=4
+time=2026-05-25T11:28:50.541+02:00 level=DEBUG msg="metal: command encoder created" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:50.541+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:50.541+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:50.541+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:50.541+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:50.541+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=1
+time=2026-05-25T11:28:50.541+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:50.543+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5627706032 texture=5627706672 width=1800 height=2000
+time=2026-05-25T11:28:50.543+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:50.543+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:50.553+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=1
+time=2026-05-25T11:28:50.553+02:00 level=DEBUG msg="metal: frame completion fired" blockID=2
+time=2026-05-25T11:28:50.553+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:50.553+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:50.553+02:00 level=DEBUG msg="metal: command encoder created" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:50.553+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:50.553+02:00 level=DEBUG msg="metal: render pipeline created" label=textured_quad_blit_pipeline vertexEntry=vs_main sampleCount=1
+time=2026-05-25T11:28:50.553+02:00 level=DEBUG msg="metal: command encoder created" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:50.553+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:50.554+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:50.554+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:50.554+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:50.554+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=2
+time=2026-05-25T11:28:50.554+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:50.554+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:50.554+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:50.557+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=3
+time=2026-05-25T11:28:50.557+02:00 level=DEBUG msg="metal: frame completion fired" blockID=4
+time=2026-05-25T11:28:50.567+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:50.567+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:50.567+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:50.567+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:50.567+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:50.568+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:50.568+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:50.568+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:50.568+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:50.568+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=3
+time=2026-05-25T11:28:50.568+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:50.569+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5645877472 texture=5628536112 width=1800 height=2000
+time=2026-05-25T11:28:50.569+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:50.569+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:50.570+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=5
+time=2026-05-25T11:28:50.570+02:00 level=DEBUG msg="metal: frame completion fired" blockID=6
+time=2026-05-25T11:28:50.570+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:50.570+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:50.570+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:50.570+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:50.571+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:50.571+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:50.571+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:50.571+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=4
+time=2026-05-25T11:28:50.571+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:50.571+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:50.571+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:50.572+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=7
+time=2026-05-25T11:28:50.572+02:00 level=DEBUG msg="metal: frame completion fired" blockID=8
+2026-05-25 11:28:50.813 main[75941:12792589] +[IMKClient subclass]: chose IMKClient_Modern
+2026-05-25 11:28:50.813 main[75941:12792589] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+time=2026-05-25T11:28:51.293+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.293+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.293+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.293+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.293+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=5
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=13628372096 texture=5627706672 width=1800 height=2000
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.294+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=9
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: frame completion fired" blockID=10
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.296+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=6
+time=2026-05-25T11:28:51.296+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.297+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.297+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.297+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.297+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=11
+time=2026-05-25T11:28:51.297+02:00 level=DEBUG msg="metal: frame completion fired" blockID=12
+time=2026-05-25T11:28:51.297+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.297+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.297+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.297+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.298+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.298+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.298+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.298+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.298+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=7
+time=2026-05-25T11:28:51.298+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.299+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5627501424 texture=5627619376 width=1800 height=2000
+time=2026-05-25T11:28:51.299+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.299+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.300+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=13
+time=2026-05-25T11:28:51.300+02:00 level=DEBUG msg="metal: frame completion fired" blockID=14
+time=2026-05-25T11:28:51.300+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.301+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=8
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.301+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.302+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=15
+time=2026-05-25T11:28:51.302+02:00 level=DEBUG msg="metal: frame completion fired" blockID=16
+time=2026-05-25T11:28:51.308+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.308+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.308+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.308+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.308+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=9
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5628471200 texture=5628536112 width=1800 height=2000
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.309+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=17
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: frame completion fired" blockID=18
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.311+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=10
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.311+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.312+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=19
+time=2026-05-25T11:28:51.312+02:00 level=DEBUG msg="metal: frame completion fired" blockID=20
+time=2026-05-25T11:28:51.313+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.313+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.313+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.313+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.313+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.313+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.314+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.314+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.314+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.314+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=11
+time=2026-05-25T11:28:51.314+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.316+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=21
+time=2026-05-25T11:28:51.316+02:00 level=DEBUG msg="metal: frame completion fired" blockID=22
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5628228176 texture=5627706672 width=1800 height=2000
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.321+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=12
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.321+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.322+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.322+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=23
+time=2026-05-25T11:28:51.322+02:00 level=DEBUG msg="metal: frame completion fired" blockID=24
+time=2026-05-25T11:28:51.322+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.322+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.322+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.322+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.323+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.323+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.323+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.323+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.323+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=13
+time=2026-05-25T11:28:51.323+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.325+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=25
+time=2026-05-25T11:28:51.325+02:00 level=DEBUG msg="metal: frame completion fired" blockID=26
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=13628391184 texture=5627619376 width=1800 height=2000
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.338+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=14
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.338+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.340+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=27
+time=2026-05-25T11:28:51.340+02:00 level=DEBUG msg="metal: frame completion fired" blockID=28
+time=2026-05-25T11:28:51.362+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.362+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.362+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.362+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.362+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.363+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.363+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.363+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.363+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.363+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=15
+time=2026-05-25T11:28:51.363+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.364+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=13628397584 texture=5628536112 width=1800 height=2000
+time=2026-05-25T11:28:51.364+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.364+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=29
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: frame completion fired" blockID=30
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.366+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=16
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.366+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.367+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=31
+time=2026-05-25T11:28:51.367+02:00 level=DEBUG msg="metal: frame completion fired" blockID=32
+time=2026-05-25T11:28:51.370+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.370+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.370+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.370+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.370+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.371+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.371+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.371+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.371+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.371+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=17
+time=2026-05-25T11:28:51.371+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.372+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5628573648 texture=5627706672 width=1800 height=2000
+time=2026-05-25T11:28:51.372+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.372+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=33
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: frame completion fired" blockID=34
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.374+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=18
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.374+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.375+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.375+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=35
+time=2026-05-25T11:28:51.375+02:00 level=DEBUG msg="metal: frame completion fired" blockID=36
+time=2026-05-25T11:28:51.375+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.375+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.375+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.375+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.375+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.376+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.376+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.376+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.376+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=19
+time=2026-05-25T11:28:51.376+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.378+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=37
+time=2026-05-25T11:28:51.378+02:00 level=DEBUG msg="metal: frame completion fired" blockID=38
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=13628390784 texture=5627619376 width=1800 height=2000
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.388+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=20
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.388+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.389+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=39
+time=2026-05-25T11:28:51.389+02:00 level=DEBUG msg="metal: frame completion fired" blockID=40
+time=2026-05-25T11:28:51.493+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.494+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.494+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.494+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.494+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.496+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.497+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.497+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.497+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.497+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=21
+time=2026-05-25T11:28:51.497+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.498+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5614112352 texture=5628536112 width=1800 height=2000
+time=2026-05-25T11:28:51.498+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.498+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.502+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=41
+time=2026-05-25T11:28:51.502+02:00 level=DEBUG msg="metal: frame completion fired" blockID=42
+time=2026-05-25T11:28:51.502+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.502+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.502+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.502+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.503+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.503+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.503+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.503+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=22
+time=2026-05-25T11:28:51.503+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.503+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.503+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.504+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=43
+time=2026-05-25T11:28:51.504+02:00 level=DEBUG msg="metal: frame completion fired" blockID=44
+time=2026-05-25T11:28:51.543+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.543+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.544+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.544+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.544+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.546+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.547+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.547+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.547+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.547+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=23
+time=2026-05-25T11:28:51.547+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.548+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5646672512 texture=5627619376 width=1800 height=2000
+time=2026-05-25T11:28:51.548+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.548+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.551+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=45
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: frame completion fired" blockID=46
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.552+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=24
+time=2026-05-25T11:28:51.552+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.553+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.553+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.554+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=47
+time=2026-05-25T11:28:51.554+02:00 level=DEBUG msg="metal: frame completion fired" blockID=48
+time=2026-05-25T11:28:51.593+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.593+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.593+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.593+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.594+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.596+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.597+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.597+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.597+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.597+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=25
+time=2026-05-25T11:28:51.597+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.598+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5759897072 texture=5628536112 width=1800 height=2000
+time=2026-05-25T11:28:51.598+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.598+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.602+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=49
+time=2026-05-25T11:28:51.602+02:00 level=DEBUG msg="metal: frame completion fired" blockID=50
+time=2026-05-25T11:28:51.602+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.602+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.602+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.602+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.603+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.603+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.603+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.603+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=26
+time=2026-05-25T11:28:51.603+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.603+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.603+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.604+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=51
+time=2026-05-25T11:28:51.604+02:00 level=DEBUG msg="metal: frame completion fired" blockID=52
+time=2026-05-25T11:28:51.741+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.742+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.742+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.742+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.742+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.744+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.745+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.745+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.745+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.745+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=27
+time=2026-05-25T11:28:51.745+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.746+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5614145488 texture=5627619376 width=1800 height=2000
+time=2026-05-25T11:28:51.746+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.746+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=53
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: frame completion fired" blockID=54
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.749+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=28
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.749+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.750+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=55
+time=2026-05-25T11:28:51.750+02:00 level=DEBUG msg="metal: frame completion fired" blockID=56
+time=2026-05-25T11:28:51.751+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.751+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.751+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:51.751+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.751+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:51.753+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:51.754+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.754+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.754+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.754+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=29
+time=2026-05-25T11:28:51.754+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.754+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5646639968 texture=5627706672 width=1800 height=2000
+time=2026-05-25T11:28:51.754+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:51.754+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:51.757+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=57
+time=2026-05-25T11:28:51.757+02:00 level=DEBUG msg="metal: frame completion fired" blockID=58
+time=2026-05-25T11:28:51.758+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:51.758+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:51.758+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:51.758+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:51.758+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.758+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:51.758+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:51.758+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=30
+time=2026-05-25T11:28:51.758+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:51.759+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:51.759+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:51.759+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=59
+time=2026-05-25T11:28:51.759+02:00 level=DEBUG msg="metal: frame completion fired" blockID=60
+time=2026-05-25T11:28:52.003+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.003+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.003+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:52.004+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:52.004+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:52.005+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:52.006+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.006+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.006+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:52.006+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=31
+time=2026-05-25T11:28:52.006+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:52.006+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5647914032 texture=5628536112 width=1800 height=2000
+time=2026-05-25T11:28:52.006+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:52.006+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.009+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=61
+time=2026-05-25T11:28:52.009+02:00 level=DEBUG msg="metal: frame completion fired" blockID=62
+time=2026-05-25T11:28:52.009+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.009+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:52.009+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:52.009+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=32
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=63
+time=2026-05-25T11:28:52.010+02:00 level=DEBUG msg="metal: frame completion fired" blockID=64
+time=2026-05-25T11:28:52.011+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.011+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.011+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:52.011+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:52.011+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:52.012+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:52.013+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.013+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.013+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:52.013+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=33
+time=2026-05-25T11:28:52.013+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:52.014+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=5614115264 texture=5627619376 width=1800 height=2000
+time=2026-05-25T11:28:52.014+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:52.014+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.017+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=65
+time=2026-05-25T11:28:52.017+02:00 level=DEBUG msg="metal: frame completion fired" blockID=66
+time=2026-05-25T11:28:52.017+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.017+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=34
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:52.018+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:52.019+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=67
+time=2026-05-25T11:28:52.019+02:00 level=DEBUG msg="metal: frame completion fired" blockID=68
+time=2026-05-25T11:28:52.020+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.020+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.020+02:00 level=INFO msg="created surface textures" label=session width=900 height=1000 msaa_samples=4
+time=2026-05-25T11:28:52.020+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:52.020+02:00 level=DEBUG msg="SDF uniform viewport" width=900 height=1000 anti_alias=true
+time=2026-05-25T11:28:52.022+02:00 level=DEBUG msg="metal: encoding started" label=session_surface_encoder
+time=2026-05-25T11:28:52.022+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.022+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.022+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:52.023+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=35
+time=2026-05-25T11:28:52.023+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:52.023+02:00 level=DEBUG msg="metal: surface texture acquired" drawable=13628363648 texture=5627706672 width=1800 height=2000
+time=2026-05-25T11:28:52.023+02:00 level=DEBUG msg=ggcanvas.RenderDirect width=1800 height=2000 hasSurfaceView=true
+time=2026-05-25T11:28:52.023+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=69
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: frame completion fired" blockID=70
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.026+02:00 level=INFO msg="created surface textures" label=session width=1800 height=2000 msaa_samples=4
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: encoding started" label="(wgpu internal) pending writes"
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: encoding started" label=session_blit_encoder
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: encoding ended"
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: Submit" buffers=2
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: submission completion handler registered" subIdx=36
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: frame completion handler registered"
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: Present"
+time=2026-05-25T11:28:52.026+02:00 level=DEBUG msg="metal: presentDrawable committed"
+time=2026-05-25T11:28:52.027+02:00 level=DEBUG msg="metal: GPU completion tracking fired" blockID=71
+time=2026-05-25T11:28:52.027+02:00 level=DEBUG msg="metal: frame completion fired" blockID=72
+time=2026-05-25T11:28:52.268+02:00 level=DEBUG msg="metal: surface destroyed"
+time=2026-05-25T11:28:52.268+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.268+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.268+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.269+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.269+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.269+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.269+02:00 level=DEBUG msg="metal: WaitIdle starting"
+time=2026-05-25T11:28:52.269+02:00 level=DEBUG msg="metal: WaitIdle complete"
+time=2026-05-25T11:28:52.271+02:00 level=DEBUG msg="metal: device destroyed"

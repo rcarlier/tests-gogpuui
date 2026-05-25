@@ -22,10 +22,13 @@ package main
 import (
 	"fmt"
 	"log"
+	"log/slog"
 	"math"
 	"math/rand/v2"
+	"os"
 	"time"
 
+	"github.com/gogpu/gg"
 	_ "github.com/gogpu/gg/gpu" // enable GPU SDF acceleration
 
 	"github.com/gogpu/gogpu"
@@ -156,6 +159,10 @@ var themeNames = []string{
 }
 
 func main() {
+	gg.SetLogger(slog.New(slog.NewTextHandler(os.Stderr, &slog.HandlerOptions{
+		Level: slog.LevelDebug,
+	})))
+
 	m3 := material3.New(widget.Hex(0x6750A4))
 
 	gogpuApp := gogpu.NewApp(gogpu.DefaultConfig().
@@ -172,6 +179,7 @@ func main() {
 
 	gs := &galleryState{}
 	ps := m3Painters(m3)
+
 	var onThemeChange func(int)
 	onThemeChange = func(idx int) {
 		gs.themeIdx = idx
