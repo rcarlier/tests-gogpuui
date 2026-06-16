@@ -1,9 +1,9 @@
 .PHONY: build run clean
 
 BINARY := app
-SRC := 20260523/main.go
 
 
+SRC := 20260616/main.go
 LOG_FILE := 20260616/logs.log
 
 
