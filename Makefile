@@ -2,7 +2,11 @@
 
 BINARY := app
 SRC := 20260523/main.go
-LOG_FILE := 20260523/logs.log
+
+
+LOG_FILE := 20260616/logs.log
+
+
 
 build:
 	GOGPU_LOG=debug go build -o $(BINARY) $(SRC) \
