@@ -5,7 +5,7 @@ go 1.26.0
 require (
 	github.com/gogpu/gg v0.48.11
 	github.com/gogpu/gogpu v0.42.0
-	github.com/gogpu/ui v0.1.32
+	github.com/gogpu/ui v0.1.33
 )
 
 require (

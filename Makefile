@@ -3,8 +3,8 @@
 BINARY := app
 
 
-SRC := 20260616/main.go
-LOG_FILE := 20260616/logs.log
+SRC := 20260616b/main.go
+LOG_FILE := 20260616b/logs.log
 
 
 
